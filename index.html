@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>みんなの日本語 クイズ一覧</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  padding: 20px;
+  padding-top: max(20px, env(safe-area-inset-top));
+}
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 24px;
+  color: #1a1a2e;
+}
+.level {
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+.level summary {
+  font-size: 1.15em;
+  font-weight: bold;
+  padding: 16px;
+  cursor: pointer;
+  list-style: none;
+  border-bottom: 2px solid #e8eef5;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #2c5282;
+}
+.level summary::-webkit-details-marker { display: none; }
+.level summary::before {
+  content: '▼';
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.2s;
+}
+.level[open] summary::before { transform: rotate(-90deg); }
+.level-content { padding: 16px; }
+.sub-section { margin-bottom: 16px; }
+.sub-section:last-child { margin-bottom: 0; }
+.sub-section-title {
+  font-size: 0.95em;
+  color: #666;
+  margin-bottom: 12px;
+  padding-left: 4px;
+}
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.icon-row .icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+  height: 56px;
+  padding: 0 16px;
+  margin-bottom: 0;
+  background: #2b6cb0;
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 2px 8px rgba(43, 108, 176, 0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+  line-height: 1;
+}
+.icon-row .icon-link:active { transform: scale(0.96); }
+.icon-row .icon-link:hover { box-shadow: 0 4px 12px rgba(43, 108, 176, 0.45); }
+.icon-row .icon-link.disabled {
+  background: #cbd5e0;
+  color: #718096;
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none;
+}
+.unit-hint {
+  font-size: 0.85em;
+  color: #a0aec0;
+  margin-top: 10px;
+  padding-left: 4px;
+}
+</style>
+</head>
+<body>
+<h1>みんなの日本語 クイズ一覧</h1>
+
+<details class="level" open>
+  <summary>第3課</summary>
+  <div class="level-content">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit3/unit3-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit3/unit3-quiz-part2.html" class="icon-link">2</a>
+        <a href="unit3/unit3-quiz-part3.html" class="icon-link">3</a>
+        <a href="unit3/unit3-quiz-part4.html" class="icon-link">4</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary>第4課</summary>
+  <div class="level-content">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <span class="icon-link disabled">1</span>
+        <span class="icon-link disabled">2</span>
+        <span class="icon-link disabled">3</span>
+        <span class="icon-link disabled">4</span>
+      </div>
+      <p class="unit-hint">準備中</p>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary>第5課</summary>
+  <div class="level-content">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <span class="icon-link disabled">1</span>
+        <span class="icon-link disabled">2</span>
+        <span class="icon-link disabled">3</span>
+        <span class="icon-link disabled">4</span>
+      </div>
+      <p class="unit-hint">準備中</p>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary>第6課</summary>
+  <div class="level-content">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <span class="icon-link disabled">1</span>
+        <span class="icon-link disabled">2</span>
+        <span class="icon-link disabled">3</span>
+        <span class="icon-link disabled">4</span>
+      </div>
+      <p class="unit-hint">準備中</p>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary>第7課</summary>
+  <div class="level-content">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <span class="icon-link disabled">1</span>
+        <span class="icon-link disabled">2</span>
+        <span class="icon-link disabled">3</span>
+        <span class="icon-link disabled">4</span>
+      </div>
+      <p class="unit-hint">準備中</p>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary>第8課</summary>
+  <div class="level-content">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <span class="icon-link disabled">1</span>
+        <span class="icon-link disabled">2</span>
+        <span class="icon-link disabled">3</span>
+        <span class="icon-link disabled">4</span>
+      </div>
+      <p class="unit-hint">準備中</p>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary>第9課</summary>
+  <div class="level-content">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <span class="icon-link disabled">1</span>
+        <span class="icon-link disabled">2</span>
+        <span class="icon-link disabled">3</span>
+        <span class="icon-link disabled">4</span>
+      </div>
+      <p class="unit-hint">準備中</p>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary>第10課</summary>
+  <div class="level-content">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <span class="icon-link disabled">1</span>
+        <span class="icon-link disabled">2</span>
+        <span class="icon-link disabled">3</span>
+        <span class="icon-link disabled">4</span>
+      </div>
+      <p class="unit-hint">準備中</p>
+    </div>
+  </div>
+</details>
+
+</body>
+</html>
