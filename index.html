@@ -47,6 +47,17 @@ h1 {
 }
 .level[open] summary::before { transform: rotate(-90deg); }
 .level-content { padding: 16px; }
+.level-content-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 28px;
+  align-items: flex-start;
+}
+.level-content-row > .sub-section {
+  flex: 1 1 200px;
+  margin-bottom: 0;
+  min-width: 0;
+}
 .sub-section { margin-bottom: 16px; }
 .sub-section:last-child { margin-bottom: 0; }
 .sub-section-title {
@@ -256,7 +267,7 @@ h1 {
 
 <details class="level">
   <summary>第33課</summary>
-  <div class="level-content">
+  <div class="level-content level-content-row">
     <div class="sub-section">
       <div class="sub-section-title">15分・パート</div>
       <div class="icon-row">
@@ -275,7 +286,7 @@ h1 {
 
 <details class="level">
   <summary>第34課</summary>
-  <div class="level-content">
+  <div class="level-content level-content-row">
     <div class="sub-section">
       <div class="sub-section-title">15分・パート</div>
       <div class="icon-row">
@@ -294,7 +305,7 @@ h1 {
 
 <details class="level">
   <summary>第35課</summary>
-  <div class="level-content">
+  <div class="level-content level-content-row">
     <div class="sub-section">
       <div class="sub-section-title">15分・パート</div>
       <div class="icon-row">
