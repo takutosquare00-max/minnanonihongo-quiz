@@ -37,15 +37,28 @@ h1 {
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   color: #2c5282;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .level summary::-webkit-details-marker { display: none; }
 .level summary::before {
   content: '▼';
   display: inline-block;
-  margin-right: 8px;
+  flex-shrink: 0;
   transition: transform 0.2s;
 }
 .level[open] summary::before { transform: rotate(-90deg); }
+.unit-title {
+  flex-shrink: 0;
+}
+.unit-topic {
+  font-size: 0.72em;
+  font-weight: normal;
+  color: #718096;
+  letter-spacing: 0.01em;
+}
 .level-content { padding: 16px; }
 .level-content-row {
   display: flex;
@@ -111,7 +124,7 @@ h1 {
 <h1>みんなの日本語 クイズ一覧</h1>
 
 <details class="level">
-  <summary>第3課</summary>
+  <summary><span class="unit-title">第3課</span><span class="unit-topic">これ・それ・あれ・どれ / 〜の（指示詞）</span></summary>
   <div class="level-content">
     <div class="sub-section">
       <div class="sub-section-title">15分・パート</div>
@@ -126,7 +139,7 @@ h1 {
 </details>
 
 <details class="level">
-  <summary>第4課</summary>
+  <summary><span class="unit-title">第4課</span><span class="unit-topic">ここ・そこ・あそこ / 〜はどこですか</span></summary>
   <div class="level-content">
     <div class="sub-section">
       <div class="sub-section-title">15分・パート</div>
@@ -141,7 +154,7 @@ h1 {
 </details>
 
 <details class="level">
-  <summary>第5課</summary>
+  <summary><span class="unit-title">第5課</span><span class="unit-topic">いくら / 〜をください / 助数詞</span></summary>
   <div class="level-content">
     <div class="sub-section">
       <div class="sub-section-title">15分・パート</div>
@@ -156,7 +169,7 @@ h1 {
 </details>
 
 <details class="level">
-  <summary>第6課</summary>
+  <summary><span class="unit-title">第6課</span><span class="unit-topic">〜時〜分 / 毎日〜します（時間表現）</span></summary>
   <div class="level-content">
     <div class="sub-section">
       <div class="sub-section-title">15分・パート</div>
@@ -172,7 +185,7 @@ h1 {
 </details>
 
 <details class="level">
-  <summary>第7課</summary>
+  <summary><span class="unit-title">第7課</span><span class="unit-topic">〜に行きます・来ます・帰ります / 移動表現</span></summary>
   <div class="level-content">
     <div class="sub-section">
       <div class="sub-section-title">15分・パート</div>
@@ -188,7 +201,7 @@ h1 {
 </details>
 
 <details class="level">
-  <summary>第8課</summary>
+  <summary><span class="unit-title">第8課</span><span class="unit-topic">〜ます / 〜ません / 〜ましたか（動詞の基本活用）</span></summary>
   <div class="level-content">
     <div class="sub-section">
       <div class="sub-section-title">15分・パート</div>
@@ -204,7 +217,7 @@ h1 {
 </details>
 
 <details class="level">
-  <summary>第9課</summary>
+  <summary><span class="unit-title">第9課</span><span class="unit-topic">〜をします / 〜と一緒に / 〜はどうでしたか</span></summary>
   <div class="level-content">
     <div class="sub-section">
       <div class="sub-section-title">15分・パート</div>
@@ -220,7 +233,7 @@ h1 {
 </details>
 
 <details class="level">
-  <summary>第10課</summary>
+  <summary><span class="unit-title">第10課</span><span class="unit-topic">〜があります・います / 場所に〜がいます</span></summary>
   <div class="level-content">
     <div class="sub-section">
       <div class="sub-section-title">15分・パート</div>
@@ -236,7 +249,7 @@ h1 {
 </details>
 
 <details class="level">
-  <summary>第31課</summary>
+  <summary><span class="unit-title">第31課</span><span class="unit-topic">〜ていただけませんか / 〜ていただきたいんですが</span></summary>
   <div class="level-content">
     <div class="sub-section">
       <div class="sub-section-title">15分×4パート（各20問）</div>
@@ -251,7 +264,7 @@ h1 {
 </details>
 
 <details class="level">
-  <summary>第32課</summary>
+  <summary><span class="unit-title">第32課</span><span class="unit-topic">〜ように（目的） / 〜ようになります</span></summary>
   <div class="level-content">
     <div class="sub-section">
       <div class="sub-section-title">15分×4パート（各20問）</div>
@@ -266,7 +279,7 @@ h1 {
 </details>
 
 <details class="level">
-  <summary>第33課</summary>
+  <summary><span class="unit-title">第33課</span><span class="unit-topic">普通体 / 〜んです（友人との会話）</span></summary>
   <div class="level-content level-content-row">
     <div class="sub-section">
       <div class="sub-section-title">15分・パート</div>
@@ -285,7 +298,7 @@ h1 {
 </details>
 
 <details class="level">
-  <summary>第34課</summary>
+  <summary><span class="unit-title">第34課</span><span class="unit-topic">〜たら（仮定条件）</span></summary>
   <div class="level-content level-content-row">
     <div class="sub-section">
       <div class="sub-section-title">15分・パート</div>
@@ -304,7 +317,7 @@ h1 {
 </details>
 
 <details class="level">
-  <summary>第35課</summary>
+  <summary><span class="unit-title">第35課</span><span class="unit-topic">〜ても（逆接条件）</span></summary>
   <div class="level-content level-content-row">
     <div class="sub-section">
       <div class="sub-section-title">15分・パート</div>
@@ -317,6 +330,294 @@ h1 {
       <div class="sub-section-title">漢字・語彙</div>
       <div class="icon-row">
         <a href="unit35/unit35-kanji-vocab-quiz.html" class="icon-link">漢字</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary><span class="unit-title">第36課</span><span class="unit-topic">〜そうです（伝聞） / 〜って</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit36/unit36-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit36/unit36-quiz-part2.html" class="icon-link">2</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">漢字・語彙</div>
+      <div class="icon-row">
+        <a href="unit36/unit36-kanji-vocab-quiz.html" class="icon-link">漢字</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary><span class="unit-title">第37課</span><span class="unit-topic">〜と思います / 〜と言っていました</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit37/unit37-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit37/unit37-quiz-part2.html" class="icon-link">2</a>
+        <a href="unit37/unit37-quiz-part3.html" class="icon-link">3</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">漢字・語彙</div>
+      <div class="icon-row">
+        <a href="unit37/unit37-kanji-vocab-quiz.html" class="icon-link">漢字</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary><span class="unit-title">第38課</span><span class="unit-topic">〜でしょう / 〜かもしれません</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit38/unit38-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit38/unit38-quiz-part2.html" class="icon-link">2</a>
+        <a href="unit38/unit38-quiz-part3.html" class="icon-link">3</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">漢字・語彙</div>
+      <div class="icon-row">
+        <a href="unit38/unit38-kanji-vocab-quiz.html" class="icon-link">漢字</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary><span class="unit-title">第39課</span><span class="unit-topic">〜ば（条件） / 〜といいんですが</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit39/unit39-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit39/unit39-quiz-part2.html" class="icon-link">2</a>
+        <a href="unit39/unit39-quiz-part3.html" class="icon-link">3</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">漢字・語彙</div>
+      <div class="icon-row">
+        <a href="unit39/unit39-kanji-vocab-quiz.html" class="icon-link">漢字</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary><span class="unit-title">第40課</span><span class="unit-topic">〜ようです / 〜みたいです</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit40/unit40-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit40/unit40-quiz-part2.html" class="icon-link">2</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">漢字・語彙</div>
+      <div class="icon-row">
+        <a href="unit40/unit40-kanji-vocab-quiz.html" class="icon-link">漢字</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary><span class="unit-title">第41課</span><span class="unit-topic">〜てあげます・くれます・もらいます</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit41/unit41-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit41/unit41-quiz-part2.html" class="icon-link">2</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">漢字・語彙</div>
+      <div class="icon-row">
+        <a href="unit41/unit41-kanji-vocab-quiz.html" class="icon-link">漢字</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary><span class="unit-title">第42課</span><span class="unit-topic">〜ておきます（事前準備）</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit42/unit42-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit42/unit42-quiz-part2.html" class="icon-link">2</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">漢字・語彙</div>
+      <div class="icon-row">
+        <a href="unit42/unit42-kanji-vocab-quiz.html" class="icon-link">漢字</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary><span class="unit-title">第43課</span><span class="unit-topic">〜てしまいます（完了・後悔）</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit43/unit43-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit43/unit43-quiz-part2.html" class="icon-link">2</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">漢字・語彙</div>
+      <div class="icon-row">
+        <a href="unit43/unit43-kanji-vocab-quiz.html" class="icon-link">漢字</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary><span class="unit-title">第44課</span><span class="unit-topic">〜てみます（試み） / 〜てみてください</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit44/unit44-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit44/unit44-quiz-part2.html" class="icon-link">2</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">漢字・語彙</div>
+      <div class="icon-row">
+        <a href="unit44/unit44-kanji-vocab-quiz.html" class="icon-link">漢字</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary><span class="unit-title">第45課</span><span class="unit-topic">〜という〜 / 〜のは〜ことです</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit45/unit45-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit45/unit45-quiz-part2.html" class="icon-link">2</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">漢字・語彙</div>
+      <div class="icon-row">
+        <a href="unit45/unit45-kanji-vocab-quiz.html" class="icon-link">漢字</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary><span class="unit-title">第46課</span><span class="unit-topic">〜ようにします / 〜ようにしてください</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit46/unit46-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit46/unit46-quiz-part2.html" class="icon-link">2</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">漢字・語彙</div>
+      <div class="icon-row">
+        <a href="unit46/unit46-kanji-vocab-quiz.html" class="icon-link">漢字</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary><span class="unit-title">第47課</span><span class="unit-topic">〜てあります / 〜ていきます・きます</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit47/unit47-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit47/unit47-quiz-part2.html" class="icon-link">2</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">漢字・語彙</div>
+      <div class="icon-row">
+        <a href="unit47/unit47-kanji-vocab-quiz.html" class="icon-link">漢字</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary><span class="unit-title">第48課</span><span class="unit-topic">〜ていただけますか / 〜てあげてください</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit48/unit48-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit48/unit48-quiz-part2.html" class="icon-link">2</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">漢字・語彙</div>
+      <div class="icon-row">
+        <a href="unit48/unit48-kanji-vocab-quiz.html" class="icon-link">漢字</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary><span class="unit-title">第49課</span><span class="unit-topic">使役形〜させます / 〜させてください</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit49/unit49-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit49/unit49-quiz-part2.html" class="icon-link">2</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">漢字・語彙</div>
+      <div class="icon-row">
+        <a href="unit49/unit49-kanji-vocab-quiz.html" class="icon-link">漢字</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+<details class="level">
+  <summary><span class="unit-title">第50課</span><span class="unit-topic">〜ても〜なくても / 〜ないで / 総まとめ</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">15分・パート</div>
+      <div class="icon-row">
+        <a href="unit50/unit50-quiz-part1.html" class="icon-link">1</a>
+        <a href="unit50/unit50-quiz-part2.html" class="icon-link">2</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">漢字・語彙</div>
+      <div class="icon-row">
+        <a href="unit50/unit50-kanji-vocab-quiz.html" class="icon-link">漢字</a>
       </div>
     </div>
   </div>
