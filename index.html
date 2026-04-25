@@ -20,10 +20,18 @@ h1 {
   margin-bottom: 24px;
   color: #1a1a2e;
 }
+.unit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+@media (max-width: 600px) {
+  .unit-grid { grid-template-columns: 1fr; }
+}
 .level {
   background: #fff;
   border-radius: 12px;
-  margin-bottom: 16px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   overflow: hidden;
 }
@@ -123,6 +131,7 @@ h1 {
 <body>
 <h1>みんなの日本語 クイズ一覧</h1>
 
+<div class="unit-grid">
 <details class="level">
   <summary><span class="unit-title">第3課</span><span class="unit-topic">これ・それ・あれ・どれ / 〜の（指示詞）</span></summary>
   <div class="level-content">
@@ -623,5 +632,6 @@ h1 {
   </div>
 </details>
 
+</div>
 </body>
 </html>
