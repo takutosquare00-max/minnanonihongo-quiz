@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>みんなの日本語 32 パート2（15分・20問）</title>
+<title>みんなの日本語 32 パート2（15分・15問）</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
@@ -32,16 +32,12 @@ header h1{font-size:1.45em;margin-bottom:4px}
 .option input{display:none}
 .option label{flex:1;display:flex;align-items:center;gap:8px;padding:12px 14px;border:2px solid #e2e8f0;border-radius:8px;cursor:pointer;transition:all .2s;font-size:.95em;touch-action:manipulation;-webkit-user-select:none;user-select:none;min-height:48px;width:100%;box-sizing:border-box}
 .option .opt-key{flex:0 0 auto;min-width:1.75em;text-align:right;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.4;align-self:center}
-.option .opt-body{flex:1;min-width:0;line-height:1.65;align-self:center}
+.option .opt-body{flex:1;min-width:0;line-height:1.65;align-self:center;word-break:break-word}
 .option label:hover{border-color:#2b6cb0;background:#f0f7ff}
 .option input:checked+label{border-color:#2b6cb0;background:#e8f2fc;color:#1a365d;font-weight:600}
 .option.correct label{border-color:#48bb78!important;background:#f0fff4!important;color:#276749!important}
 .option.wrong label{border-color:#fc8181!important;background:#fff5f5!important;color:#9b2c2c!important}
-.reading-passage{background:#f7fafc;border-left:3px solid #2b6cb0;padding:16px;margin:12px 0;border-radius:0 8px 8px 0;font-size:.95em;line-height:1.9}
-.dialogue{margin:8px 0 12px;padding:14px 16px;background:#f7fafc;border-left:3px solid #2b6cb0;border-radius:0 8px 8px 0;font-size:1.02em;line-height:1.85}
-.dialogue p{margin:0 0 .55em;padding:0}
-.dialogue p:last-child{margin-bottom:0}
-.dialogue .sp{font-weight:700;color:#2c5282;margin-right:.15em}
+.blank-paren{display:inline-block;color:#c05621;font-weight:700;white-space:nowrap}
 .btn-submit{display:block;width:100%;min-height:48px;padding:16px;background:linear-gradient(135deg,#2b6cb0 0%,#2c5282 100%);color:#fff;border:none;border-radius:12px;font-size:1.1em;font-weight:bold;cursor:pointer;transition:transform .2s,box-shadow .2s;margin-top:24px;touch-action:manipulation;-webkit-user-select:none;user-select:none}
 .btn-submit:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(43,108,176,.4)}
 .btn-submit:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
@@ -61,218 +57,202 @@ header h1{font-size:1.45em;margin-bottom:4px}
 ruby{ruby-align:center}
 rt{font-size:0.55em;font-weight:400;line-height:1.1}
 .option label ruby rt{font-size:0.5em}
-.subq{margin-top:14px;padding-top:12px;border-top:1px dashed #cbd5e0}
-.subq:first-of-type{margin-top:10px;border-top:none;padding-top:0}
-.subq-label{font-size:.95em;font-weight:600;color:#2b6cb0;margin-bottom:8px}
-.blank-paren{display:inline-block;color:#c05621;font-weight:700;white-space:nowrap}
-.blank-paren .blank-n{font-weight:700}
-.kanji-prompt{font-size:clamp(1.6rem,5vw,2.1rem);font-weight:700;text-align:center;margin:4px 0 12px;letter-spacing:.05em;color:#1a365d}
-.option .opt-body{flex:1;min-width:0;line-height:1.65;align-self:center;word-break:break-word}
-.subq + .dialogue{margin-top:calc(8px + 2.55em)}
 </style>
 </head>
 <body>
 <div class="container">
 <header>
-<h1>みんなの<ruby>日本語<rt>にほんご</rt></ruby> 32 クイズ（パート2・15分・20<ruby>問<rt>もん</rt></ruby>）</h1>
+<h1>みんなの<ruby>日本語<rt>にほんご</rt></ruby> 32 クイズ（パート2・15<ruby>分<rt>ふん</rt></ruby>・15<ruby>問<rt>もん</rt></ruby>）</h1>
 <div class="header-info">
 <div class="timer" id="timer">15:00</div>
 <div class="progress-bar"><div class="progress-fill" id="progress" style="width:100%"></div></div>
-<div class="score-badge" id="scoreBadge"><ruby>全<rt>ぜん</rt></ruby>20<ruby>問<rt>もん</rt></ruby></div>
+<div class="score-badge" id="scoreBadge"><ruby>全<rt>ぜん</rt></ruby>15<ruby>問<rt>もん</rt></ruby></div>
 </div>
 </header>
+
+<!-- Section 1: 意味問題 -->
 <div class="section">
-<div class="section-title">復習A（問題 1–2）</div><p class="section-lead"><ruby>会話<rt>かいわ</rt></ruby>の（　）に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p><div class="dialogue">
-<p><span class="sp">Aさん：</span><ruby>来週<rt>らいしゅう</rt></ruby>は　<ruby>暇<rt>ひま</rt></ruby>ですか。</p>
-<p><span class="sp">Bさん：</span><ruby>来週<rt>らいしゅう</rt></ruby>は　<span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>かも　しれません。</p>
-</div><div class="subq"><div class="q-text"><span class="q-num">1</span><span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>に　<ruby>入<rt>はい</rt></ruby>るのは</div><div class="options">
-<div class="option"><input id="q1a" name="q1" type="radio" value="1"/><label for="q1a"><span class="opt-key">1.</span><span class="opt-body"><ruby>暇<rt>ひま</rt></ruby></span></label></div>
-<div class="option"><input id="q1b" name="q1" type="radio" value="0"/><label for="q1b"><span class="opt-key">2.</span><span class="opt-body"><ruby>忙<rt>いそが</rt></ruby>しい</span></label></div>
-<div class="option"><input id="q1c" name="q1" type="radio" value="0"/><label for="q1c"><span class="opt-key">3.</span><span class="opt-body"><ruby>休<rt>やす</rt></ruby>み</span></label></div>
-<div class="option"><input id="q1d" name="q1" type="radio" value="0"/><label for="q1d"><span class="opt-key">4.</span><span class="opt-body"><ruby>分<rt>わ</rt></ruby>からない</span></label></div>
-</div><div class="explanation">✅ 正解：1 — 「<ruby>来週<rt>らいしゅう</rt></ruby>は　<ruby>暇<rt>ひま</rt></ruby>かも　しれません」。</div></div><div class="dialogue">
-<p><span class="sp">Aさん：</span><ruby>彼<rt>かれ</rt></ruby>は　<ruby>病気<rt>びょうき</rt></ruby>なんですか。</p>
-<p><span class="sp">Bさん：</span><ruby>彼<rt>かれ</rt></ruby>は　<span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>かも　しれません。</p>
-</div><div class="subq"><div class="q-text"><span class="q-num">2</span><span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>に　<ruby>入<rt>はい</rt></ruby>るのは</div><div class="options">
-<div class="option"><input id="q2a" name="q2" type="radio" value="1"/><label for="q2a"><span class="opt-key">1.</span><span class="opt-body"><ruby>病気<rt>びょうき</rt></ruby></span></label></div>
-<div class="option"><input id="q2b" name="q2" type="radio" value="0"/><label for="q2b"><span class="opt-key">2.</span><span class="opt-body"><ruby>元気<rt>げんき</rt></ruby></span></label></div>
-<div class="option"><input id="q2c" name="q2" type="radio" value="0"/><label for="q2c"><span class="opt-key">3.</span><span class="opt-body"><ruby>忙<rt>いそが</rt></ruby>しい</span></label></div>
-<div class="option"><input id="q2d" name="q2" type="radio" value="0"/><label for="q2d"><span class="opt-key">4.</span><span class="opt-body"><ruby>大丈夫<rt>だいじょうぶ</rt></ruby></span></label></div>
-</div><div class="explanation">✅ 正解：1 — 「<ruby>彼<rt>かれ</rt></ruby>は　<ruby>病気<rt>びょうき</rt></ruby>かも　しれません」。</div></div>
-</div><div class="section">
-<div class="section-title">復習A（問題 3–6）</div><p class="section-lead"><ruby>会話<rt>かいわ</rt></ruby>の（　）に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p><div class="dialogue">
-<p><span class="sp">Aさん：</span>きのうから　<ruby>熱<rt>ねつ</rt></ruby>が　あるんです。</p>
-<p><span class="sp">Bさん：</span>じゃ、<ruby>無理<rt>むり</rt></ruby>を　<span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>ほうが　いいですよ。</p>
-</div><div class="subq"><div class="q-text"><span class="q-num">3</span><span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>に　<ruby>入<rt>はい</rt></ruby>るのは</div><div class="options">
-<div class="option"><input id="q3a" name="q3" type="radio" value="1"/><label for="q3a"><span class="opt-key">1.</span><span class="opt-body">しない</span></label></div>
-<div class="option"><input id="q3b" name="q3" type="radio" value="0"/><label for="q3b"><span class="opt-key">2.</span><span class="opt-body">した</span></label></div>
-<div class="option"><input id="q3c" name="q3" type="radio" value="0"/><label for="q3c"><span class="opt-key">3.</span><span class="opt-body">します</span></label></div>
-<div class="option"><input id="q3d" name="q3" type="radio" value="0"/><label for="q3d"><span class="opt-key">4.</span><span class="opt-body">して</span></label></div>
-</div><div class="explanation">✅ 正解：1 — 「しない」ほうが　いいですよ。</div></div><div class="dialogue">
-<p><span class="sp">Aさん：</span><ruby>連休<rt>れんきゅう</rt></ruby>に　<ruby>九州<rt>きゅうしゅう</rt></ruby>へ　<ruby>行<rt>い</rt></ruby>きたいんです。</p>
-<p><span class="sp">Bさん：</span>じゃ、<ruby>早<rt>はや</rt></ruby>く　<span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>ほうが　いいですよ。</p>
-</div><div class="subq"><div class="q-text"><span class="q-num">4</span><span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>に　<ruby>入<rt>はい</rt></ruby>るのは</div><div class="options">
-<div class="option"><input id="q4a" name="q4" type="radio" value="1"/><label for="q4a"><span class="opt-key">1.</span><span class="opt-body"><ruby>予約<rt>よやく</rt></ruby>した</span></label></div>
-<div class="option"><input id="q4b" name="q4" type="radio" value="0"/><label for="q4b"><span class="opt-key">2.</span><span class="opt-body"><ruby>予約<rt>よやく</rt></ruby>する</span></label></div>
-<div class="option"><input id="q4c" name="q4" type="radio" value="0"/><label for="q4c"><span class="opt-key">3.</span><span class="opt-body"><ruby>予約<rt>よやく</rt></ruby>します</span></label></div>
-<div class="option"><input id="q4d" name="q4" type="radio" value="0"/><label for="q4d"><span class="opt-key">4.</span><span class="opt-body"><ruby>予約<rt>よやく</rt></ruby>して</span></label></div>
-</div><div class="explanation">✅ 正解：1 — 「<ruby>予約<rt>よやく</rt></ruby>した」ほうが　いいですよ。</div></div><div class="dialogue">
-<p><span class="sp">Aさん：</span>おなかの　<ruby>調子<rt>ちょうし</rt></ruby>が　よくないんです。</p>
-<p><span class="sp">Bさん：</span>じゃ、<ruby>冷<rt>つめ</rt></ruby>たい　<ruby>物<rt>もの</rt></ruby>は　<span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>ほうが　いいですよ。</p>
-</div><div class="subq"><div class="q-text"><span class="q-num">5</span><span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>に　<ruby>入<rt>はい</rt></ruby>るのは</div><div class="options">
-<div class="option"><input id="q5a" name="q5" type="radio" value="1"/><label for="q5a"><span class="opt-key">1.</span><span class="opt-body"><ruby>飲<rt>の</rt></ruby>まない</span></label></div>
-<div class="option"><input id="q5b" name="q5" type="radio" value="0"/><label for="q5b"><span class="opt-key">2.</span><span class="opt-body"><ruby>飲<rt>の</rt></ruby>む</span></label></div>
-<div class="option"><input id="q5c" name="q5" type="radio" value="0"/><label for="q5c"><span class="opt-key">3.</span><span class="opt-body"><ruby>飲<rt>の</rt></ruby>みます</span></label></div>
-<div class="option"><input id="q5d" name="q5" type="radio" value="0"/><label for="q5d"><span class="opt-key">4.</span><span class="opt-body"><ruby>飲<rt>の</rt></ruby>んだ</span></label></div>
-</div><div class="explanation">✅ 正解：1 — 「<ruby>飲<rt>の</rt></ruby>まない」ほうが　いいですよ。</div></div><div class="dialogue">
-<p><span class="sp">Aさん：</span><ruby>明日<rt>あした</rt></ruby>　<ruby>日本語<rt>にほんご</rt></ruby>の　<ruby>試験<rt>しけん</rt></ruby>なんです。</p>
-<p><span class="sp">Bさん：</span>じゃ、<ruby>今晩<rt>こんばん</rt></ruby>は　<ruby>早<rt>はや</rt></ruby>く　<span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>ほうが　いいですよ。</p>
-</div><div class="subq"><div class="q-text"><span class="q-num">6</span><span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>に　<ruby>入<rt>はい</rt></ruby>るのは</div><div class="options">
-<div class="option"><input id="q6a" name="q6" type="radio" value="1"/><label for="q6a"><span class="opt-key">1.</span><span class="opt-body"><ruby>寝<rt>ね</rt></ruby>た</span></label></div>
-<div class="option"><input id="q6b" name="q6" type="radio" value="0"/><label for="q6b"><span class="opt-key">2.</span><span class="opt-body"><ruby>寝<rt>ね</rt></ruby>る</span></label></div>
-<div class="option"><input id="q6c" name="q6" type="radio" value="0"/><label for="q6c"><span class="opt-key">3.</span><span class="opt-body"><ruby>寝<rt>ね</rt></ruby>ます</span></label></div>
-<div class="option"><input id="q6d" name="q6" type="radio" value="0"/><label for="q6d"><span class="opt-key">4.</span><span class="opt-body"><ruby>起<rt>お</rt></ruby>きた</span></label></div>
-</div><div class="explanation">✅ 正解：1 — 「<ruby>寝<rt>ね</rt></ruby>た」ほうが　いいですよ。</div></div>
-</div><div class="section">
-<div class="section-title">復習A（問題 7–10）</div><p class="section-lead"><ruby>会話<rt>かいわ</rt></ruby>の（　）に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p><div class="dialogue">
-<p><span class="sp">Aさん：</span><ruby>明日<rt>あした</rt></ruby>　<ruby>晴<rt>は</rt></ruby>れますか。</p>
-<p><span class="sp">Bさん：</span>ええ、<ruby>西<rt>にし</rt></ruby>の　<ruby>空<rt>そら</rt></ruby>が　<ruby>赤<rt>あか</rt></ruby>いですから、たぶん　<span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>でしょう。</p>
-</div><div class="subq"><div class="q-text"><span class="q-num">7</span><span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>に　<ruby>入<rt>はい</rt></ruby>るのは</div><div class="options">
-<div class="option"><input id="q7a" name="q7" type="radio" value="1"/><label for="q7a"><span class="opt-key">1.</span><span class="opt-body"><ruby>晴<rt>は</rt></ruby>れる</span></label></div>
-<div class="option"><input id="q7b" name="q7" type="radio" value="0"/><label for="q7b"><span class="opt-key">2.</span><span class="opt-body"><ruby>晴<rt>は</rt></ruby>れます</span></label></div>
-<div class="option"><input id="q7c" name="q7" type="radio" value="0"/><label for="q7c"><span class="opt-key">3.</span><span class="opt-body"><ruby>晴<rt>は</rt></ruby>れない</span></label></div>
-<div class="option"><input id="q7d" name="q7" type="radio" value="0"/><label for="q7d"><span class="opt-key">4.</span><span class="opt-body"><ruby>曇<rt>くも</rt></ruby>る</span></label></div>
-</div><div class="explanation">✅ 正解：1 — 「<ruby>晴<rt>は</rt></ruby>れる」でしょう。</div></div><div class="dialogue">
-<p><span class="sp">Aさん：</span><ruby>彼女<rt>かのじょ</rt></ruby>は　<ruby>道<rt>みち</rt></ruby>が　<ruby>分<rt>わ</rt></ruby>かりますか。</p>
-<p><span class="sp">Bさん：</span>ええ、<ruby>地図<rt>ちず</rt></ruby>を　<ruby>持<rt>も</rt></ruby>って　いますから、たぶん　<span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>でしょう。</p>
-</div><div class="subq"><div class="q-text"><span class="q-num">8</span><span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>に　<ruby>入<rt>はい</rt></ruby>るのは</div><div class="options">
-<div class="option"><input id="q8a" name="q8" type="radio" value="1"/><label for="q8a"><span class="opt-key">1.</span><span class="opt-body"><ruby>分<rt>わ</rt></ruby>かる</span></label></div>
-<div class="option"><input id="q8b" name="q8" type="radio" value="0"/><label for="q8b"><span class="opt-key">2.</span><span class="opt-body"><ruby>分<rt>わ</rt></ruby>かります</span></label></div>
-<div class="option"><input id="q8c" name="q8" type="radio" value="0"/><label for="q8c"><span class="opt-key">3.</span><span class="opt-body"><ruby>分<rt>わ</rt></ruby>からない</span></label></div>
-<div class="option"><input id="q8d" name="q8" type="radio" value="0"/><label for="q8d"><span class="opt-key">4.</span><span class="opt-body"><ruby>知<rt>し</rt></ruby>る</span></label></div>
-</div><div class="explanation">✅ 正解：1 — 「<ruby>分<rt>わ</rt></ruby>かる」でしょう。</div></div><div class="dialogue">
-<p><span class="sp">Aさん：</span><ruby>高橋<rt>たかはし</rt></ruby>さんは　<ruby>今日<rt>きょう</rt></ruby>　<ruby>家<rt>いえ</rt></ruby>に　いますか。</p>
-<p><span class="sp">Bさん：</span>いいえ、<ruby>日曜日<rt>にちようび</rt></ruby>は　いつも　<ruby>釣<rt>つ</rt></ruby>りに　<ruby>行<rt>い</rt></ruby>って　いますから、たぶん　<span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>でしょう。</p>
-</div><div class="subq"><div class="q-text"><span class="q-num">9</span><span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>に　<ruby>入<rt>はい</rt></ruby>るのは</div><div class="options">
-<div class="option"><input id="q9a" name="q9" type="radio" value="1"/><label for="q9a"><span class="opt-key">1.</span><span class="opt-body">いない</span></label></div>
-<div class="option"><input id="q9b" name="q9" type="radio" value="0"/><label for="q9b"><span class="opt-key">2.</span><span class="opt-body">いる</span></label></div>
-<div class="option"><input id="q9c" name="q9" type="radio" value="0"/><label for="q9c"><span class="opt-key">3.</span><span class="opt-body">います</span></label></div>
-<div class="option"><input id="q9d" name="q9" type="radio" value="0"/><label for="q9d"><span class="opt-key">4.</span><span class="opt-body"><ruby>帰<rt>かえ</rt></ruby>る</span></label></div>
-</div><div class="explanation">✅ 正解：1 — 「いない」でしょう。</div></div><div class="dialogue">
-<p><span class="sp">Aさん：</span><ruby>彼<rt>かれ</rt></ruby>は　<ruby>試合<rt>しあい</rt></ruby>に　<ruby>出<rt>で</rt></ruby>ますか。</p>
-<p><span class="sp">Bさん：</span>いいえ、<ruby>怪我<rt>けが</rt></ruby>を　しましたから、たぶん　<span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>でしょう。</p>
-</div><div class="subq"><div class="q-text"><span class="q-num">10</span><span class="blank-paren">（<span class="blank-n">①</span>　　　　）</span>に　<ruby>入<rt>はい</rt></ruby>るのは</div><div class="options">
-<div class="option"><input id="q10a" name="q10" type="radio" value="1"/><label for="q10a"><span class="opt-key">1.</span><span class="opt-body"><ruby>出<rt>で</rt></ruby>ない</span></label></div>
-<div class="option"><input id="q10b" name="q10" type="radio" value="0"/><label for="q10b"><span class="opt-key">2.</span><span class="opt-body"><ruby>出<rt>で</rt></ruby>る</span></label></div>
-<div class="option"><input id="q10c" name="q10" type="radio" value="0"/><label for="q10c"><span class="opt-key">3.</span><span class="opt-body"><ruby>出<rt>で</rt></ruby>ます</span></label></div>
-<div class="option"><input id="q10d" name="q10" type="radio" value="0"/><label for="q10d"><span class="opt-key">4.</span><span class="opt-body"><ruby>出<rt>で</rt></ruby>た</span></label></div>
-</div><div class="explanation">✅ 正解：1 — 「<ruby>出<rt>で</rt></ruby>ない」でしょう。</div></div>
-</div>
-<div class="section">
-<div class="section-title">漢字・語彙（問題 11–20）</div>
-<p class="section-lead"><ruby>次<rt>つぎ</rt></ruby>の<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>読<rt>よ</rt></ruby>みとして<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
+<div class="section-title"><ruby>意味<rt>いみ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>んでください（<ruby>問題<rt>もんだい</rt></ruby> 1–5）</div>
+<p class="section-lead"><ruby>意味<rt>いみ</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
+
 <div class="question">
-<div class="q-text"><span class="q-num">11</span></div>
-<p class="kanji-prompt" lang="ja">出る</p>
+<div class="q-text"><span class="q-num">1</span>「<ruby>無理<rt>むり</rt></ruby>をします」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
+<div class="options" style="grid-template-columns:1fr">
+<div class="option"><input id="q1a" name="q1" type="radio" value="0"/><label for="q1a"><span class="opt-key">1.</span><span class="opt-body"><ruby>仕事<rt>しごと</rt></ruby>をさぼる</span></label></div>
+<div class="option"><input id="q1b" name="q1" type="radio" value="1"/><label for="q1b"><span class="opt-key">2.</span><span class="opt-body">がんばりすぎる</span></label></div>
+<div class="option"><input id="q1c" name="q1" type="radio" value="0"/><label for="q1c"><span class="opt-key">3.</span><span class="opt-body"><ruby>早<rt>はや</rt></ruby>めに<ruby>帰<rt>かえ</rt></ruby>る</span></label></div>
+<div class="option"><input id="q1d" name="q1" type="radio" value="0"/><label for="q1d"><span class="opt-key">4.</span><span class="opt-body"><ruby>準備<rt>じゅんび</rt></ruby>をしっかりする</span></label></div>
+</div>
+<div class="explanation">✅ 正解：2 — <ruby>体<rt>からだ</rt></ruby>や<ruby>状況<rt>じょうきょう</rt></ruby>の<ruby>限界<rt>げんかい</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えてがんばりすぎること。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">2</span>「こみます」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
 <div class="options">
-<div class="option"><input id="q111" name="q11" type="radio" value="1"/><label for="q111"><span class="opt-key">1.</span><span class="opt-body">でる</span></label></div>
-<div class="option"><input id="q112" name="q11" type="radio" value="0"/><label for="q112"><span class="opt-key">2.</span><span class="opt-body">い</span></label></div>
-<div class="option"><input id="q113" name="q11" type="radio" value="0"/><label for="q113"><span class="opt-key">3.</span><span class="opt-body">こむ</span></label></div>
-<div class="option"><input id="q114" name="q11" type="radio" value="0"/><label for="q114"><span class="opt-key">4.</span><span class="opt-body">じゅうぶん</span></label></div>
+<div class="option"><input id="q2a" name="q2" type="radio" value="0"/><label for="q2a"><span class="opt-key">1.</span><span class="opt-body"><ruby>道<rt>みち</rt></ruby>がすいている</span></label></div>
+<div class="option"><input id="q2b" name="q2" type="radio" value="0"/><label for="q2b"><span class="opt-key">2.</span><span class="opt-body"><ruby>道<rt>みち</rt></ruby>が<ruby>静<rt>しず</rt></ruby>かになる</span></label></div>
+<div class="option"><input id="q2c" name="q2" type="radio" value="1"/><label for="q2c"><span class="opt-key">3.</span><span class="opt-body"><ruby>道<rt>みち</rt></ruby>が<ruby>混雑<rt>こんざつ</rt></ruby>している</span></label></div>
+<div class="option"><input id="q2d" name="q2" type="radio" value="0"/><label for="q2d"><span class="opt-key">4.</span><span class="opt-body"><ruby>道<rt>みち</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>くなる</span></label></div>
 </div>
-<div class="explanation">✅ 正解：1 — でる</div>
-</div><div class="question">
-<div class="q-text"><span class="q-num">12</span></div>
-<p class="kanji-prompt" lang="ja">無理</p>
+<div class="explanation">✅ 正解：3 — 「こみます」は<ruby>道<rt>みち</rt></ruby>が<ruby>混雑<rt>こんざつ</rt></ruby>している<ruby>状態<rt>じょうたい</rt></ruby>。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">3</span>「おかしい」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
 <div class="options">
-<div class="option"><input id="q121" name="q12" type="radio" value="1"/><label for="q121"><span class="opt-key">1.</span><span class="opt-body">むり</span></label></div>
-<div class="option"><input id="q122" name="q12" type="radio" value="0"/><label for="q122"><span class="opt-key">2.</span><span class="opt-body">たいよう</span></label></div>
-<div class="option"><input id="q123" name="q12" type="radio" value="0"/><label for="q123"><span class="opt-key">3.</span><span class="opt-body">とうほくちほう</span></label></div>
-<div class="option"><input id="q124" name="q12" type="radio" value="0"/><label for="q124"><span class="opt-key">4.</span><span class="opt-body">くもる</span></label></div>
+<div class="option"><input id="q3a" name="q3" type="radio" value="0"/><label for="q3a"><span class="opt-key">1.</span><span class="opt-body"><ruby>正常<rt>せいじょう</rt></ruby>だ</span></label></div>
+<div class="option"><input id="q3b" name="q3" type="radio" value="0"/><label for="q3b"><span class="opt-key">2.</span><span class="opt-body">かわいい</span></label></div>
+<div class="option"><input id="q3c" name="q3" type="radio" value="1"/><label for="q3c"><span class="opt-key">3.</span><span class="opt-body"><ruby>変<rt>へん</rt></ruby>だ</span></label></div>
+<div class="option"><input id="q3d" name="q3" type="radio" value="0"/><label for="q3d"><span class="opt-key">4.</span><span class="opt-body">おいしい</span></label></div>
 </div>
-<div class="explanation">✅ 正解：1 — むり</div>
-</div><div class="question">
-<div class="q-text"><span class="q-num">13</span></div>
-<p class="kanji-prompt" lang="ja">十分</p>
+<div class="explanation">✅ 正解：3 — 「おかしい」は<ruby>変<rt>へん</rt></ruby>だ・<ruby>普通<rt>ふつう</rt></ruby>でないという<ruby>意味<rt>いみ</rt></ruby>。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">4</span>「<ruby>成功<rt>せいこう</rt></ruby>します」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
+<div class="options" style="grid-template-columns:1fr">
+<div class="option"><input id="q4a" name="q4" type="radio" value="0"/><label for="q4a"><span class="opt-key">1.</span><span class="opt-body"><ruby>失敗<rt>しっぱい</rt></ruby>する</span></label></div>
+<div class="option"><input id="q4b" name="q4" type="radio" value="1"/><label for="q4b"><span class="opt-key">2.</span><span class="opt-body"><ruby>目的<rt>もくてき</rt></ruby>を<ruby>達成<rt>たっせい</rt></ruby>する</span></label></div>
+<div class="option"><input id="q4c" name="q4" type="radio" value="0"/><label for="q4c"><span class="opt-key">3.</span><span class="opt-body"><ruby>大変<rt>たいへん</rt></ruby>になる</span></label></div>
+<div class="option"><input id="q4d" name="q4" type="radio" value="0"/><label for="q4d"><span class="opt-key">4.</span><span class="opt-body">やめる</span></label></div>
+</div>
+<div class="explanation">✅ 正解：2 — 「<ruby>成功<rt>せいこう</rt></ruby>します」は<ruby>目的<rt>もくてき</rt></ruby>を<ruby>達成<rt>たっせい</rt></ruby>する・うまくいくという<ruby>意味<rt>いみ</rt></ruby>。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">5</span>「<ruby>健康<rt>けんこう</rt></ruby>」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
+<div class="options" style="grid-template-columns:1fr">
+<div class="option"><input id="q5a" name="q5" type="radio" value="0"/><label for="q5a"><span class="opt-key">1.</span><span class="opt-body"><ruby>病気<rt>びょうき</rt></ruby>の<ruby>状態<rt>じょうたい</rt></ruby></span></label></div>
+<div class="option"><input id="q5b" name="q5" type="radio" value="1"/><label for="q5b"><span class="opt-key">2.</span><span class="opt-body"><ruby>元気<rt>げんき</rt></ruby>な<ruby>状態<rt>じょうたい</rt></ruby></span></label></div>
+<div class="option"><input id="q5c" name="q5" type="radio" value="0"/><label for="q5c"><span class="opt-key">3.</span><span class="opt-body"><ruby>勉強<rt>べんきょう</rt></ruby>のこと</span></label></div>
+<div class="option"><input id="q5d" name="q5" type="radio" value="0"/><label for="q5d"><span class="opt-key">4.</span><span class="opt-body"><ruby>運動<rt>うんどう</rt></ruby>のこと</span></label></div>
+</div>
+<div class="explanation">✅ 正解：2 — 「<ruby>健康<rt>けんこう</rt></ruby>」は<ruby>体<rt>からだ</rt></ruby>や<ruby>心<rt>こころ</rt></ruby>が<ruby>元気<rt>げんき</rt></ruby>で<ruby>正常<rt>せいじょう</rt></ruby>な<ruby>状態<rt>じょうたい</rt></ruby>。</div>
+</div>
+</div>
+
+<!-- Section 2: 接続形確認 -->
+<div class="section">
+<div class="section-title">〜でしょう・〜かもしれません（<ruby>接続形<rt>せつぞくけい</rt></ruby>の<ruby>確認<rt>かくにん</rt></ruby>）（<ruby>問題<rt>もんだい</rt></ruby> 6–11）</div>
+<p class="section-lead"><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>選<rt>えら</rt></ruby>びましょう。（　）の<ruby>中<rt>なか</rt></ruby>は<ruby>参考<rt>さんこう</rt></ruby><ruby>語<rt>ご</rt></ruby>です。</p>
+
+<div class="question">
+<div class="q-text"><span class="q-num">6</span>あしたの<ruby>山<rt>やま</rt></ruby>は<span class="blank-paren">（　　　　）</span>でしょう。（<ruby>寒<rt>さむ</rt></ruby>い）</div>
 <div class="options">
-<div class="option"><input id="q131" name="q13" type="radio" value="1"/><label for="q131"><span class="opt-key">1.</span><span class="opt-body">じゅうぶん</span></label></div>
-<div class="option"><input id="q132" name="q13" type="radio" value="0"/><label for="q132"><span class="opt-key">2.</span><span class="opt-body">ほっかいどうちほう</span></label></div>
-<div class="option"><input id="q133" name="q13" type="radio" value="0"/><label for="q133"><span class="opt-key">3.</span><span class="opt-body">せいこう</span></label></div>
-<div class="option"><input id="q134" name="q13" type="radio" value="0"/><label for="q134"><span class="opt-key">4.</span><span class="opt-body">せんせい</span></label></div>
+<div class="option"><input id="q6a" name="q6" type="radio" value="0"/><label for="q6a"><span class="opt-key">1.</span><span class="opt-body"><ruby>寒<rt>さむ</rt></ruby>くて</span></label></div>
+<div class="option"><input id="q6b" name="q6" type="radio" value="0"/><label for="q6b"><span class="opt-key">2.</span><span class="opt-body"><ruby>寒<rt>さむ</rt></ruby>かった</span></label></div>
+<div class="option"><input id="q6c" name="q6" type="radio" value="0"/><label for="q6c"><span class="opt-key">3.</span><span class="opt-body"><ruby>寒<rt>さむ</rt></ruby>な</span></label></div>
+<div class="option"><input id="q6d" name="q6" type="radio" value="1"/><label for="q6d"><span class="opt-key">4.</span><span class="opt-body"><ruby>寒<rt>さむ</rt></ruby>い</span></label></div>
 </div>
-<div class="explanation">✅ 正解：1 — じゅうぶん</div>
-</div><div class="question">
-<div class="q-text"><span class="q-num">14</span></div>
-<p class="kanji-prompt" lang="ja">先生</p>
+<div class="explanation">✅ 正解：4 — い<ruby>形容詞<rt>けいようし</rt></ruby>は<ruby>辞書形<rt>じしょけい</rt></ruby>のまま「でしょう」に<ruby>接続<rt>せつぞく</rt></ruby>（「<ruby>寒<rt>さむ</rt></ruby>いでしょう」）。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">7</span><ruby>彼<rt>かれ</rt></ruby>は<ruby>今<rt>いま</rt></ruby><span class="blank-paren">（　　　　）</span>でしょう。（ひま）</div>
 <div class="options">
-<div class="option"><input id="q141" name="q14" type="radio" value="1"/><label for="q141"><span class="opt-key">1.</span><span class="opt-body">せんせい</span></label></div>
-<div class="option"><input id="q142" name="q14" type="radio" value="0"/><label for="q142"><span class="opt-key">2.</span><span class="opt-body">つづく</span></label></div>
-<div class="option"><input id="q143" name="q14" type="radio" value="0"/><label for="q143"><span class="opt-key">3.</span><span class="opt-body">さいこうきおん</span></label></div>
-<div class="option"><input id="q144" name="q14" type="radio" value="0"/><label for="q144"><span class="opt-key">4.</span><span class="opt-body">はれのちくもり</span></label></div>
+<div class="option"><input id="q7a" name="q7" type="radio" value="0"/><label for="q7a"><span class="opt-key">1.</span><span class="opt-body">ひまな</span></label></div>
+<div class="option"><input id="q7b" name="q7" type="radio" value="0"/><label for="q7b"><span class="opt-key">2.</span><span class="opt-body">ひまだ</span></label></div>
+<div class="option"><input id="q7c" name="q7" type="radio" value="0"/><label for="q7c"><span class="opt-key">3.</span><span class="opt-body">ひまで</span></label></div>
+<div class="option"><input id="q7d" name="q7" type="radio" value="1"/><label for="q7d"><span class="opt-key">4.</span><span class="opt-body">ひま</span></label></div>
 </div>
-<div class="explanation">✅ 正解：1 — せんせい</div>
-</div><div class="question">
-<div class="q-text"><span class="q-num">15</span></div>
-<p class="kanji-prompt" lang="ja">空</p>
+<div class="explanation">✅ 正解：4 — な<ruby>形容詞<rt>けいようし</rt></ruby>・<ruby>名詞<rt>めいし</rt></ruby>は<ruby>語幹<rt>ごかん</rt></ruby>のまま「でしょう」に<ruby>接続<rt>せつぞく</rt></ruby>（「ひまでしょう」）。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">8</span>あの<ruby>音<rt>おと</rt></ruby>は<span class="blank-paren">（　　　　）</span>かもしれません。（<ruby>雷<rt>かみなり</rt></ruby>）</div>
 <div class="options">
-<div class="option"><input id="q151" name="q15" type="radio" value="1"/><label for="q151"><span class="opt-key">1.</span><span class="opt-body">そら</span></label></div>
-<div class="option"><input id="q152" name="q15" type="radio" value="0"/><label for="q152"><span class="opt-key">2.</span><span class="opt-body">うんどう</span></label></div>
-<div class="option"><input id="q153" name="q15" type="radio" value="0"/><label for="q153"><span class="opt-key">3.</span><span class="opt-body">たからくじ</span></label></div>
-<div class="option"><input id="q154" name="q15" type="radio" value="0"/><label for="q154"><span class="opt-key">4.</span><span class="opt-body">はれのちくもり</span></label></div>
+<div class="option"><input id="q8a" name="q8" type="radio" value="0"/><label for="q8a"><span class="opt-key">1.</span><span class="opt-body"><ruby>雷<rt>かみなり</rt></ruby>な</span></label></div>
+<div class="option"><input id="q8b" name="q8" type="radio" value="0"/><label for="q8b"><span class="opt-key">2.</span><span class="opt-body"><ruby>雷<rt>かみなり</rt></ruby>で</span></label></div>
+<div class="option"><input id="q8c" name="q8" type="radio" value="0"/><label for="q8c"><span class="opt-key">3.</span><span class="opt-body"><ruby>雷<rt>かみなり</rt></ruby>だ</span></label></div>
+<div class="option"><input id="q8d" name="q8" type="radio" value="1"/><label for="q8d"><span class="opt-key">4.</span><span class="opt-body"><ruby>雷<rt>かみなり</rt></ruby></span></label></div>
 </div>
-<div class="explanation">✅ 正解：1 — そら</div>
-</div><div class="question">
-<div class="q-text"><span class="q-num">16</span></div>
-<p class="kanji-prompt" lang="ja">太陽</p>
+<div class="explanation">✅ 正解：4 — <ruby>名詞<rt>めいし</rt></ruby>は<ruby>語幹<rt>ごかん</rt></ruby>のまま「かもしれません」に<ruby>接続<rt>せつぞく</rt></ruby>（「<ruby>雷<rt>かみなり</rt></ruby>かもしれません」）。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">9</span><ruby>山<rt>やま</rt></ruby>の<ruby>天気<rt>てんき</rt></ruby>は<span class="blank-paren">（　　　　）</span>かもしれませんから、セーターを<ruby>持<rt>も</rt></ruby>って<ruby>行<rt>い</rt></ruby>ってください。（<ruby>寒<rt>さむ</rt></ruby>い）</div>
 <div class="options">
-<div class="option"><input id="q161" name="q16" type="radio" value="1"/><label for="q161"><span class="opt-key">1.</span><span class="opt-body">たいよう</span></label></div>
-<div class="option"><input id="q162" name="q16" type="radio" value="0"/><label for="q162"><span class="opt-key">2.</span><span class="opt-body">じゅうぶん</span></label></div>
-<div class="option"><input id="q163" name="q16" type="radio" value="0"/><label for="q163"><span class="opt-key">3.</span><span class="opt-body">はたらきすぎ</span></label></div>
-<div class="option"><input id="q164" name="q16" type="radio" value="0"/><label for="q164"><span class="opt-key">4.</span><span class="opt-body">はれる</span></label></div>
+<div class="option"><input id="q9a" name="q9" type="radio" value="0"/><label for="q9a"><span class="opt-key">1.</span><span class="opt-body"><ruby>寒<rt>さむ</rt></ruby>くて</span></label></div>
+<div class="option"><input id="q9b" name="q9" type="radio" value="0"/><label for="q9b"><span class="opt-key">2.</span><span class="opt-body"><ruby>寒<rt>さむ</rt></ruby>な</span></label></div>
+<div class="option"><input id="q9c" name="q9" type="radio" value="1"/><label for="q9c"><span class="opt-key">3.</span><span class="opt-body"><ruby>寒<rt>さむ</rt></ruby>い</span></label></div>
+<div class="option"><input id="q9d" name="q9" type="radio" value="0"/><label for="q9d"><span class="opt-key">4.</span><span class="opt-body"><ruby>寒<rt>さむ</rt></ruby>かった</span></label></div>
 </div>
-<div class="explanation">✅ 正解：1 — たいよう</div>
-</div><div class="question">
-<div class="q-text"><span class="q-num">17</span></div>
-<p class="kanji-prompt" lang="ja">星</p>
+<div class="explanation">✅ 正解：3 — い<ruby>形容詞<rt>けいようし</rt></ruby>は<ruby>辞書形<rt>じしょけい</rt></ruby>のまま「かもしれません」に<ruby>接続<rt>せつぞく</rt></ruby>（「<ruby>寒<rt>さむ</rt></ruby>いかもしれません」）。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">10</span><ruby>隣<rt>となり</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>は<span class="blank-paren">（　　　　）</span>かもしれません。（<ruby>不便<rt>ふべん</rt></ruby>）</div>
 <div class="options">
-<div class="option"><input id="q171" name="q17" type="radio" value="1"/><label for="q171"><span class="opt-key">1.</span><span class="opt-body">ほし</span></label></div>
-<div class="option"><input id="q172" name="q17" type="radio" value="0"/><label for="q172"><span class="opt-key">2.</span><span class="opt-body">ゆき</span></label></div>
-<div class="option"><input id="q173" name="q17" type="radio" value="0"/><label for="q173"><span class="opt-key">3.</span><span class="opt-body">こむ</span></label></div>
-<div class="option"><input id="q174" name="q17" type="radio" value="0"/><label for="q174"><span class="opt-key">4.</span><span class="opt-body">きんきちほう</span></label></div>
+<div class="option"><input id="q10a" name="q10" type="radio" value="0"/><label for="q10a"><span class="opt-key">1.</span><span class="opt-body"><ruby>不便<rt>ふべん</rt></ruby>な</span></label></div>
+<div class="option"><input id="q10b" name="q10" type="radio" value="0"/><label for="q10b"><span class="opt-key">2.</span><span class="opt-body"><ruby>不便<rt>ふべん</rt></ruby>に</span></label></div>
+<div class="option"><input id="q10c" name="q10" type="radio" value="0"/><label for="q10c"><span class="opt-key">3.</span><span class="opt-body"><ruby>不便<rt>ふべん</rt></ruby>で</span></label></div>
+<div class="option"><input id="q10d" name="q10" type="radio" value="1"/><label for="q10d"><span class="opt-key">4.</span><span class="opt-body"><ruby>不便<rt>ふべん</rt></ruby></span></label></div>
 </div>
-<div class="explanation">✅ 正解：1 — ほし</div>
-</div><div class="question">
-<div class="q-text"><span class="q-num">18</span></div>
-<p class="kanji-prompt" lang="ja">風</p>
+<div class="explanation">✅ 正解：4 — な<ruby>形容詞<rt>けいようし</rt></ruby>は<ruby>語幹<rt>ごかん</rt></ruby>のまま「かもしれません」に<ruby>接続<rt>せつぞく</rt></ruby>（「<ruby>不便<rt>ふべん</rt></ruby>かもしれません」）。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">11</span><ruby>正<rt>ただ</rt></ruby>しい<ruby>文<rt>ぶん</rt></ruby>はどれですか。</div>
+<div class="options" style="grid-template-columns:1fr">
+<div class="option"><input id="q11a" name="q11" type="radio" value="0"/><label for="q11a"><span class="opt-key">1.</span><span class="opt-body"><ruby>来週<rt>らいしゅう</rt></ruby>はひまだかもしれません。</span></label></div>
+<div class="option"><input id="q11b" name="q11" type="radio" value="0"/><label for="q11b"><span class="opt-key">2.</span><span class="opt-body"><ruby>来週<rt>らいしゅう</rt></ruby>はひまなかもしれません。</span></label></div>
+<div class="option"><input id="q11c" name="q11" type="radio" value="1"/><label for="q11c"><span class="opt-key">3.</span><span class="opt-body"><ruby>来週<rt>らいしゅう</rt></ruby>はひまかもしれません。</span></label></div>
+<div class="option"><input id="q11d" name="q11" type="radio" value="0"/><label for="q11d"><span class="opt-key">4.</span><span class="opt-body"><ruby>来週<rt>らいしゅう</rt></ruby>はひまにかもしれません。</span></label></div>
+</div>
+<div class="explanation">✅ 正解：3 — な<ruby>形容詞<rt>けいようし</rt></ruby>の<ruby>語幹<rt>ごかん</rt></ruby>「ひま」に<ruby>直接<rt>ちょくせつ</rt></ruby>「かもしれません」が<ruby>続<rt>つづ</rt></ruby>く。</div>
+</div>
+</div>
+
+<!-- Section 3: 意味問題（追加） -->
+<div class="section">
+<div class="section-title"><ruby>意味<rt>いみ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>んでください（<ruby>追加<rt>ついか</rt></ruby>）（<ruby>問題<rt>もんだい</rt></ruby> 12–15）</div>
+<p class="section-lead"><ruby>意味<rt>いみ</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
+
+<div class="question">
+<div class="q-text"><span class="q-num">12</span>「うるさい」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
 <div class="options">
-<div class="option"><input id="q181" name="q18" type="radio" value="1"/><label for="q181"><span class="opt-key">1.</span><span class="opt-body">かぜ</span></label></div>
-<div class="option"><input id="q182" name="q18" type="radio" value="0"/><label for="q182"><span class="opt-key">2.</span><span class="opt-body">しこくちほう</span></label></div>
-<div class="option"><input id="q183" name="q18" type="radio" value="0"/><label for="q183"><span class="opt-key">3.</span><span class="opt-body">あめ</span></label></div>
-<div class="option"><input id="q184" name="q18" type="radio" value="0"/><label for="q184"><span class="opt-key">4.</span><span class="opt-body">はれる</span></label></div>
+<div class="option"><input id="q12a" name="q12" type="radio" value="0"/><label for="q12a"><span class="opt-key">1.</span><span class="opt-body"><ruby>静<rt>しず</rt></ruby>かだ</span></label></div>
+<div class="option"><input id="q12b" name="q12" type="radio" value="1"/><label for="q12b"><span class="opt-key">2.</span><span class="opt-body"><ruby>不快<rt>ふかい</rt></ruby>だ</span></label></div>
+<div class="option"><input id="q12c" name="q12" type="radio" value="0"/><label for="q12c"><span class="opt-key">3.</span><span class="opt-body"><ruby>美<rt>うつく</rt></ruby>しい<ruby>音<rt>おと</rt></ruby>だ</span></label></div>
+<div class="option"><input id="q12d" name="q12" type="radio" value="0"/><label for="q12d"><span class="opt-key">4.</span><span class="opt-body">やさしい</span></label></div>
 </div>
-<div class="explanation">✅ 正解：1 — かぜ</div>
-</div><div class="question">
-<div class="q-text"><span class="q-num">19</span></div>
-<p class="kanji-prompt" lang="ja">元気</p>
-<div class="options">
-<div class="option"><input id="q191" name="q19" type="radio" value="1"/><label for="q191"><span class="opt-key">1.</span><span class="opt-body">げんき</span></label></div>
-<div class="option"><input id="q192" name="q19" type="radio" value="0"/><label for="q192"><span class="opt-key">2.</span><span class="opt-body">さいこうきおん</span></label></div>
-<div class="option"><input id="q193" name="q19" type="radio" value="0"/><label for="q193"><span class="opt-key">3.</span><span class="opt-body">ちゅうごくちほう</span></label></div>
-<div class="option"><input id="q194" name="q19" type="radio" value="0"/><label for="q194"><span class="opt-key">4.</span><span class="opt-body">むり</span></label></div>
+<div class="explanation">✅ 正解：2 — 「うるさい」は<ruby>騒<rt>さわ</rt></ruby>がしくて<ruby>不快<rt>ふかい</rt></ruby>という<ruby>意味<rt>いみ</rt></ruby>。</div>
 </div>
-<div class="explanation">✅ 正解：1 — げんき</div>
-</div><div class="question">
-<div class="q-text"><span class="q-num">20</span></div>
-<p class="kanji-prompt" lang="ja">胃</p>
-<div class="options">
-<div class="option"><input id="q201" name="q20" type="radio" value="1"/><label for="q201"><span class="opt-key">1.</span><span class="opt-body">い</span></label></div>
-<div class="option"><input id="q202" name="q20" type="radio" value="0"/><label for="q202"><span class="opt-key">2.</span><span class="opt-body">じゅうぶん</span></label></div>
-<div class="option"><input id="q203" name="q20" type="radio" value="0"/><label for="q203"><span class="opt-key">3.</span><span class="opt-body">はれ</span></label></div>
-<div class="option"><input id="q204" name="q20" type="radio" value="0"/><label for="q204"><span class="opt-key">4.</span><span class="opt-body">さいこうきおん</span></label></div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">13</span>「<ruby>困<rt>こま</rt></ruby>ります」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
+<div class="options" style="grid-template-columns:1fr">
+<div class="option"><input id="q13a" name="q13" type="radio" value="0"/><label for="q13a"><span class="opt-key">1.</span><span class="opt-body"><ruby>楽<rt>らく</rt></ruby>になる</span></label></div>
+<div class="option"><input id="q13b" name="q13" type="radio" value="0"/><label for="q13b"><span class="opt-key">2.</span><span class="opt-body"><ruby>元気<rt>げんき</rt></ruby>になる</span></label></div>
+<div class="option"><input id="q13c" name="q13" type="radio" value="1"/><label for="q13c"><span class="opt-key">3.</span><span class="opt-body">どうしたらよいかわからない</span></label></div>
+<div class="option"><input id="q13d" name="q13" type="radio" value="0"/><label for="q13d"><span class="opt-key">4.</span><span class="opt-body"><ruby>怒<rt>おこ</rt></ruby>る</span></label></div>
 </div>
-<div class="explanation">✅ 正解：1 — い</div>
+<div class="explanation">✅ 正解：3 — どうしたらよいかわからなくて<ruby>困惑<rt>こんわく</rt></ruby>する<ruby>状態<rt>じょうたい</rt></ruby>。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">14</span>「<ruby>宝<rt>たから</rt></ruby>くじが<ruby>当<rt>あ</rt></ruby>たります」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
+<div class="options" style="grid-template-columns:1fr">
+<div class="option"><input id="q14a" name="q14" type="radio" value="0"/><label for="q14a"><span class="opt-key">1.</span><span class="opt-body"><ruby>宝<rt>たから</rt></ruby>くじを<ruby>買<rt>か</rt></ruby>う</span></label></div>
+<div class="option"><input id="q14b" name="q14" type="radio" value="0"/><label for="q14b"><span class="opt-key">2.</span><span class="opt-body"><ruby>宝<rt>たから</rt></ruby>くじをなくす</span></label></div>
+<div class="option"><input id="q14c" name="q14" type="radio" value="0"/><label for="q14c"><span class="opt-key">3.</span><span class="opt-body"><ruby>宝<rt>たから</rt></ruby>くじに<ruby>負<rt>ま</rt></ruby>ける</span></label></div>
+<div class="option"><input id="q14d" name="q14" type="radio" value="1"/><label for="q14d"><span class="opt-key">4.</span><span class="opt-body"><ruby>宝<rt>たから</rt></ruby>くじでお<ruby>金<rt>かね</rt></ruby>を<ruby>得<rt>え</rt></ruby>る</span></label></div>
+</div>
+<div class="explanation">✅ 正解：4 — 「<ruby>当<rt>あ</rt></ruby>たります」は<ruby>賞金<rt>しょうきん</rt></ruby>を<ruby>得<rt>え</rt></ruby>る・<ruby>当選<rt>とうせん</rt></ruby>するという<ruby>意味<rt>いみ</rt></ruby>。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">15</span>「<ruby>恋愛<rt>れんあい</rt></ruby>」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
+<div class="options" style="grid-template-columns:1fr">
+<div class="option"><input id="q15a" name="q15" type="radio" value="0"/><label for="q15a"><span class="opt-key">1.</span><span class="opt-body"><ruby>仕事<rt>しごと</rt></ruby>のこと</span></label></div>
+<div class="option"><input id="q15b" name="q15" type="radio" value="0"/><label for="q15b"><span class="opt-key">2.</span><span class="opt-body"><ruby>友情<rt>ゆうじょう</rt></ruby>のこと</span></label></div>
+<div class="option"><input id="q15c" name="q15" type="radio" value="1"/><label for="q15c"><span class="opt-key">3.</span><span class="opt-body"><ruby>好<rt>す</rt></ruby>きのこと</span></label></div>
+<div class="option"><input id="q15d" name="q15" type="radio" value="0"/><label for="q15d"><span class="opt-key">4.</span><span class="opt-body"><ruby>家族<rt>かぞく</rt></ruby>のこと</span></label></div>
+</div>
+<div class="explanation">✅ 正解：3 — <ruby>男女<rt>だんじょ</rt></ruby>が<ruby>互<rt>たが</rt></ruby>いに<ruby>恋<rt>こい</rt></ruby>しあうこと。</div>
 </div>
 </div>
+
 <button class="btn-submit" id="submitBtn" onclick="submitTest()"><ruby>採点<rt>さいてん</rt></ruby>する</button>
 <div class="result-panel" id="resultPanel">
 <h2 id="resultTitle"></h2><div class="result-score" id="resultScore"></div>
@@ -280,7 +260,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 </div>
 <script>
-const TOTAL=20,TIME_LIMIT=900;
+const TOTAL=15,TIME_LIMIT=900;
 let timeLeft=TIME_LIMIT,timerInterval,submitted=false;
 function shuffleAllOptions(){
 function randBelow(n){
