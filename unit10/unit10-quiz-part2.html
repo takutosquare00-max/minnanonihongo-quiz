@@ -204,7 +204,7 @@ const keyEl=inp.closest('.option').querySelector('.opt-key');
 const mk=keyEl&&keyEl.textContent.match(/^(\d+)\./);
 return mk?mk[1]:'';
 }).filter(Boolean);
-if(correctKeys.length)explain.textContent=explain.textContent.replace(/正解：[0-9・]+/,'正解：'+correctKeys.join('・'));
+if(correctKeys.length)explain.innerHTML=explain.innerHTML.replace(/正解：[0-9・]+/,'正解：'+correctKeys.join('・'));
 }
 return items.findIndex(function(el){return el.querySelector('input[value="1"]');});
 }

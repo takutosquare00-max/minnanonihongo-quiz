@@ -269,7 +269,7 @@ items.forEach(function(el,idx){const inp=el.querySelector('input[type="radio"]')
 const explain=optsDiv.nextElementSibling;
 const slots=[];
 items.forEach(function(el,idx){if(el.querySelector('input[type="radio"][value="1"]'))slots.push(idx+1);});
-if(explain&&explain.classList&&explain.classList.contains('explanation')&&slots.length){explain.textContent=explain.textContent.replace(/正解：[^—]+/,'正解：'+slots.join('/'));}
+if(explain&&explain.classList&&explain.classList.contains('explanation')&&slots.length){explain.innerHTML=explain.innerHTML.replace(/正解：[^—]+/,'正解：'+slots.join('/'));}
 return slots.length?slots[0]-1:-1;
 }
 const posCounts=[0,0,0,0];

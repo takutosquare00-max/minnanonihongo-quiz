@@ -380,7 +380,7 @@ if(opt){
 const keyEl=opt.querySelector('.opt-key');
 if(keyEl){
 const mk=keyEl.textContent.match(/^(\d+)\./);
-if(mk)explain.textContent=explain.textContent.replace(/正解：\d+/,'正解：'+mk[1]);
+if(mk)explain.innerHTML=explain.innerHTML.replace(/正解：\d+/,'正解：'+mk[1]);
 }
 }
 }
