@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>みんなの日本語 44 パート1（15分・21問）</title>
+<title>みんなの日本語 44 パート1（15分・18問）</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
@@ -57,16 +57,20 @@ ruby{ruby-align:center}
 rt{font-size:0.55em;font-weight:400;line-height:1.1}
 .option label ruby rt{font-size:0.5em}
 .blank-paren{display:inline-block;color:#c05621;font-weight:700;white-space:nowrap}
+.dialog{margin:10px 0 14px;padding:12px 14px;background:#f7fafc;border-radius:8px;border:1px solid #e2e8f0;font-size:1.02em;line-height:1.75}
+.dialog p{margin:8px 0}
+.dialog .sp{font-weight:700;color:#2b6cb0;margin-right:6px}
+.multi-hint{display:block;font-size:.88em;color:#718096;font-weight:400;margin-top:4px}
 </style>
 </head>
 <body>
 <div class="container">
 <header>
-<h1>みんなの<ruby>日本語<rt>にほんご</rt></ruby> 44 クイズ（パート1・15<ruby>分<rt>ふん</rt></ruby>・21<ruby>問<rt>もん</rt></ruby>）</h1>
+<h1>みんなの<ruby>日本語<rt>にほんご</rt></ruby> 44 クイズ（パート1・15<ruby>分<rt>ふん</rt></ruby>・18<ruby>問<rt>もん</rt></ruby>）</h1>
 <div class="header-info">
 <div class="timer" id="timer">15:00</div>
 <div class="progress-bar"><div class="progress-fill" id="progress" style="width:100%"></div></div>
-<div class="score-badge" id="scoreBadge"><ruby>全<rt>ぜん</rt></ruby>21<ruby>問<rt>もん</rt></ruby></div>
+<div class="score-badge" id="scoreBadge"><ruby>全<rt>ぜん</rt></ruby>18<ruby>問<rt>もん</rt></ruby></div>
 </div>
 </header>
 
@@ -76,7 +80,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <p class="section-lead"><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 
 <div class="question">
-<div class="q-text"><span class="q-num">1</span>「ゆうべ お<ruby>酒<rt>さけ</rt></ruby>を <span class="blank-paren">（　　　　）</span>すぎました。」（<ruby>飲<rt>の</rt></ruby>みます→ます<ruby>形<rt>けい</rt></ruby><ruby>語幹<rt>ごかん</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">1</span>ゆうべ お<ruby>酒<rt>さけ</rt></ruby>を <span class="blank-paren">（　　　　）</span>すぎました。</div>
 <div class="options">
 <div class="option"><input id="q1a" name="q1" type="radio" value="0"/><label for="q1a"><span class="opt-key">1.</span><span class="opt-body"><ruby>飲<rt>の</rt></ruby>んで</span></label></div>
 <div class="option"><input id="q1b" name="q1" type="radio" value="1"/><label for="q1b"><span class="opt-key">2.</span><span class="opt-body"><ruby>飲<rt>の</rt></ruby>み</span></label></div>
@@ -87,7 +91,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">2</span>「この セーターは <ruby>大<rt>おお</rt></ruby>き<span class="blank-paren">（　　　　）</span>ます。」（<ruby>大<rt>おお</rt></ruby>きい→<ruby>語幹<rt>ごかん</rt></ruby> ＋ すぎます）</div>
+<div class="q-text"><span class="q-num">2</span>この セーターは <ruby>大<rt>おお</rt></ruby>き<span class="blank-paren">（　　　　）</span>ます。</div>
 <div class="options">
 <div class="option"><input id="q2a" name="q2" type="radio" value="0"/><label for="q2a"><span class="opt-key">1.</span><span class="opt-body">いすぎ</span></label></div>
 <div class="option"><input id="q2b" name="q2" type="radio" value="0"/><label for="q2b"><span class="opt-key">2.</span><span class="opt-body">くすぎ</span></label></div>
@@ -98,7 +102,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">3</span>「この <ruby>問題<rt>もんだい</rt></ruby>は <ruby>複雑<rt>ふくざつ</rt></ruby><span class="blank-paren">（　　　　）</span>ます。」（<ruby>複雑<rt>ふくざつ</rt></ruby>：な<ruby>形容詞<rt>けいようし</rt></ruby>→<ruby>語幹<rt>ごかん</rt></ruby> ＋ すぎます）</div>
+<div class="q-text"><span class="q-num">3</span>この <ruby>問題<rt>もんだい</rt></ruby>は <ruby>複雑<rt>ふくざつ</rt></ruby><span class="blank-paren">（　　　　）</span>ます。</div>
 <div class="options">
 <div class="option"><input id="q3a" name="q3" type="radio" value="0"/><label for="q3a"><span class="opt-key">1.</span><span class="opt-body">いすぎ</span></label></div>
 <div class="option"><input id="q3b" name="q3" type="radio" value="0"/><label for="q3b"><span class="opt-key">2.</span><span class="opt-body">くすぎ</span></label></div>
@@ -111,23 +115,23 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="question">
 <div class="q-text"><span class="q-num">4</span>「〜すぎます」の<ruby>正<rt>ただ</rt></ruby>しい<ruby>形<rt>かたち</rt></ruby>の<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせはどれですか。</div>
 <div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q4a" name="q4" type="radio" value="0"/><label for="q4a"><span class="opt-key">1.</span><span class="opt-body"><ruby>動詞<rt>どうし</rt></ruby>：ます<ruby>形<rt>けい</rt></ruby><ruby>語幹<rt>ごかん</rt></ruby>　い<ruby>形容詞<rt>けいようし</rt></ruby>：〜い ＋ すぎます　な<ruby>形容詞<rt>けいようし</rt></ruby>：〜な ＋ すぎます</span></label></div>
-<div class="option"><input id="q4b" name="q4" type="radio" value="1"/><label for="q4b"><span class="opt-key">2.</span><span class="opt-body"><ruby>動詞<rt>どうし</rt></ruby>：ます<ruby>形<rt>けい</rt></ruby><ruby>語幹<rt>ごかん</rt></ruby>　い<ruby>形容詞<rt>けいようし</rt></ruby>：<ruby>語幹<rt>ごかん</rt></ruby> ＋ すぎます　な<ruby>形容詞<rt>けいようし</rt></ruby>：<ruby>語幹<rt>ごかん</rt></ruby> ＋ すぎます</span></label></div>
-<div class="option"><input id="q4c" name="q4" type="radio" value="0"/><label for="q4c"><span class="opt-key">3.</span><span class="opt-body"><ruby>動詞<rt>どうし</rt></ruby>：<ruby>辞書形<rt>じしょけい</rt></ruby>　い<ruby>形容詞<rt>けいようし</rt></ruby>：<ruby>語幹<rt>ごかん</rt></ruby> ＋ すぎます　な<ruby>形容詞<rt>けいようし</rt></ruby>：<ruby>語幹<rt>ごかん</rt></ruby> ＋ すぎます</span></label></div>
-<div class="option"><input id="q4d" name="q4" type="radio" value="0"/><label for="q4d"><span class="opt-key">4.</span><span class="opt-body"><ruby>動詞<rt>どうし</rt></ruby>：て<ruby>形<rt>けい</rt></ruby>　い<ruby>形容詞<rt>けいようし</rt></ruby>：<ruby>語幹<rt>ごかん</rt></ruby> ＋ すぎます　な<ruby>形容詞<rt>けいようし</rt></ruby>：<ruby>語幹<rt>ごかん</rt></ruby> ＋ すぎます</span></label></div>
+<div class="option"><input id="q4a" name="q4" type="radio" value="0"/><label for="q4a"><span class="opt-key">1.</span><span class="opt-body">い<ruby>形容詞<rt>けいようし</rt></ruby>は<ruby>語尾<rt>ごび</rt></ruby>「い」をつけたまま「すぎます」をつける</span></label></div>
+<div class="option"><input id="q4b" name="q4" type="radio" value="1"/><label for="q4b"><span class="opt-key">2.</span><span class="opt-body"><ruby>動詞<rt>どうし</rt></ruby>のます<ruby>形<rt>けい</rt></ruby>に「すぎます」をつける</span></label></div>
+<div class="option"><input id="q4c" name="q4" type="radio" value="0"/><label for="q4c"><span class="opt-key">3.</span><span class="opt-body"><ruby>動詞<rt>どうし</rt></ruby>は<ruby>辞書形<rt>じしょけい</rt></ruby>に「すぎます」をつける</span></label></div>
+<div class="option"><input id="q4d" name="q4" type="radio" value="0"/><label for="q4d"><span class="opt-key">4.</span><span class="opt-body"><ruby>動詞<rt>どうし</rt></ruby>はて<ruby>形<rt>けい</rt></ruby>に「すぎます」をつける</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 動詞はます形語幹、い形容詞・な形容詞はそれぞれ語幹に「すぎます」を付けます。</div>
+<div class="explanation">✅ 正解：2 — 「〜すぎます」は動詞のます形語幹（「ます」の前の形）に「すぎます」を付けます。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">5</span>「<ruby>笑<rt>わら</rt></ruby>いすぎて、<ruby>涙<rt>なみだ</rt></ruby>が <ruby>出<rt>で</rt></ruby>たんです。」の「<ruby>笑<rt>わら</rt></ruby>いすぎて」の<ruby>形<rt>かたち</rt></ruby>はどれですか。（<ruby>笑<rt>わら</rt></ruby>います）</div>
-<div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q5a" name="q5" type="radio" value="0"/><label for="q5a"><span class="opt-key">1.</span><span class="opt-body"><ruby>笑<rt>わら</rt></ruby>う ＋ すぎて</span></label></div>
-<div class="option"><input id="q5b" name="q5" type="radio" value="1"/><label for="q5b"><span class="opt-key">2.</span><span class="opt-body"><ruby>笑<rt>わら</rt></ruby>い ＋ すぎて</span></label></div>
-<div class="option"><input id="q5c" name="q5" type="radio" value="0"/><label for="q5c"><span class="opt-key">3.</span><span class="opt-body"><ruby>笑<rt>わら</rt></ruby>って ＋ すぎて</span></label></div>
-<div class="option"><input id="q5d" name="q5" type="radio" value="0"/><label for="q5d"><span class="opt-key">4.</span><span class="opt-body"><ruby>笑<rt>わら</rt></ruby>った ＋ すぎて</span></label></div>
+<div class="q-text"><span class="q-num">5</span>テレビを <span class="blank-paren">（　　　　）</span>すぎました。</div>
+<div class="options">
+<div class="option"><input id="q5a" name="q5" type="radio" value="0"/><label for="q5a"><span class="opt-key">1.</span><span class="opt-body"><ruby>見<rt>み</rt></ruby>て</span></label></div>
+<div class="option"><input id="q5b" name="q5" type="radio" value="1"/><label for="q5b"><span class="opt-key">2.</span><span class="opt-body"><ruby>見<rt>み</rt></ruby></span></label></div>
+<div class="option"><input id="q5c" name="q5" type="radio" value="0"/><label for="q5c"><span class="opt-key">3.</span><span class="opt-body"><ruby>見<rt>み</rt></ruby>る</span></label></div>
+<div class="option"><input id="q5d" name="q5" type="radio" value="0"/><label for="q5d"><span class="opt-key">4.</span><span class="opt-body"><ruby>見<rt>み</rt></ruby>た</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「笑います」のます形語幹は「笑い」。「笑い＋すぎて」となります。</div>
+<div class="explanation">✅ 正解：2 — 「〜すぎます」は動詞のます形語幹に付きます。「見ます」→「見＋すぎます」→「見すぎました」。</div>
 </div>
 </div>
 
@@ -140,11 +144,11 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="q-text"><span class="q-num">6</span>「〜すぎます」はどんな<ruby>意味<rt>いみ</rt></ruby>・<ruby>場面<rt>ばめん</rt></ruby>で<ruby>使<rt>つか</rt></ruby>いますか。</div>
 <div class="options" style="grid-template-columns:1fr">
 <div class="option"><input id="q6a" name="q6" type="radio" value="0"/><label for="q6a"><span class="opt-key">1.</span><span class="opt-body"><ruby>程度<rt>ていど</rt></ruby>が<ruby>足<rt>た</rt></ruby>りないことを<ruby>表<rt>あらわ</rt></ruby>す</span></label></div>
-<div class="option"><input id="q6b" name="q6" type="radio" value="1"/><label for="q6b"><span class="opt-key">2.</span><span class="opt-body"><ruby>普通<rt>ふつう</rt></ruby>や<ruby>適切<rt>てきせつ</rt></ruby>な<ruby>量<rt>りょう</rt></ruby>・<ruby>程度<rt>ていど</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えていることを<ruby>表<rt>あらわ</rt></ruby>す（<ruby>好<rt>この</rt></ruby>ましくない<ruby>場合<rt>ばあい</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い）</span></label></div>
+<div class="option"><input id="q6b" name="q6" type="radio" value="1"/><label for="q6b"><span class="opt-key">2.</span><span class="opt-body"><ruby>普通<rt>ふつう</rt></ruby>の<ruby>程度<rt>ていど</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えていることを<ruby>表<rt>あらわ</rt></ruby>す</span></label></div>
 <div class="option"><input id="q6c" name="q6" type="radio" value="0"/><label for="q6c"><span class="opt-key">3.</span><span class="opt-body"><ruby>程度<rt>ていど</rt></ruby>がちょうどよいことを<ruby>表<rt>あらわ</rt></ruby>す</span></label></div>
 <div class="option"><input id="q6d" name="q6" type="radio" value="0"/><label for="q6d"><span class="opt-key">4.</span><span class="opt-body"><ruby>可能<rt>かのう</rt></ruby>であることを<ruby>表<rt>あらわ</rt></ruby>す</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「〜すぎます」は普通や適切な量・程度を超えていることを表し、好ましくないニュアンスで使われることが多いです。</div>
+<div class="explanation">✅ 正解：2 — 「〜すぎます」は普通の程度を超えていることを表し、好ましくないニュアンスで使われることが多いです。</div>
 </div>
 
 <div class="question">
@@ -152,10 +156,10 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="options">
 <div class="option"><input id="q7a" name="q7" type="radio" value="0"/><label for="q7a"><span class="opt-key">1.</span><span class="opt-body"><ruby>感謝<rt>かんしゃ</rt></ruby>の<ruby>表現<rt>ひょうげん</rt></ruby></span></label></div>
 <div class="option"><input id="q7b" name="q7" type="radio" value="0"/><label for="q7b"><span class="opt-key">2.</span><span class="opt-body"><ruby>肯定的<rt>こうていてき</rt></ruby>でよい<ruby>結果<rt>けっか</rt></ruby></span></label></div>
-<div class="option"><input id="q7c" name="q7" type="radio" value="1"/><label for="q7c"><span class="opt-key">3.</span><span class="opt-body"><ruby>問題<rt>もんだい</rt></ruby>・<ruby>不都合<rt>ふつごう</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>す<ruby>内容<rt>ないよう</rt></ruby></span></label></div>
+<div class="option"><input id="q7c" name="q7" type="radio" value="1"/><label for="q7c"><span class="opt-key">3.</span><span class="opt-body"><ruby>問題<rt>もんだい</rt></ruby>や<ruby>不都合<rt>ふつごう</rt></ruby></span></label></div>
 <div class="option"><input id="q7d" name="q7" type="radio" value="0"/><label for="q7d"><span class="opt-key">4.</span><span class="opt-body"><ruby>命令<rt>めいれい</rt></ruby></span></label></div>
 </div>
-<div class="explanation">✅ 正解：3 — 「〜すぎて」の後には問題・不都合・好ましくない結果が来ます。例：「簡単すぎて、おもしろくない」。</div>
+<div class="explanation">✅ 正解：3 — 「〜すぎて」の後には問題や不都合・好ましくない結果が来ます。例：「簡単すぎて、おもしろくない」。</div>
 </div>
 
 <div class="question">
@@ -170,7 +174,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">9</span>「いくら <ruby>好<rt>す</rt></ruby>きでも、<ruby>食<rt>た</rt></ruby>べすぎると、<span class="blank-paren">（　　　　）</span>ですよ。」</div>
+<div class="q-text"><span class="q-num">9</span>いくら <ruby>好<rt>す</rt></ruby>きでも、<ruby>食<rt>た</rt></ruby>べすぎると、<span class="blank-paren">（　　　　）</span>ですよ。</div>
 <div class="options">
 <div class="option"><input id="q9a" name="q9" type="radio" value="0"/><label for="q9a"><span class="opt-key">1.</span><span class="opt-body"><ruby>体<rt>からだ</rt></ruby>に いい</span></label></div>
 <div class="option"><input id="q9b" name="q9" type="radio" value="0"/><label for="q9b"><span class="opt-key">2.</span><span class="opt-body"><ruby>元気<rt>げんき</rt></ruby>に なる</span></label></div>
@@ -187,29 +191,29 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <p class="section-lead"><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 
 <div class="question">
-<div class="q-text"><span class="q-num">10</span>「この パソコンは <ruby>使<rt>つか</rt></ruby>い<span class="blank-paren">（　　　　）</span>です。」（<ruby>使<rt>つか</rt></ruby>いやすい）</div>
-<div class="options">
-<div class="option"><input id="q10a" name="q10" type="radio" value="1"/><label for="q10a"><span class="opt-key">1.</span><span class="opt-body">やすい</span></label></div>
-<div class="option"><input id="q10b" name="q10" type="radio" value="0"/><label for="q10b"><span class="opt-key">2.</span><span class="opt-body">にくい</span></label></div>
-<div class="option"><input id="q10c" name="q10" type="radio" value="0"/><label for="q10c"><span class="opt-key">3.</span><span class="opt-body">すぎ</span></label></div>
-<div class="option"><input id="q10d" name="q10" type="radio" value="0"/><label for="q10d"><span class="opt-key">4.</span><span class="opt-body">すぎる</span></label></div>
+<div class="q-text"><span class="q-num">10</span>この パソコンは <ruby>使<rt>つか</rt></ruby>い<span class="blank-paren">（　　　　）</span>です。<span class="multi-hint"><ruby>正<rt>ただ</rt></ruby>しいものをすべて<ruby>選<rt>えら</rt></ruby>んでください。</span></div>
+<div class="options options-multi no-shuffle" style="grid-template-columns:1fr 1fr">
+<div class="option"><input id="q10a" name="q10" type="checkbox" value="a"/><label for="q10a"><span class="opt-key">1.</span><span class="opt-body">やすい</span></label></div>
+<div class="option"><input id="q10b" name="q10" type="checkbox" value="b"/><label for="q10b"><span class="opt-key">2.</span><span class="opt-body">にくい</span></label></div>
+<div class="option"><input id="q10c" name="q10" type="checkbox" value="w1"/><label for="q10c"><span class="opt-key">3.</span><span class="opt-body">すぎ</span></label></div>
+<div class="option"><input id="q10d" name="q10" type="checkbox" value="w2"/><label for="q10d"><span class="opt-key">4.</span><span class="opt-body">すぎる</span></label></div>
 </div>
-<div class="explanation">✅ 正解：1 — 「使いやすい」は使うことが簡単・便利という意味。動詞ます形語幹「使い」＋「やすい」。</div>
-</div>
-
-<div class="question">
-<div class="q-text"><span class="q-num">11</span>「<ruby>東京<rt>とうきょう</rt></ruby>は <ruby>住<rt>す</rt></ruby>み<span class="blank-paren">（　　　　）</span>です。」（<ruby>住<rt>す</rt></ruby>みにくい）</div>
-<div class="options">
-<div class="option"><input id="q11a" name="q11" type="radio" value="0"/><label for="q11a"><span class="opt-key">1.</span><span class="opt-body">やすい</span></label></div>
-<div class="option"><input id="q11b" name="q11" type="radio" value="1"/><label for="q11b"><span class="opt-key">2.</span><span class="opt-body">にくい</span></label></div>
-<div class="option"><input id="q11c" name="q11" type="radio" value="0"/><label for="q11c"><span class="opt-key">3.</span><span class="opt-body">にくいて</span></label></div>
-<div class="option"><input id="q11d" name="q11" type="radio" value="0"/><label for="q11d"><span class="opt-key">4.</span><span class="opt-body">やすくて</span></label></div>
-</div>
-<div class="explanation">✅ 正解：2 — 「住みにくい」は住むことが難しい・不便という意味。「住み＋にくい」。</div>
+<div class="explanation">✅ 正解：1・2 — 「使いやすい／使いにくい」のどちらも文として正しいので、やすい・にくいを両方えらびます。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">12</span>「<ruby>白<rt>しろ</rt></ruby>い シャツは <ruby>汚<rt>よご</rt></ruby>れ<span class="blank-paren">（　　　　）</span>です。」（<ruby>汚<rt>よご</rt></ruby>れやすい：<ruby>自動詞<rt>じどうし</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">11</span><ruby>東京<rt>とうきょう</rt></ruby>は <ruby>住<rt>す</rt></ruby>み<span class="blank-paren">（　　　　）</span>です。<span class="multi-hint"><ruby>正<rt>ただ</rt></ruby>しいものをすべて<ruby>選<rt>えら</rt></ruby>んでください。</span></div>
+<div class="options options-multi no-shuffle" style="grid-template-columns:1fr 1fr">
+<div class="option"><input id="q11a" name="q11" type="checkbox" value="a"/><label for="q11a"><span class="opt-key">1.</span><span class="opt-body">やすい</span></label></div>
+<div class="option"><input id="q11b" name="q11" type="checkbox" value="b"/><label for="q11b"><span class="opt-key">2.</span><span class="opt-body">にくい</span></label></div>
+<div class="option"><input id="q11c" name="q11" type="checkbox" value="w1"/><label for="q11c"><span class="opt-key">3.</span><span class="opt-body">にくいて</span></label></div>
+<div class="option"><input id="q11d" name="q11" type="checkbox" value="w2"/><label for="q11d"><span class="opt-key">4.</span><span class="opt-body">やすくて</span></label></div>
+</div>
+<div class="explanation">✅ 正解：1・2 — 「住みやすい／住みにくい」のどちらも文として正しいので、やすい・にくいを両方えらびます。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">12</span><ruby>白<rt>しろ</rt></ruby>い シャツは <ruby>汚<rt>よご</rt></ruby>れ<span class="blank-paren">（　　　　）</span>です。</div>
 <div class="options">
 <div class="option"><input id="q12a" name="q12" type="radio" value="0"/><label for="q12a"><span class="opt-key">1.</span><span class="opt-body">にくい</span></label></div>
 <div class="option"><input id="q12b" name="q12" type="radio" value="1"/><label for="q12b"><span class="opt-key">2.</span><span class="opt-body">やすい</span></label></div>
@@ -222,23 +226,23 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="question">
 <div class="q-text"><span class="q-num">13</span>「〜やすいです」と「〜にくいです」の<ruby>形<rt>かたち</rt></ruby>はどれですか。</div>
 <div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q13a" name="q13" type="radio" value="0"/><label for="q13a"><span class="opt-key">1.</span><span class="opt-body"><ruby>動詞辞書形<rt>どうしじしょけい</rt></ruby> ＋ やすい / にくい</span></label></div>
-<div class="option"><input id="q13b" name="q13" type="radio" value="0"/><label for="q13b"><span class="opt-key">2.</span><span class="opt-body"><ruby>動詞<rt>どうし</rt></ruby>て<ruby>形<rt>けい</rt></ruby> ＋ やすい / にくい</span></label></div>
-<div class="option"><input id="q13c" name="q13" type="radio" value="1"/><label for="q13c"><span class="opt-key">3.</span><span class="opt-body"><ruby>動詞<rt>どうし</rt></ruby>ます<ruby>形<rt>けい</rt></ruby>（<ruby>語幹<rt>ごかん</rt></ruby>） ＋ やすい / にくい</span></label></div>
-<div class="option"><input id="q13d" name="q13" type="radio" value="0"/><label for="q13d"><span class="opt-key">4.</span><span class="opt-body"><ruby>動詞<rt>どうし</rt></ruby>た<ruby>形<rt>けい</rt></ruby> ＋ やすい / にくい</span></label></div>
+<div class="option"><input id="q13a" name="q13" type="radio" value="0"/><label for="q13a"><span class="opt-key">1.</span><span class="opt-body"><ruby>動詞辞書形<rt>どうしじしょけい</rt></ruby>に「やすい」をつける</span></label></div>
+<div class="option"><input id="q13b" name="q13" type="radio" value="0"/><label for="q13b"><span class="opt-key">2.</span><span class="opt-body"><ruby>動詞<rt>どうし</rt></ruby>て<ruby>形<rt>けい</rt></ruby>に「やすい」をつける</span></label></div>
+<div class="option"><input id="q13c" name="q13" type="radio" value="1"/><label for="q13c"><span class="opt-key">3.</span><span class="opt-body"><ruby>動詞<rt>どうし</rt></ruby>ます<ruby>形<rt>けい</rt></ruby>に「やすい」や「にくい」をつける</span></label></div>
+<div class="option"><input id="q13d" name="q13" type="radio" value="0"/><label for="q13d"><span class="opt-key">4.</span><span class="opt-body"><ruby>動詞<rt>どうし</rt></ruby>た<ruby>形<rt>けい</rt></ruby>に「やすい」をつける</span></label></div>
 </div>
-<div class="explanation">✅ 正解：3 — 「〜やすい / にくい」はます形語幹に付けます。例：書き＋やすい、使い＋にくい。</div>
+<div class="explanation">✅ 正解：3 — 「〜やすい／にくい」はます形語幹（「ます」の前の形）に付けます。例：書き＋やすい、使い＋にくい。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">14</span>「<ruby>雨<rt>あめ</rt></ruby>の <ruby>日<rt>ひ</rt></ruby>は <ruby>洗濯物<rt>せんたくもの</rt></ruby>が <ruby>乾<rt>かわ</rt></ruby>きにくいです。」の「にくい」の<ruby>活用<rt>かつよう</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</div>
-<div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q14a" name="q14" type="radio" value="0"/><label for="q14a"><span class="opt-key">1.</span><span class="opt-body"><ruby>乾<rt>かわ</rt></ruby>きにくかった（<ruby>過去形<rt>かこけい</rt></ruby>）のみ<ruby>正<rt>ただ</rt></ruby>しい</span></label></div>
-<div class="option"><input id="q14b" name="q14" type="radio" value="0"/><label for="q14b"><span class="opt-key">2.</span><span class="opt-body"><ruby>乾<rt>かわ</rt></ruby>きにくく なりました（<ruby>変化<rt>へんか</rt></ruby>）のみ<ruby>正<rt>ただ</rt></ruby>しい</span></label></div>
-<div class="option"><input id="q14c" name="q14" type="radio" value="0"/><label for="q14c"><span class="opt-key">3.</span><span class="opt-body"><ruby>乾<rt>かわ</rt></ruby>きにくい（<ruby>辞書形<rt>じしょけい</rt></ruby>）のみ<ruby>正<rt>ただ</rt></ruby>しい</span></label></div>
-<div class="option"><input id="q14d" name="q14" type="radio" value="1"/><label for="q14d"><span class="opt-key">4.</span><span class="opt-body"><ruby>乾<rt>かわ</rt></ruby>きにくかった・<ruby>乾<rt>かわ</rt></ruby>きにくく なる・<ruby>乾<rt>かわ</rt></ruby>きにくい　すべて<ruby>正<rt>ただ</rt></ruby>しい</span></label></div>
+<div class="q-text"><span class="q-num">14</span><ruby>日本語<rt>にほんご</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しい<ruby>文章<rt>ぶんしょう</rt></ruby>をすべて<ruby>選<rt>えら</rt></ruby>びなさい。</div>
+<div class="options options-multi no-shuffle" style="grid-template-columns:1fr">
+<div class="option"><input id="q14a" name="q14" type="checkbox" value="1"/><label for="q14a"><span class="opt-key">1.</span><span class="opt-body"><ruby>雨<rt>あめ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>は <ruby>洗濯物<rt>せんたくもの</rt></ruby>が <ruby>乾<rt>かわ</rt></ruby>きにくいです。</span></label></div>
+<div class="option"><input id="q14b" name="q14" type="checkbox" value="2"/><label for="q14b"><span class="opt-key">2.</span><span class="opt-body"><ruby>雨<rt>あめ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>は <ruby>洗濯物<rt>せんたくもの</rt></ruby>が <ruby>乾<rt>かわ</rt></ruby>きにくくなります。</span></label></div>
+<div class="option"><input id="q14c" name="q14" type="checkbox" value="3"/><label for="q14c"><span class="opt-key">3.</span><span class="opt-body"><ruby>雨<rt>あめ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>は <ruby>洗濯物<rt>せんたくもの</rt></ruby>が <ruby>乾<rt>かわ</rt></ruby>きにくかったです。</span></label></div>
+<div class="option"><input id="q14d" name="q14" type="checkbox" value="4"/><label for="q14d"><span class="opt-key">4.</span><span class="opt-body"><ruby>雨<rt>あめ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>は <ruby>洗濯物<rt>せんたくもの</rt></ruby>が <ruby>乾<rt>かわ</rt></ruby>きやすいです。</span></label></div>
 </div>
-<div class="explanation">✅ 正解：4 — 「にくい」はい形容詞と同じ活用をします。過去形・変化・辞書形すべて使えます。</div>
+<div class="explanation">✅ 正解：1・2・4 — 3の「〜にくかったです」は文として不自然です。1・2・4は日本語として正しい文です。</div>
 </div>
 </div>
 
@@ -248,7 +252,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <p class="section-lead"><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 
 <div class="question">
-<div class="q-text"><span class="q-num">15</span>「ズボンを <ruby>短<rt>みじか</rt></ruby>く<span class="blank-paren">（　　　　）</span>ください。」</div>
+<div class="q-text"><span class="q-num">15</span>ズボンを <ruby>短<rt>みじか</rt></ruby>く<span class="blank-paren">（　　　　）</span>ください。</div>
 <div class="options">
 <div class="option"><input id="q15a" name="q15" type="radio" value="0"/><label for="q15a"><span class="opt-key">1.</span><span class="opt-body">すれば</span></label></div>
 <div class="option"><input id="q15b" name="q15" type="radio" value="1"/><label for="q15b"><span class="opt-key">2.</span><span class="opt-body">して</span></label></div>
@@ -259,7 +263,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">16</span>「<ruby>部屋<rt>へや</rt></ruby>を きれい<span class="blank-paren">（　　　　）</span>します。」（な<ruby>形容詞<rt>けいようし</rt></ruby> ＋ に）</div>
+<div class="q-text"><span class="q-num">16</span><ruby>部屋<rt>へや</rt></ruby>を きれい<span class="blank-paren">（　　　　）</span>します。</div>
 <div class="options">
 <div class="option"><input id="q16a" name="q16" type="radio" value="0"/><label for="q16a"><span class="opt-key">1.</span><span class="opt-body">く</span></label></div>
 <div class="option"><input id="q16b" name="q16" type="radio" value="1"/><label for="q16b"><span class="opt-key">2.</span><span class="opt-body">に</span></label></div>
@@ -270,7 +274,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">17</span>「<ruby>音<rt>おと</rt></ruby>を <span class="blank-paren">（　　　　）</span>します。」（<ruby>大<rt>おお</rt></ruby>きい→く<ruby>形<rt>けい</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">17</span><ruby>音<rt>おと</rt></ruby>を <span class="blank-paren">（　　　　）</span>します。</div>
 <div class="options">
 <div class="option"><input id="q17a" name="q17" type="radio" value="0"/><label for="q17a"><span class="opt-key">1.</span><span class="opt-body"><ruby>大<rt>おお</rt></ruby>きにします</span></label></div>
 <div class="option"><input id="q17b" name="q17" type="radio" value="1"/><label for="q17b"><span class="opt-key">2.</span><span class="opt-body"><ruby>大<rt>おお</rt></ruby>きくします</span></label></div>
@@ -281,7 +285,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">18</span>「<ruby>塩<rt>しお</rt></ruby>の <ruby>量<rt>りょう</rt></ruby>を <ruby>半分<rt>はんぶん</rt></ruby><span class="blank-paren">（　　　　）</span>しました。」（<ruby>名詞<rt>めいし</rt></ruby> ＋ に ＋ します）</div>
+<div class="q-text"><span class="q-num">18</span><ruby>塩<rt>しお</rt></ruby>の <ruby>量<rt>りょう</rt></ruby>を <ruby>半分<rt>はんぶん</rt></ruby><span class="blank-paren">（　　　　）</span>しました。</div>
 <div class="options">
 <div class="option"><input id="q18a" name="q18" type="radio" value="1"/><label for="q18a"><span class="opt-key">1.</span><span class="opt-body">に</span></label></div>
 <div class="option"><input id="q18b" name="q18" type="radio" value="0"/><label for="q18b"><span class="opt-key">2.</span><span class="opt-body">を</span></label></div>
@@ -292,45 +296,6 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 </div>
 
-<!-- セクション5: 名詞 に します（選択・決定） -->
-<div class="section">
-<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>19〜21：<ruby>名詞<rt>めいし</rt></ruby> に します（<ruby>選択<rt>せんたく</rt></ruby>・<ruby>決定<rt>けってい</rt></ruby>）</div>
-<p class="section-lead"><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
-
-<div class="question">
-<div class="q-text"><span class="q-num">19</span>「<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>は <ruby>何<rt>なに</rt></ruby><span class="blank-paren">（　　　　）</span>しますか。……ビールに します。」</div>
-<div class="options">
-<div class="option"><input id="q19a" name="q19" type="radio" value="0"/><label for="q19a"><span class="opt-key">1.</span><span class="opt-body">を</span></label></div>
-<div class="option"><input id="q19b" name="q19" type="radio" value="0"/><label for="q19b"><span class="opt-key">2.</span><span class="opt-body">が</span></label></div>
-<div class="option"><input id="q19c" name="q19" type="radio" value="1"/><label for="q19c"><span class="opt-key">3.</span><span class="opt-body">に</span></label></div>
-<div class="option"><input id="q19d" name="q19" type="radio" value="0"/><label for="q19d"><span class="opt-key">4.</span><span class="opt-body">で</span></label></div>
-</div>
-<div class="explanation">✅ 正解：3 — 「何にしますか」は飲み物・食べ物などを選ぶときの表現。選択・決定の「〜にします」。</div>
-</div>
-
-<div class="question">
-<div class="q-text"><span class="q-num">20</span>「<ruby>部屋<rt>へや</rt></ruby>は シングル<span class="blank-paren">（　　　　）</span>しますか、ツイン<span class="blank-paren">（　　　　）</span>しますか。」</div>
-<div class="options">
-<div class="option"><input id="q20a" name="q20" type="radio" value="1"/><label for="q20a"><span class="opt-key">1.</span><span class="opt-body">に / に</span></label></div>
-<div class="option"><input id="q20b" name="q20" type="radio" value="0"/><label for="q20b"><span class="opt-key">2.</span><span class="opt-body">が / が</span></label></div>
-<div class="option"><input id="q20c" name="q20" type="radio" value="0"/><label for="q20c"><span class="opt-key">3.</span><span class="opt-body">を / を</span></label></div>
-<div class="option"><input id="q20d" name="q20" type="radio" value="0"/><label for="q20d"><span class="opt-key">4.</span><span class="opt-body">で / で</span></label></div>
-</div>
-<div class="explanation">✅ 正解：1 — 選択・決定の表現は「名詞＋に＋します」。シングルにしますか、ツインにしますか。</div>
-</div>
-
-<div class="question">
-<div class="q-text"><span class="q-num">21</span>「<ruby>名詞<rt>めいし</rt></ruby> に します」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
-<div class="options">
-<div class="option"><input id="q21a" name="q21" type="radio" value="0"/><label for="q21a"><span class="opt-key">1.</span><span class="opt-body"><ruby>名詞<rt>めいし</rt></ruby>を<ruby>使<rt>つか</rt></ruby>う</span></label></div>
-<div class="option"><input id="q21b" name="q21" type="radio" value="0"/><label for="q21b"><span class="opt-key">2.</span><span class="opt-body"><ruby>名詞<rt>めいし</rt></ruby>を<ruby>買<rt>か</rt></ruby>う</span></label></div>
-<div class="option"><input id="q21c" name="q21" type="radio" value="1"/><label for="q21c"><span class="opt-key">3.</span><span class="opt-body"><ruby>名詞<rt>めいし</rt></ruby>に<ruby>決<rt>き</rt></ruby>める・<ruby>選<rt>えら</rt></ruby>ぶ</span></label></div>
-<div class="option"><input id="q21d" name="q21" type="radio" value="0"/><label for="q21d"><span class="opt-key">4.</span><span class="opt-body"><ruby>名詞<rt>めいし</rt></ruby>を<ruby>作<rt>つく</rt></ruby>る</span></label></div>
-</div>
-<div class="explanation">✅ 正解：3 — 「名詞にします」は複数の選択肢の中からその名詞を選んで決めるという意味。注文・予約の場面でよく使います。</div>
-</div>
-</div>
-
 <button class="btn-submit" id="submitBtn" onclick="submitTest()"><ruby>採点<rt>さいてん</rt></ruby>する</button>
 <div class="result-panel" id="resultPanel">
 <h2 id="resultTitle"></h2><div class="result-score" id="resultScore"></div>
@@ -338,7 +303,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 </div>
 <script>
-const TOTAL=21,TIME_LIMIT=900;
+const TOTAL=18,TIME_LIMIT=900;
 let timeLeft=TIME_LIMIT,timerInterval,submitted=false;
 function shuffleAllOptions(){
 function randBelow(n){
@@ -391,6 +356,7 @@ return items.findIndex(function(el){return el.querySelector('input[type="radio"]
 }
 const posCounts=[0,0,0,0];
 document.querySelectorAll('.options').forEach(function(optsDiv){
+if(optsDiv.classList.contains('no-shuffle'))return;
 const items=Array.prototype.filter.call(optsDiv.children,function(el){
 return el.classList&&el.classList.contains('option');
 });
@@ -436,19 +402,49 @@ else el.className='timer';
 if(timeLeft<=0){clearInterval(timerInterval);submitTest();}
 },1000);
 }
+function gradeCheckboxExact(name,mustArr){
+const inputs=[...document.querySelectorAll(`input[name="${name}"]`)];
+const checked=inputs.filter(i=>i.checked).map(i=>i.value);
+const must=new Set(mustArr);
+if(checked.length!==must.size)return false;
+for(const v of checked){if(!must.has(v))return false;}
+for(const v of must){if(!checked.includes(v))return false;}
+return true;
+}
+function markCheckboxQuestion(name,goodVals){
+document.querySelectorAll(`input[name="${name}"]`).forEach(inp=>{
+const p=inp.closest('.option');
+if(!p)return;
+const ok=goodVals.includes(inp.value);
+if(ok)p.classList.add('correct');
+if(inp.checked&&!ok)p.classList.add('wrong');
+});
+}
 function submitTest(){
 if(submitted)return;submitted=true;
 if(timerInterval)clearInterval(timerInterval);
 let correct=0;
 for(let i=1;i<=TOTAL;i++){
+if(i===10){
+if(gradeCheckboxExact('q10',['a','b']))correct++;
+markCheckboxQuestion('q10',['a','b']);
+}else if(i===11){
+if(gradeCheckboxExact('q11',['a','b']))correct++;
+markCheckboxQuestion('q11',['a','b']);
+}else if(i===14){
+if(gradeCheckboxExact('q14',['1','2','4']))correct++;
+markCheckboxQuestion('q14',['1','2','4']);
+}else{
 const sel=document.querySelector(`input[name="q${i}"]:checked`);
 const opts=document.querySelectorAll(`input[name="q${i}"]`);
 if(sel&&sel.value==='1'){correct++;}
 opts.forEach(o=>{
-const p=o.parentElement;
+const p=o.closest('.option');
+if(!p)return;
 if(o.value==='1')p.classList.add('correct');
 else if(o.checked&&o.value!=='1')p.classList.add('wrong');
 });
+}
 }
 document.querySelectorAll('.explanation').forEach(e=>e.classList.add('show'));
 const pct=Math.round((correct/TOTAL)*100);

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>みんなの日本語 44 パート2（15分・12問）</title>
+<title>みんなの日本語 44 パート2（15分・16問）</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
@@ -53,6 +53,10 @@ header h1{font-size:1.45em;margin-bottom:4px}
 .result-item .value{font-size:1.2em;font-weight:bold}
 .explanation{display:none;margin-top:8px;padding:10px;background:#fffbeb;border-radius:8px;font-size:.9em;border-left:3px solid #f6ad55}
 .explanation.show{display:block}
+.blank-paren{display:inline-block;color:#c05621;font-weight:700;white-space:nowrap}
+.dialog{margin:10px 0 14px;padding:12px 14px;background:#f7fafc;border-radius:8px;border:1px solid #e2e8f0;font-size:1.02em;line-height:1.75}
+.dialog p{margin:8px 0}
+.dialog .sp{font-weight:700;color:#2b6cb0;margin-right:6px}
 ruby{ruby-align:center}
 rt{font-size:0.55em;font-weight:400;line-height:1.1}
 .option label ruby rt{font-size:0.5em}
@@ -61,155 +65,221 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <body>
 <div class="container">
 <header>
-<h1>みんなの<ruby>日本語<rt>にほんご</rt></ruby> 44 クイズ（パート2・15<ruby>分<rt>ふん</rt></ruby>・12<ruby>問<rt>もん</rt></ruby>）</h1>
+<h1>みんなの<ruby>日本語<rt>にほんご</rt></ruby> 44 クイズ（パート2・15<ruby>分<rt>ふん</rt></ruby>・16<ruby>問<rt>もん</rt></ruby>）</h1>
 <div class="header-info">
 <div class="timer" id="timer">15:00</div>
 <div class="progress-bar"><div class="progress-fill" id="progress" style="width:100%"></div></div>
-<div class="score-badge" id="scoreBadge"><ruby>全<rt>ぜん</rt></ruby>12<ruby>問<rt>もん</rt></ruby></div>
+<div class="score-badge" id="scoreBadge"><ruby>全<rt>ぜん</rt></ruby>16<ruby>問<rt>もん</rt></ruby></div>
 </div>
 </header>
 
-<!-- セクション1: 意味を選んでください（文法・文型語彙） -->
+<!-- セクション0: 名詞 に します（選択・決定） — part1 より移動 -->
 <div class="section">
-<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>1〜7：<ruby>意味<rt>いみ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>んでください</div>
+<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>1〜3：<ruby>名詞<rt>めいし</rt></ruby> に します</div>
+<p class="section-lead"><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
+
+<div class="question">
+<div class="q-text"><span class="q-num">1</span><ruby>次<rt>つぎ</rt></ruby>の<ruby>会話<rt>かいわ</rt></ruby>を　よんで、<ruby>空欄<rt>くうらん</rt></ruby>に　はいるものを　えらんでください。</div>
+<div class="dialog">
+<p><span class="sp">A</span>：<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>は <ruby>何<rt>なに</rt></ruby><span class="blank-paren">（　　　　）</span>しますか。</p>
+<p><span class="sp">B</span>：ビールに します。</p>
+</div>
+<div class="options">
+<div class="option"><input id="q1a" name="q1" type="radio" value="0"/><label for="q1a"><span class="opt-key">1.</span><span class="opt-body">を</span></label></div>
+<div class="option"><input id="q1b" name="q1" type="radio" value="0"/><label for="q1b"><span class="opt-key">2.</span><span class="opt-body">が</span></label></div>
+<div class="option"><input id="q1c" name="q1" type="radio" value="1"/><label for="q1c"><span class="opt-key">3.</span><span class="opt-body">に</span></label></div>
+<div class="option"><input id="q1d" name="q1" type="radio" value="0"/><label for="q1d"><span class="opt-key">4.</span><span class="opt-body">で</span></label></div>
+</div>
+<div class="explanation">✅ 正解：3 — 「何にしますか」は飲み物・食べ物などを選ぶときの表現。選択・決定の「〜にします」。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">2</span><ruby>部屋<rt>へや</rt></ruby>は シングル<span class="blank-paren">（　　　　）</span>しますか、ツイン<span class="blank-paren">（　　　　）</span>しますか。</div>
+<div class="options">
+<div class="option"><input id="q2a" name="q2" type="radio" value="1"/><label for="q2a"><span class="opt-key">1.</span><span class="opt-body">どちらも「に」</span></label></div>
+<div class="option"><input id="q2b" name="q2" type="radio" value="0"/><label for="q2b"><span class="opt-key">2.</span><span class="opt-body">どちらも「が」</span></label></div>
+<div class="option"><input id="q2c" name="q2" type="radio" value="0"/><label for="q2c"><span class="opt-key">3.</span><span class="opt-body">どちらも「を」</span></label></div>
+<div class="option"><input id="q2d" name="q2" type="radio" value="0"/><label for="q2d"><span class="opt-key">4.</span><span class="opt-body">どちらも「で」</span></label></div>
+</div>
+<div class="explanation">✅ 正解：1 — どちらの空にも「に」が入ります。選択・決定の「名詞＋に＋します」。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">3</span>「これにします」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
+<div class="options">
+<div class="option"><input id="q3a" name="q3" type="radio" value="0"/><label for="q3a"><span class="opt-key">1.</span><span class="opt-body"><ruby>使<rt>つか</rt></ruby>う</span></label></div>
+<div class="option"><input id="q3b" name="q3" type="radio" value="0"/><label for="q3b"><span class="opt-key">2.</span><span class="opt-body"><ruby>買<rt>か</rt></ruby>う</span></label></div>
+<div class="option"><input id="q3c" name="q3" type="radio" value="1"/><label for="q3c"><span class="opt-key">3.</span><span class="opt-body"><ruby>選<rt>えら</rt></ruby>ぶ</span></label></div>
+<div class="option"><input id="q3d" name="q3" type="radio" value="0"/><label for="q3d"><span class="opt-key">4.</span><span class="opt-body"><ruby>作<rt>つく</rt></ruby>る</span></label></div>
+</div>
+<div class="explanation">✅ 正解：3 — 「〜にします」「これにします」は、それを選んで決めるという意味です。注文・予約の場面でよく使います。</div>
+</div>
+</div>
+
+<!-- セクション1: 読み方 -->
+<div class="section">
+<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>4〜7：<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>選<rt>えら</rt></ruby>んでください</div>
+<p class="section-lead"><ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
+
+<div class="question">
+<div class="q-text"><span class="q-num">4</span>「滑ります」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>はどれですか。</div>
+<div class="options">
+<div class="option"><input id="q4a" name="q4" type="radio" value="1"/><label for="q4a"><span class="opt-key">1.</span><span class="opt-body">すべります</span></label></div>
+<div class="option"><input id="q4b" name="q4" type="radio" value="0"/><label for="q4b"><span class="opt-key">2.</span><span class="opt-body">かわります</span></label></div>
+<div class="option"><input id="q4c" name="q4" type="radio" value="0"/><label for="q4c"><span class="opt-key">3.</span><span class="opt-body">ながれます</span></label></div>
+<div class="option"><input id="q4d" name="q4" type="radio" value="0"/><label for="q4d"><span class="opt-key">4.</span><span class="opt-body">まわります</span></label></div>
+</div>
+<div class="explanation">✅ 正解：1 — 「滑ります」は「すべります」と読みます。「雪道で滑ります」のように使います。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">5</span>「調節します」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>はどれですか。</div>
+<div class="options">
+<div class="option"><input id="q5a" name="q5" type="radio" value="1"/><label for="q5a"><span class="opt-key">1.</span><span class="opt-body">ちょうせつします</span></label></div>
+<div class="option"><input id="q5b" name="q5" type="radio" value="0"/><label for="q5b"><span class="opt-key">2.</span><span class="opt-body">ちょうせいします</span></label></div>
+<div class="option"><input id="q5c" name="q5" type="radio" value="0"/><label for="q5c"><span class="opt-key">3.</span><span class="opt-body">ちょうてつします</span></label></div>
+<div class="option"><input id="q5d" name="q5" type="radio" value="0"/><label for="q5d"><span class="opt-key">4.</span><span class="opt-body">ちょうさいします</span></label></div>
+</div>
+<div class="explanation">✅ 正解：1 — 「調節します」は「ちょうせつします」と読みます。「調整（ちょうせい）」と混同しやすいので注意。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">6</span>「涙」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>はどれですか。</div>
+<div class="options">
+<div class="option"><input id="q6a" name="q6" type="radio" value="0"/><label for="q6a"><span class="opt-key">1.</span><span class="opt-body">かみ</span></label></div>
+<div class="option"><input id="q6b" name="q6" type="radio" value="1"/><label for="q6b"><span class="opt-key">2.</span><span class="opt-body">なみだ</span></label></div>
+<div class="option"><input id="q6c" name="q6" type="radio" value="0"/><label for="q6c"><span class="opt-key">3.</span><span class="opt-body">なみ</span></label></div>
+<div class="option"><input id="q6d" name="q6" type="radio" value="0"/><label for="q6d"><span class="opt-key">4.</span><span class="opt-body">なみき</span></label></div>
+</div>
+<div class="explanation">✅ 正解：2 — 「涙」は「なみだ」と読みます。「涙が出ます」のように使います。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">7</span>「安全な」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>はどれですか。</div>
+<div class="options">
+<div class="option"><input id="q7a" name="q7" type="radio" value="1"/><label for="q7a"><span class="opt-key">1.</span><span class="opt-body">あんぜん</span></label></div>
+<div class="option"><input id="q7b" name="q7" type="radio" value="0"/><label for="q7b"><span class="opt-key">2.</span><span class="opt-body">あんぜい</span></label></div>
+<div class="option"><input id="q7c" name="q7" type="radio" value="0"/><label for="q7c"><span class="opt-key">3.</span><span class="opt-body">あんせん</span></label></div>
+<div class="option"><input id="q7d" name="q7" type="radio" value="0"/><label for="q7d"><span class="opt-key">4.</span><span class="opt-body">あんてん</span></label></div>
+</div>
+<div class="explanation">✅ 正解：1 — 「安全」は「あんぜん」と読みます。「危険」の反対語で、な形容詞です。</div>
+</div>
+</div>
+
+<!-- セクション2: 意味（文型・新出語彙） -->
+<div class="section">
+<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>8〜12：<ruby>意味<rt>いみ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>んでください</div>
 <p class="section-lead"><ruby>意味<rt>いみ</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 
 <div class="question">
-<div class="q-text"><span class="q-num">1</span>「〜すぎます」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
+<div class="q-text"><span class="q-num">8</span>「〜すぎます」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
 <div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q1a" name="q1" type="radio" value="0"/><label for="q1a"><span class="opt-key">1.</span><span class="opt-body">〜しすぎない</span></label></div>
-<div class="option"><input id="q1b" name="q1" type="radio" value="1"/><label for="q1b"><span class="opt-key">2.</span><span class="opt-body"><ruby>程度<rt>ていど</rt></ruby>や<ruby>量<rt>りょう</rt></ruby>が<ruby>適切<rt>てきせつ</rt></ruby>な<ruby>範囲<rt>はんい</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えている</span></label></div>
-<div class="option"><input id="q1c" name="q1" type="radio" value="0"/><label for="q1c"><span class="opt-key">3.</span><span class="opt-body">〜できない</span></label></div>
-<div class="option"><input id="q1d" name="q1" type="radio" value="0"/><label for="q1d"><span class="opt-key">4.</span><span class="opt-body">〜したくない</span></label></div>
+<div class="option"><input id="q8a" name="q8" type="radio" value="0"/><label for="q8a"><span class="opt-key">1.</span><span class="opt-body">〜しすぎない</span></label></div>
+<div class="option"><input id="q8b" name="q8" type="radio" value="1"/><label for="q8b"><span class="opt-key">2.</span><span class="opt-body">〜を<ruby>超<rt>こ</rt></ruby>えている</span></label></div>
+<div class="option"><input id="q8c" name="q8" type="radio" value="0"/><label for="q8c"><span class="opt-key">3.</span><span class="opt-body">〜できない</span></label></div>
+<div class="option"><input id="q8d" name="q8" type="radio" value="0"/><label for="q8d"><span class="opt-key">4.</span><span class="opt-body">〜したくない</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「〜すぎます」は程度や量が適切な範囲を超えていることを表します。</div>
-</div>
-
-<div class="question">
-<div class="q-text"><span class="q-num">2</span>「<ruby>濃<rt>こ</rt></ruby>い」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。（コーヒーが〜）</div>
-<div class="options">
-<div class="option"><input id="q2a" name="q2" type="radio" value="0"/><label for="q2a"><span class="opt-key">1.</span><span class="opt-body"><ruby>薄<rt>うす</rt></ruby>い・さっぱりした</span></label></div>
-<div class="option"><input id="q2b" name="q2" type="radio" value="1"/><label for="q2b"><span class="opt-key">2.</span><span class="opt-body"><ruby>味<rt>あじ</rt></ruby>や<ruby>色<rt>いろ</rt></ruby>が<ruby>強<rt>つよ</rt></ruby>い・<ruby>濃<rt>こ</rt></ruby>い</span></label></div>
-<div class="option"><input id="q2c" name="q2" type="radio" value="0"/><label for="q2c"><span class="opt-key">3.</span><span class="opt-body"><ruby>辛<rt>から</rt></ruby>い</span></label></div>
-<div class="option"><input id="q2d" name="q2" type="radio" value="0"/><label for="q2d"><span class="opt-key">4.</span><span class="opt-body"><ruby>甘<rt>あま</rt></ruby>い</span></label></div>
-</div>
-<div class="explanation">✅ 正解：2 — 「濃い」は味や色・成分が強くて濃い状態を表します。コーヒーが濃い＝味が強い。</div>
+<div class="explanation">✅ 正解：2 — 「〜すぎます」は適切な程度や量を超えていることを表します。多くは好ましくない結果に使います。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">3</span>「<ruby>薄<rt>うす</rt></ruby>い」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。（<ruby>色<rt>いろ</rt></ruby>が〜）</div>
-<div class="options">
-<div class="option"><input id="q3a" name="q3" type="radio" value="0"/><label for="q3a"><span class="opt-key">1.</span><span class="opt-body"><ruby>明<rt>あか</rt></ruby>るい</span></label></div>
-<div class="option"><input id="q3b" name="q3" type="radio" value="0"/><label for="q3b"><span class="opt-key">2.</span><span class="opt-body"><ruby>厚<rt>あつ</rt></ruby>い</span></label></div>
-<div class="option"><input id="q3c" name="q3" type="radio" value="1"/><label for="q3c"><span class="opt-key">3.</span><span class="opt-body"><ruby>色<rt>いろ</rt></ruby>や<ruby>味<rt>あじ</rt></ruby>が<ruby>弱<rt>よわ</rt></ruby>い・<ruby>薄<rt>うす</rt></ruby>い</span></label></div>
-<div class="option"><input id="q3d" name="q3" type="radio" value="0"/><label for="q3d"><span class="opt-key">4.</span><span class="opt-body"><ruby>重<rt>おも</rt></ruby>い</span></label></div>
-</div>
-<div class="explanation">✅ 正解：3 — 「薄い」は色・味・成分などが弱くて薄い状態。「濃い」の反対語です。</div>
-</div>
-
-<div class="question">
-<div class="q-text"><span class="q-num">4</span>「〜やすいです」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
+<div class="q-text"><span class="q-num">9</span>「〜やすいです」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
 <div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q4a" name="q4" type="radio" value="0"/><label for="q4a"><span class="opt-key">1.</span><span class="opt-body">〜することが<ruby>難<rt>むずか</rt></ruby>しい</span></label></div>
-<div class="option"><input id="q4b" name="q4" type="radio" value="1"/><label for="q4b"><span class="opt-key">2.</span><span class="opt-body">〜することが<ruby>易<rt>やさ</rt></ruby>しい・〜しやすい</span></label></div>
-<div class="option"><input id="q4c" name="q4" type="radio" value="0"/><label for="q4c"><span class="opt-key">3.</span><span class="opt-body">〜しすぎる</span></label></div>
-<div class="option"><input id="q4d" name="q4" type="radio" value="0"/><label for="q4d"><span class="opt-key">4.</span><span class="opt-body">〜したくない</span></label></div>
+<div class="option"><input id="q9a" name="q9" type="radio" value="0"/><label for="q9a"><span class="opt-key">1.</span><span class="opt-body">〜することが<ruby>難<rt>むずか</rt></ruby>しい</span></label></div>
+<div class="option"><input id="q9b" name="q9" type="radio" value="1"/><label for="q9b"><span class="opt-key">2.</span><span class="opt-body">〜することが<ruby>簡単<rt>かんたん</rt></ruby></span></label></div>
+<div class="option"><input id="q9c" name="q9" type="radio" value="0"/><label for="q9c"><span class="opt-key">3.</span><span class="opt-body">〜しすぎる</span></label></div>
+<div class="option"><input id="q9d" name="q9" type="radio" value="0"/><label for="q9d"><span class="opt-key">4.</span><span class="opt-body">〜したくない</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「〜やすいです」はその動作が簡単・便利・しやすいという意味です。</div>
+<div class="explanation">✅ 正解：2 — 「〜やすいです」はその動作が簡単・しやすいという意味です。「このパソコンは使いやすいです」。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">5</span>「〜にくいです」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
+<div class="q-text"><span class="q-num">10</span>「〜にくいです」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
 <div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q5a" name="q5" type="radio" value="0"/><label for="q5a"><span class="opt-key">1.</span><span class="opt-body">〜することが<ruby>易<rt>やさ</rt></ruby>しい</span></label></div>
-<div class="option"><input id="q5b" name="q5" type="radio" value="0"/><label for="q5b"><span class="opt-key">2.</span><span class="opt-body">〜しすぎる</span></label></div>
-<div class="option"><input id="q5c" name="q5" type="radio" value="1"/><label for="q5c"><span class="opt-key">3.</span><span class="opt-body">〜することが<ruby>難<rt>むずか</rt></ruby>しい・〜しにくい</span></label></div>
-<div class="option"><input id="q5d" name="q5" type="radio" value="0"/><label for="q5d"><span class="opt-key">4.</span><span class="opt-body">〜したくない</span></label></div>
+<div class="option"><input id="q10a" name="q10" type="radio" value="0"/><label for="q10a"><span class="opt-key">1.</span><span class="opt-body">〜することが<ruby>易<rt>やさ</rt></ruby>しい</span></label></div>
+<div class="option"><input id="q10b" name="q10" type="radio" value="0"/><label for="q10b"><span class="opt-key">2.</span><span class="opt-body">〜しすぎる</span></label></div>
+<div class="option"><input id="q10c" name="q10" type="radio" value="1"/><label for="q10c"><span class="opt-key">3.</span><span class="opt-body">〜することが<ruby>難<rt>むずか</rt></ruby>しい</span></label></div>
+<div class="option"><input id="q10d" name="q10" type="radio" value="0"/><label for="q10d"><span class="opt-key">4.</span><span class="opt-body">〜したくない</span></label></div>
 </div>
-<div class="explanation">✅ 正解：3 — 「〜にくいです」はその動作がしづらい・難しいという意味。「やすい」の反対です。</div>
-</div>
-
-<div class="question">
-<div class="q-text"><span class="q-num">6</span>「〜<ruby>倍<rt>ばい</rt></ruby>」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
-<div class="options">
-<div class="option"><input id="q6a" name="q6" type="radio" value="0"/><label for="q6a"><span class="opt-key">1.</span><span class="opt-body">〜<ruby>分<rt>ぶん</rt></ruby>の<ruby>一<rt>いち</rt></ruby></span></label></div>
-<div class="option"><input id="q6b" name="q6" type="radio" value="0"/><label for="q6b"><span class="opt-key">2.</span><span class="opt-body">〜パーセント</span></label></div>
-<div class="option"><input id="q6c" name="q6" type="radio" value="1"/><label for="q6c"><span class="opt-key">3.</span><span class="opt-body">〜<ruby>倍<rt>ばい</rt></ruby>（2<ruby>倍<rt>ばい</rt></ruby>＝2 times）</span></label></div>
-<div class="option"><input id="q6d" name="q6" type="radio" value="0"/><label for="q6d"><span class="opt-key">4.</span><span class="opt-body">〜<ruby>以上<rt>いじょう</rt></ruby></span></label></div>
-</div>
-<div class="explanation">✅ 正解：3 — 「〜倍」は倍数を表します。2倍＝2 times、3倍＝3 times。「この部屋はあの部屋の2倍の広さです」。</div>
+<div class="explanation">✅ 正解：3 — 「〜にくいです」はその動作が難しい・しづらいという意味。「〜やすい」の反対です。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">7</span>「<ruby>危険<rt>きけん</rt></ruby>[な]」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
+<div class="q-text"><span class="q-num">11</span>「濃い」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
 <div class="options">
-<div class="option"><input id="q7a" name="q7" type="radio" value="0"/><label for="q7a"><span class="opt-key">1.</span><span class="opt-body"><ruby>安全<rt>あんぜん</rt></ruby>な</span></label></div>
-<div class="option"><input id="q7b" name="q7" type="radio" value="1"/><label for="q7b"><span class="opt-key">2.</span><span class="opt-body"><ruby>危<rt>あぶ</rt></ruby>ない・<ruby>命<rt>いのち</rt></ruby>や<ruby>体<rt>からだ</rt></ruby>に<ruby>害<rt>がい</rt></ruby>が<ruby>及<rt>およ</rt></ruby>ぶおそれがある</span></label></div>
-<div class="option"><input id="q7c" name="q7" type="radio" value="0"/><label for="q7c"><span class="opt-key">3.</span><span class="opt-body"><ruby>丈夫<rt>じょうぶ</rt></ruby>な</span></label></div>
-<div class="option"><input id="q7d" name="q7" type="radio" value="0"/><label for="q7d"><span class="opt-key">4.</span><span class="opt-body"><ruby>便利<rt>べんり</rt></ruby>な</span></label></div>
+<div class="option"><input id="q11a" name="q11" type="radio" value="0"/><label for="q11a"><span class="opt-key">1.</span><span class="opt-body"><ruby>薄<rt>うす</rt></ruby>い・さっぱりした</span></label></div>
+<div class="option"><input id="q11b" name="q11" type="radio" value="1"/><label for="q11b"><span class="opt-key">2.</span><span class="opt-body"><ruby>味<rt>あじ</rt></ruby>が<ruby>強<rt>つよ</rt></ruby>い</span></label></div>
+<div class="option"><input id="q11c" name="q11" type="radio" value="0"/><label for="q11c"><span class="opt-key">3.</span><span class="opt-body"><ruby>辛<rt>から</rt></ruby>い</span></label></div>
+<div class="option"><input id="q11d" name="q11" type="radio" value="0"/><label for="q11d"><span class="opt-key">4.</span><span class="opt-body"><ruby>甘<rt>あま</rt></ruby>い</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「危険な」は危ない・命や体に害を及ぼすおそれがある状態。「安全」の反対語です。</div>
+<div class="explanation">✅ 正解：2 — 「濃い」は味や色が強い状態を表します。「薄い」の反対語です。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">12</span>「危険な」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
+<div class="options">
+<div class="option"><input id="q12a" name="q12" type="radio" value="0"/><label for="q12a"><span class="opt-key">1.</span><span class="opt-body"><ruby>安全<rt>あんぜん</rt></ruby>な</span></label></div>
+<div class="option"><input id="q12b" name="q12" type="radio" value="1"/><label for="q12b"><span class="opt-key">2.</span><span class="opt-body">あぶない</span></label></div>
+<div class="option"><input id="q12c" name="q12" type="radio" value="0"/><label for="q12c"><span class="opt-key">3.</span><span class="opt-body"><ruby>丈夫<rt>じょうぶ</rt></ruby>な</span></label></div>
+<div class="option"><input id="q12d" name="q12" type="radio" value="0"/><label for="q12d"><span class="opt-key">4.</span><span class="opt-body"><ruby>便利<rt>べんり</rt></ruby>な</span></label></div>
+</div>
+<div class="explanation">✅ 正解：2 — 「危険な」はあぶない状態、「安全」の反対語です。</div>
 </div>
 </div>
 
-<!-- セクション2: 語彙の意味（問題9より） -->
+<!-- セクション3: 漢字 -->
 <div class="section">
-<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>8〜12：<ruby>語彙<rt>ごい</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby></div>
+<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>13〜14：<ruby>漢字<rt>かんじ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>んでください</div>
+<p class="section-lead"><ruby>漢字<rt>かんじ</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
+
+<div class="question">
+<div class="q-text"><span class="q-num">13</span>「くうき」の<ruby>漢字<rt>かんじ</rt></ruby>はどれですか。</div>
+<div class="options">
+<div class="option"><input id="q13a" name="q13" type="radio" value="0"/><label for="q13a"><span class="opt-key">1.</span><span class="opt-body">大気</span></label></div>
+<div class="option"><input id="q13b" name="q13" type="radio" value="1"/><label for="q13b"><span class="opt-key">2.</span><span class="opt-body">空気</span></label></div>
+<div class="option"><input id="q13c" name="q13" type="radio" value="0"/><label for="q13c"><span class="opt-key">3.</span><span class="opt-body">空間</span></label></div>
+<div class="option"><input id="q13d" name="q13" type="radio" value="0"/><label for="q13d"><span class="opt-key">4.</span><span class="opt-body">気温</span></label></div>
+</div>
+<div class="explanation">✅ 正解：2 — 「くうき」は「空気」と書きます。「空気がきれいです」のように使います。</div>
+</div>
+
+<div class="question">
+<div class="q-text"><span class="q-num">14</span>「きけん」の<ruby>漢字<rt>かんじ</rt></ruby>はどれですか。</div>
+<div class="options">
+<div class="option"><input id="q14a" name="q14" type="radio" value="0"/><label for="q14a"><span class="opt-key">1.</span><span class="opt-body">危機</span></label></div>
+<div class="option"><input id="q14b" name="q14" type="radio" value="0"/><label for="q14b"><span class="opt-key">2.</span><span class="opt-body">安全</span></label></div>
+<div class="option"><input id="q14c" name="q14" type="radio" value="1"/><label for="q14c"><span class="opt-key">3.</span><span class="opt-body">危険</span></label></div>
+<div class="option"><input id="q14d" name="q14" type="radio" value="0"/><label for="q14d"><span class="opt-key">4.</span><span class="opt-body">注意</span></label></div>
+</div>
+<div class="explanation">✅ 正解：3 — 「きけん」は「危険」と書きます。「安全」の反対語です。</div>
+</div>
+</div>
+
+<!-- セクション4: 追加語彙・会話表現 -->
+<div class="section">
+<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>15〜16：<ruby>語彙<rt>ごい</rt></ruby>・<ruby>会話表現<rt>かいわひょうげん</rt></ruby></div>
 <p class="section-lead"><ruby>意味<rt>いみ</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 
 <div class="question">
-<div class="q-text"><span class="q-num">8</span>「ぬれます」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
+<div class="q-text"><span class="q-num">15</span>「ぬれます」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
 <div class="options">
-<div class="option"><input id="q8a" name="q8" type="radio" value="0"/><label for="q8a"><span class="opt-key">1.</span><span class="opt-body"><ruby>乾<rt>かわ</rt></ruby>く</span></label></div>
-<div class="option"><input id="q8b" name="q8" type="radio" value="1"/><label for="q8b"><span class="opt-key">2.</span><span class="opt-body"><ruby>水分<rt>すいぶん</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>んで<ruby>湿<rt>しめ</rt></ruby>る・<ruby>濡<rt>ぬ</rt></ruby>れる</span></label></div>
-<div class="option"><input id="q8c" name="q8" type="radio" value="0"/><label for="q8c"><span class="opt-key">3.</span><span class="opt-body"><ruby>汚<rt>よご</rt></ruby>れる</span></label></div>
-<div class="option"><input id="q8d" name="q8" type="radio" value="0"/><label for="q8d"><span class="opt-key">4.</span><span class="opt-body"><ruby>固<rt>かた</rt></ruby>まる</span></label></div>
+<div class="option"><input id="q15a" name="q15" type="radio" value="0"/><label for="q15a"><span class="opt-key">1.</span><span class="opt-body"><ruby>乾<rt>かわ</rt></ruby>く</span></label></div>
+<div class="option"><input id="q15b" name="q15" type="radio" value="1"/><label for="q15b"><span class="opt-key">2.</span><span class="opt-body"><ruby>水<rt>みず</rt></ruby>がつく</span></label></div>
+<div class="option"><input id="q15c" name="q15" type="radio" value="0"/><label for="q15c"><span class="opt-key">3.</span><span class="opt-body"><ruby>汚<rt>よご</rt></ruby>れる</span></label></div>
+<div class="option"><input id="q15d" name="q15" type="radio" value="0"/><label for="q15d"><span class="opt-key">4.</span><span class="opt-body"><ruby>固<rt>かた</rt></ruby>まる</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「ぬれます（濡れます）」は水分を含んで湿った状態になること。「乾く」の反対です。</div>
+<div class="explanation">✅ 正解：2 — 「ぬれます」は雨などで水がつき、湿った状態になることです。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">9</span>「<ruby>厚<rt>あつ</rt></ruby>い」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。（<ruby>本<rt>ほん</rt></ruby>が〜）</div>
-<div class="options">
-<div class="option"><input id="q9a" name="q9" type="radio" value="0"/><label for="q9a"><span class="opt-key">1.</span><span class="opt-body"><ruby>薄<rt>うす</rt></ruby>い・<ruby>平<rt>たい</rt></ruby>らな</span></label></div>
-<div class="option"><input id="q9b" name="q9" type="radio" value="1"/><label for="q9b"><span class="opt-key">2.</span><span class="opt-body"><ruby>厚<rt>あつ</rt></ruby>みがある・<ruby>分厚<rt>ぶあつ</rt></ruby>い</span></label></div>
-<div class="option"><input id="q9c" name="q9" type="radio" value="0"/><label for="q9c"><span class="opt-key">3.</span><span class="opt-body"><ruby>細<rt>ほそ</rt></ruby>い</span></label></div>
-<div class="option"><input id="q9d" name="q9" type="radio" value="0"/><label for="q9d"><span class="opt-key">4.</span><span class="opt-body"><ruby>重<rt>おも</rt></ruby>い</span></label></div>
-</div>
-<div class="explanation">✅ 正解：2 — 「厚い」は厚みがある・分厚い状態。本が厚い＝ページ数が多く分厚い。</div>
-</div>
-
-<div class="question">
-<div class="q-text"><span class="q-num">10</span>「<ruby>細<rt>ほそ</rt></ruby>い」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。（ひもが〜）</div>
-<div class="options">
-<div class="option"><input id="q10a" name="q10" type="radio" value="0"/><label for="q10a"><span class="opt-key">1.</span><span class="opt-body"><ruby>長<rt>なが</rt></ruby>い</span></label></div>
-<div class="option"><input id="q10b" name="q10" type="radio" value="0"/><label for="q10b"><span class="opt-key">2.</span><span class="opt-body"><ruby>短<rt>みじか</rt></ruby>い</span></label></div>
-<div class="option"><input id="q10c" name="q10" type="radio" value="1"/><label for="q10c"><span class="opt-key">3.</span><span class="opt-body"><ruby>直径<rt>ちょっけい</rt></ruby>や<ruby>幅<rt>はば</rt></ruby>が<ruby>小<rt>ちい</rt></ruby>さい・<ruby>細<rt>ほそ</rt></ruby>い</span></label></div>
-<div class="option"><input id="q10d" name="q10" type="radio" value="0"/><label for="q10d"><span class="opt-key">4.</span><span class="opt-body"><ruby>太<rt>ふと</rt></ruby>い</span></label></div>
-</div>
-<div class="explanation">✅ 正解：3 — 「細い」は直径や幅が小さい状態。「太い」の反対語です。</div>
-</div>
-
-<div class="question">
-<div class="q-text"><span class="q-num">11</span>「この <ruby>写真<rt>しゃしん</rt></ruby>みたいに して ください。」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
+<div class="q-text"><span class="q-num">16</span>「この <ruby>写真<rt>しゃしん</rt></ruby>みたいに して ください。」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
 <div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q11a" name="q11" type="radio" value="0"/><label for="q11a"><span class="opt-key">1.</span><span class="opt-body">この<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>ってください</span></label></div>
-<div class="option"><input id="q11b" name="q11" type="radio" value="1"/><label for="q11b"><span class="opt-key">2.</span><span class="opt-body">この<ruby>写真<rt>しゃしん</rt></ruby>のようなスタイルにしてください</span></label></div>
-<div class="option"><input id="q11c" name="q11" type="radio" value="0"/><label for="q11c"><span class="opt-key">3.</span><span class="opt-body">この<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>直<rt>なお</rt></ruby>してください</span></label></div>
-<div class="option"><input id="q11d" name="q11" type="radio" value="0"/><label for="q11d"><span class="opt-key">4.</span><span class="opt-body">この<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>見<rt>み</rt></ruby>てください</span></label></div>
+<div class="option"><input id="q16a" name="q16" type="radio" value="0"/><label for="q16a"><span class="opt-key">1.</span><span class="opt-body">この<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>ってください</span></label></div>
+<div class="option"><input id="q16b" name="q16" type="radio" value="1"/><label for="q16b"><span class="opt-key">2.</span><span class="opt-body">この<ruby>写真<rt>しゃしん</rt></ruby>のようにしてください。</span></label></div>
+<div class="option"><input id="q16c" name="q16" type="radio" value="0"/><label for="q16c"><span class="opt-key">3.</span><span class="opt-body">この<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>直<rt>なお</rt></ruby>してください</span></label></div>
+<div class="option"><input id="q16d" name="q16" type="radio" value="0"/><label for="q16d"><span class="opt-key">4.</span><span class="opt-body">この<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>見<rt>み</rt></ruby>てください</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「〜みたいにしてください」は〜のようなスタイル・状態にしてほしいという依頼。美容院などで使います。</div>
-</div>
-
-<div class="question">
-<div class="q-text"><span class="q-num">12</span>「<ruby>起<rt>お</rt></ruby>きます」（<ruby>事故<rt>じこ</rt></ruby>が〜）の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
-<div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q12a" name="q12" type="radio" value="0"/><label for="q12a"><span class="opt-key">1.</span><span class="opt-body"><ruby>目<rt>め</rt></ruby>が<ruby>覚<rt>さ</rt></ruby>める・<ruby>起床<rt>きしょう</rt></ruby>する</span></label></div>
-<div class="option"><input id="q12b" name="q12" type="radio" value="1"/><label for="q12b"><span class="opt-key">2.</span><span class="opt-body"><ruby>物事<rt>ものごと</rt></ruby>が<ruby>発生<rt>はっせい</rt></ruby>する・<ruby>生<rt>しょう</rt></ruby>じる</span></label></div>
-<div class="option"><input id="q12c" name="q12" type="radio" value="0"/><label for="q12c"><span class="opt-key">3.</span><span class="opt-body"><ruby>立<rt>た</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>がる</span></label></div>
-<div class="option"><input id="q12d" name="q12" type="radio" value="0"/><label for="q12d"><span class="opt-key">4.</span><span class="opt-body"><ruby>始<rt>はじ</rt></ruby>める</span></label></div>
-</div>
-<div class="explanation">✅ 正解：2 — 「事故が起きます」は事故が発生するという意味。「起きます」は「起床する」以外に「出来事が発生する」という意味でも使います。</div>
+<div class="explanation">✅ 正解：2 — 「〜みたいにしてください」は写真のような形・スタイルにしてほしいという依頼です。</div>
 </div>
 </div>
 
@@ -220,7 +290,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 </div>
 <script>
-const TOTAL=12,TIME_LIMIT=900;
+const TOTAL=16,TIME_LIMIT=900;
 let timeLeft=TIME_LIMIT,timerInterval,submitted=false;
 function shuffleAllOptions(){
 function randBelow(n){
@@ -327,7 +397,8 @@ const sel=document.querySelector(`input[name="q${i}"]:checked`);
 const opts=document.querySelectorAll(`input[name="q${i}"]`);
 if(sel&&sel.value==='1'){correct++;}
 opts.forEach(o=>{
-const p=o.parentElement;
+const p=o.closest('.option');
+if(!p)return;
 if(o.value==='1')p.classList.add('correct');
 else if(o.checked&&o.value!=='1')p.classList.add('wrong');
 });
