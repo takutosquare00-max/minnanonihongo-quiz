@@ -36,6 +36,7 @@ header h1{font-size:1.45em;margin-bottom:4px}
 .option label:hover{border-color:#2b6cb0;background:#f0f7ff}
 .option input:checked+label{border-color:#2b6cb0;background:#e8f2fc;color:#1a365d;font-weight:600}
 .option.correct label{border-color:#48bb78!important;background:#f0fff4!important;color:#276749!important}
+.option.alt-correct label{border-color:#f6ad55!important;background:#fffbeb!important;color:#975a16!important}
 .option.wrong label{border-color:#fc8181!important;background:#fff5f5!important;color:#9b2c2c!important}
 .btn-submit{display:block;width:100%;min-height:48px;padding:16px;background:linear-gradient(135deg,#2b6cb0 0%,#2c5282 100%);color:#fff;border:none;border-radius:12px;font-size:1.1em;font-weight:bold;cursor:pointer;transition:transform .2s,box-shadow .2s;margin-top:24px;touch-action:manipulation;-webkit-user-select:none;user-select:none}
 .btn-submit:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(43,108,176,.4)}
@@ -76,18 +77,18 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <p class="section-lead"><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 
 <div class="question">
-<div class="q-text"><span class="q-num">1</span>「カードを なくした<span class="blank-paren">（　　　　）</span>は、すぐ カード<ruby>会社<rt>かいしゃ</rt></ruby>に <ruby>連絡<rt>れんらく</rt></ruby>して ください。」</div>
-<div class="options">
-<div class="option"><input id="q1a" name="q1" type="radio" value="0"/><label for="q1a"><span class="opt-key">1.</span><span class="opt-body">とき</span></label></div>
-<div class="option"><input id="q1b" name="q1" type="radio" value="1"/><label for="q1b"><span class="opt-key">2.</span><span class="opt-body"><ruby>場合<rt>ばあい</rt></ruby></span></label></div>
-<div class="option"><input id="q1c" name="q1" type="radio" value="0"/><label for="q1c"><span class="opt-key">3.</span><span class="opt-body">ば</span></label></div>
-<div class="option"><input id="q1d" name="q1" type="radio" value="0"/><label for="q1d"><span class="opt-key">4.</span><span class="opt-body">なら</span></label></div>
+<div class="q-text"><span class="q-num">1</span>カードを なくした<span class="blank-paren">（　　　　）</span>は、すぐ カード<ruby>会社<rt>かいしゃ</rt></ruby>に <ruby>連絡<rt>れんらく</rt></ruby>して ください。</div>
+<div class="options options-multi no-shuffle">
+<div class="option"><input id="q1a" name="q1" type="checkbox" value="a"/><label for="q1a"><span class="opt-key">1.</span><span class="opt-body">とき</span></label></div>
+<div class="option"><input id="q1b" name="q1" type="checkbox" value="b"/><label for="q1b"><span class="opt-key">2.</span><span class="opt-body"><ruby>場合<rt>ばあい</rt></ruby></span></label></div>
+<div class="option"><input id="q1c" name="q1" type="checkbox" value="w1"/><label for="q1c"><span class="opt-key">3.</span><span class="opt-body">ば</span></label></div>
+<div class="option"><input id="q1d" name="q1" type="checkbox" value="w2"/><label for="q1d"><span class="opt-key">4.</span><span class="opt-body">なら</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「〜た場合は」は動詞た形に「場合は」を接続します。「なくした場合は」で「カードをなくしたという状況の場合は」という仮定の条件を表します。</div>
+<div class="explanation">✅ 正解：2 — 「なくした場合は」がこの文型では最も自然です。1（とき）も使えます。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">2</span>「<ruby>会議<rt>かいぎ</rt></ruby>に <ruby>間<rt>ま</rt></ruby>に <ruby>合<rt>あ</rt></ruby>わない<span class="blank-paren">（　　　　）</span>は、<ruby>連絡<rt>れんらく</rt></ruby>して ください。」（<ruby>否定形<rt>ひていけい</rt></ruby>＋<ruby>場合<rt>ばあい</rt></ruby>は）</div>
+<div class="q-text"><span class="q-num">2</span><ruby>会議<rt>かいぎ</rt></ruby>に <ruby>間<rt>ま</rt></ruby>に <ruby>合<rt>あ</rt></ruby>わない<span class="blank-paren">（　　　　）</span>は、<ruby>連絡<rt>れんらく</rt></ruby>して ください。</div>
 <div class="options">
 <div class="option"><input id="q2a" name="q2" type="radio" value="1"/><label for="q2a"><span class="opt-key">1.</span><span class="opt-body"><ruby>場合<rt>ばあい</rt></ruby></span></label></div>
 <div class="option"><input id="q2b" name="q2" type="radio" value="0"/><label for="q2b"><span class="opt-key">2.</span><span class="opt-body">から</span></label></div>
@@ -98,7 +99,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">3</span>「<ruby>領収書<rt>りょうしゅうしょ</rt></ruby>が <ruby>必要<rt>ひつよう</rt></ruby><span class="blank-paren">（　　　　）</span><ruby>場合<rt>ばあい</rt></ruby>は、<ruby>言<rt>い</rt></ruby>って ください。」（な<ruby>形容詞<rt>けいようし</rt></ruby>＋<ruby>場合<rt>ばあい</rt></ruby>は）</div>
+<div class="q-text"><span class="q-num">3</span><ruby>領収書<rt>りょうしゅうしょ</rt></ruby>が <ruby>必要<rt>ひつよう</rt></ruby><span class="blank-paren">（　　　　）</span><ruby>場合<rt>ばあい</rt></ruby>は、<ruby>言<rt>い</rt></ruby>って ください。</div>
 <div class="options">
 <div class="option"><input id="q3a" name="q3" type="radio" value="0"/><label for="q3a"><span class="opt-key">1.</span><span class="opt-body">の</span></label></div>
 <div class="option"><input id="q3b" name="q3" type="radio" value="1"/><label for="q3b"><span class="opt-key">2.</span><span class="opt-body">な</span></label></div>
@@ -109,7 +110,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">4</span>「<ruby>火事<rt>かじ</rt></ruby>や <ruby>地震<rt>じしん</rt></ruby><span class="blank-paren">（　　　　）</span><ruby>場合<rt>ばあい</rt></ruby>は、エレベーターを <ruby>使<rt>つか</rt></ruby>わないで ください。」（<ruby>名詞<rt>めいし</rt></ruby>＋<ruby>場合<rt>ばあい</rt></ruby>は）</div>
+<div class="q-text"><span class="q-num">4</span><ruby>火事<rt>かじ</rt></ruby>や <ruby>地震<rt>じしん</rt></ruby><span class="blank-paren">（　　　　）</span><ruby>場合<rt>ばあい</rt></ruby>は、エレベーターを <ruby>使<rt>つか</rt></ruby>わないで ください。</div>
 <div class="options">
 <div class="option"><input id="q4a" name="q4" type="radio" value="0"/><label for="q4a"><span class="opt-key">1.</span><span class="opt-body">で</span></label></div>
 <div class="option"><input id="q4b" name="q4" type="radio" value="0"/><label for="q4b"><span class="opt-key">2.</span><span class="opt-body">な</span></label></div>
@@ -120,7 +121,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">5</span>「コンサートが<span class="blank-paren">（　　　　）</span><ruby>場合<rt>ばあい</rt></ruby>は、お<ruby>金<rt>かね</rt></ruby>を <ruby>返<rt>かえ</rt></ruby>します。」（<ruby>中止<rt>ちゅうし</rt></ruby>：<ruby>名詞<rt>めいし</rt></ruby>＋の＋<ruby>場合<rt>ばあい</rt></ruby>は）</div>
+<div class="q-text"><span class="q-num">5</span>コンサートが<span class="blank-paren">（　　　　）</span><ruby>場合<rt>ばあい</rt></ruby>は、お<ruby>金<rt>かね</rt></ruby>を <ruby>返<rt>かえ</rt></ruby>します。</div>
 <div class="options">
 <div class="option"><input id="q5a" name="q5" type="radio" value="0"/><label for="q5a"><span class="opt-key">1.</span><span class="opt-body"><ruby>中止<rt>ちゅうし</rt></ruby>で</span></label></div>
 <div class="option"><input id="q5b" name="q5" type="radio" value="1"/><label for="q5b"><span class="opt-key">2.</span><span class="opt-body"><ruby>中止<rt>ちゅうし</rt></ruby>の</span></label></div>
@@ -140,18 +141,18 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="q-text"><span class="q-num">6</span>「〜<ruby>場合<rt>ばあい</rt></ruby>は」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
 <div class="options" style="grid-template-columns:1fr">
 <div class="option"><input id="q6a" name="q6" type="radio" value="0"/><label for="q6a"><span class="opt-key">1.</span><span class="opt-body">〜という<ruby>理由<rt>りゆう</rt></ruby>で</span></label></div>
-<div class="option"><input id="q6b" name="q6" type="radio" value="1"/><label for="q6b"><span class="opt-key">2.</span><span class="opt-body">〜という<ruby>状況<rt>じょうきょう</rt></ruby>・<ruby>条件<rt>じょうけん</rt></ruby>が<ruby>発生<rt>はっせい</rt></ruby>した<ruby>場合<rt>ばあい</rt></ruby>に（<ruby>仮定<rt>かてい</rt></ruby>の<ruby>条件提示<rt>じょうけんていじ</rt></ruby>）</span></label></div>
+<div class="option"><input id="q6b" name="q6" type="radio" value="1"/><label for="q6b"><span class="opt-key">2.</span><span class="opt-body">〜という<ruby>条件<rt>じょうけん</rt></ruby>のときは</span></label></div>
 <div class="option"><input id="q6c" name="q6" type="radio" value="0"/><label for="q6c"><span class="opt-key">3.</span><span class="opt-body">〜した<ruby>後<rt>あと</rt></ruby>で</span></label></div>
 <div class="option"><input id="q6d" name="q6" type="radio" value="0"/><label for="q6d"><span class="opt-key">4.</span><span class="opt-body">〜する<ruby>前<rt>まえ</rt></ruby>に</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「〜場合は」は「ある状況・条件が発生したときに」という仮定の条件を提示する表現です。理由（から・ので）や時間（前・後）とは異なります。</div>
+<div class="explanation">✅ 正解：2 — 「〜場合は」は「〜という条件のときは」という仮定の条件を表します。理由（から・ので）や時間（前・後）とは異なります。</div>
 </div>
 
 <div class="question">
 <div class="q-text"><span class="q-num">7</span>「〜<ruby>場合<rt>ばあい</rt></ruby>は」の<ruby>後<rt>あと</rt></ruby>に<ruby>来<rt>く</rt></ruby>る<ruby>内容<rt>ないよう</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</div>
 <div class="options" style="grid-template-columns:1fr">
 <div class="option"><input id="q7a" name="q7" type="radio" value="0"/><label for="q7a"><span class="opt-key">1.</span><span class="opt-body"><ruby>過去<rt>かこ</rt></ruby>の<ruby>事実<rt>じじつ</rt></ruby>の<ruby>述<rt>の</rt></ruby>べ<ruby>方<rt>かた</rt></ruby></span></label></div>
-<div class="option"><input id="q7b" name="q7" type="radio" value="1"/><label for="q7b"><span class="opt-key">2.</span><span class="opt-body">その<ruby>状況<rt>じょうきょう</rt></ruby>での<ruby>対処<rt>たいしょ</rt></ruby>・<ruby>指示<rt>しじ</rt></ruby>・アドバイス</span></label></div>
+<div class="option"><input id="q7b" name="q7" type="radio" value="1"/><label for="q7b"><span class="opt-key">2.</span><span class="opt-body">その<ruby>状況<rt>じょうきょう</rt></ruby>での<ruby>指示<rt>しじ</rt></ruby></span></label></div>
 <div class="option"><input id="q7c" name="q7" type="radio" value="0"/><label for="q7c"><span class="opt-key">3.</span><span class="opt-body"><ruby>過去<rt>かこ</rt></ruby>の<ruby>経験<rt>けいけん</rt></ruby></span></label></div>
 <div class="option"><input id="q7d" name="q7" type="radio" value="0"/><label for="q7d"><span class="opt-key">4.</span><span class="opt-body"><ruby>現在<rt>げんざい</rt></ruby>の<ruby>状態<rt>じょうたい</rt></ruby>の<ruby>説明<rt>せつめい</rt></ruby></span></label></div>
 </div>
@@ -162,22 +163,22 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="q-text"><span class="q-num">8</span>「<ruby>場合<rt>ばあい</rt></ruby>は」と「とき」の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>の<ruby>違<rt>ちが</rt></ruby>いとして<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</div>
 <div class="options" style="grid-template-columns:1fr">
 <div class="option"><input id="q8a" name="q8" type="radio" value="0"/><label for="q8a"><span class="opt-key">1.</span><span class="opt-body"><ruby>全<rt>まった</rt></ruby>く<ruby>同<rt>おな</rt></ruby>じ<ruby>意味<rt>いみ</rt></ruby>でいつでも<ruby>交換<rt>こうかん</rt></ruby>できる</span></label></div>
-<div class="option"><input id="q8b" name="q8" type="radio" value="1"/><label for="q8b"><span class="opt-key">2.</span><span class="opt-body">「<ruby>場合<rt>ばあい</rt></ruby>は」は<ruby>仮定<rt>かてい</rt></ruby>の<ruby>条件<rt>じょうけん</rt></ruby>・<ruby>手順<rt>てじゅん</rt></ruby>の<ruby>説明<rt>せつめい</rt></ruby>に<ruby>多<rt>おお</rt></ruby>く<ruby>使<rt>つか</rt></ruby>い、「とき」は<ruby>時点<rt>じてん</rt></ruby>（<ruby>時間<rt>じかん</rt></ruby>）の<ruby>表現<rt>ひょうげん</rt></ruby>にも<ruby>使<rt>つか</rt></ruby>う</span></label></div>
+<div class="option"><input id="q8b" name="q8" type="radio" value="1"/><label for="q8b"><span class="opt-key">2.</span><span class="opt-body">「とき」は<ruby>時点<rt>じてん</rt></ruby>の<ruby>表現<rt>ひょうげん</rt></ruby>に<ruby>使<rt>つか</rt></ruby>う</span></label></div>
 <div class="option"><input id="q8c" name="q8" type="radio" value="0"/><label for="q8c"><span class="opt-key">3.</span><span class="opt-body">「とき」は<ruby>過去<rt>かこ</rt></ruby>にのみ<ruby>使<rt>つか</rt></ruby>う</span></label></div>
 <div class="option"><input id="q8d" name="q8" type="radio" value="0"/><label for="q8d"><span class="opt-key">4.</span><span class="opt-body">「<ruby>場合<rt>ばあい</rt></ruby>は」は<ruby>常<rt>つね</rt></ruby>に<ruby>丁寧語<rt>ていねいご</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>使<rt>つか</rt></ruby>う</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「場合は」は仮定の条件・マニュアル的な手順説明に使うことが多く、「とき」は時点（子どものとき・寝るときなど）の表現にも広く使います。</div>
+<div class="explanation">✅ 正解：2 — 「とき」は時点（子どものとき・寝るときなど）の表現に使います。「場合は」とは使い方が異なります。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">9</span><ruby>次<rt>つぎ</rt></ruby>のうち「<ruby>場合<rt>ばあい</rt></ruby>は」を<ruby>使<rt>つか</rt></ruby>う<ruby>最<rt>もっと</rt></ruby>も<ruby>適切<rt>てきせつ</rt></ruby>な<ruby>文<rt>ぶん</rt></ruby>はどれですか。</div>
-<div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q9a" name="q9" type="radio" value="0"/><label for="q9a"><span class="opt-key">1.</span><span class="opt-body"><ruby>子<rt>こ</rt></ruby>どもの とき、よく <ruby>遊<rt>あそ</rt></ruby>びました。</span></label></div>
-<div class="option"><input id="q9b" name="q9" type="radio" value="1"/><label for="q9b"><span class="opt-key">2.</span><span class="opt-body"><ruby>電車<rt>でんしゃ</rt></ruby>が <ruby>止<rt>と</rt></ruby>まった <ruby>場合<rt>ばあい</rt></ruby>は、バスで <ruby>来<rt>き</rt></ruby>て ください。</span></label></div>
-<div class="option"><input id="q9c" name="q9" type="radio" value="0"/><label for="q9c"><span class="opt-key">3.</span><span class="opt-body"><ruby>雨<rt>あめ</rt></ruby>が <ruby>降<rt>ふ</rt></ruby>った とき、<ruby>傘<rt>かさ</rt></ruby>を さしました。</span></label></div>
-<div class="option"><input id="q9d" name="q9" type="radio" value="0"/><label for="q9d"><span class="opt-key">4.</span><span class="opt-body"><ruby>仕事<rt>しごと</rt></ruby>が <ruby>終<rt>お</rt></ruby>わった とき、<ruby>帰<rt>かえ</rt></ruby>ります。</span></label></div>
+<div class="q-text"><span class="q-num">9</span><ruby>次<rt>つぎ</rt></ruby>のうち<ruby>日本語<rt>にほんご</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>全<rt>すべ</rt></ruby>て<ruby>選<rt>えら</rt></ruby>んでください。</div>
+<div class="options options-multi no-shuffle" style="grid-template-columns:1fr">
+<div class="option"><input id="q9a" name="q9" type="checkbox" value="1"/><label for="q9a"><span class="opt-key">1.</span><span class="opt-body"><ruby>子<rt>こ</rt></ruby>どもの とき、よく <ruby>遊<rt>あそ</rt></ruby>びました。</span></label></div>
+<div class="option"><input id="q9b" name="q9" type="checkbox" value="2"/><label for="q9b"><span class="opt-key">2.</span><span class="opt-body"><ruby>電車<rt>でんしゃ</rt></ruby>が <ruby>止<rt>と</rt></ruby>まった <ruby>場合<rt>ばあい</rt></ruby>は、バスで <ruby>来<rt>き</rt></ruby>て ください。</span></label></div>
+<div class="option"><input id="q9c" name="q9" type="checkbox" value="3"/><label for="q9c"><span class="opt-key">3.</span><span class="opt-body"><ruby>雨<rt>あめ</rt></ruby>が <ruby>降<rt>ふ</rt></ruby>った とき、<ruby>傘<rt>かさ</rt></ruby>を さしました。</span></label></div>
+<div class="option"><input id="q9d" name="q9" type="checkbox" value="4"/><label for="q9d"><span class="opt-key">4.</span><span class="opt-body"><ruby>仕事<rt>しごと</rt></ruby>が <ruby>終<rt>お</rt></ruby>わった とき、<ruby>帰<rt>かえ</rt></ruby>ります。</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「電車が止まった場合は、バスで来てください」は仮定の状況への対処を指示する典型的な「場合は」の使い方です。1・3・4は「とき」が自然な時点表現です。</div>
+<div class="explanation">✅ 正解：1、2 — 「子どものとき、よく遊びました。」「電車が止まった場合は、バスで来てください。」は文法的に正しい日本語です。</div>
 </div>
 </div>
 
@@ -187,7 +188,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <p class="section-lead"><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 
 <div class="question">
-<div class="q-text"><span class="q-num">10</span>「<ruby>約束<rt>やくそく</rt></ruby>を したのに、<ruby>彼女<rt>かのじょ</rt></ruby>は <span class="blank-paren">（　　　　）</span>。」（<ruby>期待<rt>きたい</rt></ruby>に<ruby>反<rt>はん</rt></ruby>した<ruby>結果<rt>けっか</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">10</span><ruby>約束<rt>やくそく</rt></ruby>を したのに、<ruby>彼女<rt>かのじょ</rt></ruby>は <span class="blank-paren">（　　　　）</span>。</div>
 <div class="options">
 <div class="option"><input id="q10a" name="q10" type="radio" value="0"/><label for="q10a"><span class="opt-key">1.</span><span class="opt-body"><ruby>来<rt>き</rt></ruby>ました</span></label></div>
 <div class="option"><input id="q10b" name="q10" type="radio" value="1"/><label for="q10b"><span class="opt-key">2.</span><span class="opt-body"><ruby>来<rt>き</rt></ruby>ませんでした</span></label></div>
@@ -198,7 +199,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">11</span>「<ruby>一生懸命<rt>いっしょうけんめい</rt></ruby> <ruby>練習<rt>れんしゅう</rt></ruby>したのに、<span class="blank-paren">（　　　　）</span>。」（<ruby>不満<rt>ふまん</rt></ruby>・<ruby>残念<rt>ざんねん</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">11</span><ruby>一生懸命<rt>いっしょうけんめい</rt></ruby> <ruby>練習<rt>れんしゅう</rt></ruby>したのに、<span class="blank-paren">（　　　　）</span>。</div>
 <div class="options" style="grid-template-columns:1fr">
 <div class="option"><input id="q11a" name="q11" type="radio" value="0"/><label for="q11a"><span class="opt-key">1.</span><span class="opt-body"><ruby>優勝<rt>ゆうしょう</rt></ruby>できました</span></label></div>
 <div class="option"><input id="q11b" name="q11" type="radio" value="0"/><label for="q11b"><span class="opt-key">2.</span><span class="opt-body">よかったです</span></label></div>
@@ -209,34 +210,34 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">12</span>「〜のに」（<ruby>逆接<rt>ぎゃくせつ</rt></ruby>）の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
+<div class="q-text"><span class="q-num">12</span>「〜のに」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
 <div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q12a" name="q12" type="radio" value="0"/><label for="q12a"><span class="opt-key">1.</span><span class="opt-body">〜のために（<ruby>目的<rt>もくてき</rt></ruby>）</span></label></div>
+<div class="option"><input id="q12a" name="q12" type="radio" value="0"/><label for="q12a"><span class="opt-key">1.</span><span class="opt-body">〜のために</span></label></div>
 <div class="option"><input id="q12b" name="q12" type="radio" value="0"/><label for="q12b"><span class="opt-key">2.</span><span class="opt-body">〜という<ruby>理由<rt>りゆう</rt></ruby>で</span></label></div>
-<div class="option"><input id="q12c" name="q12" type="radio" value="1"/><label for="q12c"><span class="opt-key">3.</span><span class="opt-body">〜にもかかわらず（<ruby>前<rt>まえ</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>に<ruby>反<rt>はん</rt></ruby>した<ruby>結果<rt>けっか</rt></ruby>・<ruby>不満<rt>ふまん</rt></ruby>・<ruby>意外<rt>いがい</rt></ruby>）</span></label></div>
+<div class="option"><input id="q12c" name="q12" type="radio" value="1"/><label for="q12c"><span class="opt-key">3.</span><span class="opt-body">〜にもかかわらず</span></label></div>
 <div class="option"><input id="q12d" name="q12" type="radio" value="0"/><label for="q12d"><span class="opt-key">4.</span><span class="opt-body">〜する<ruby>方法<rt>ほうほう</rt></ruby></span></label></div>
 </div>
 <div class="explanation">✅ 正解：3 — 逆接の「のに」は「〜にもかかわらず」という意味で、話者の不満・意外・残念な気持ちを含みます。目的の「のに」（〜するのに必要）とは異なります。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">13</span>「<ruby>冬<rt>ふゆ</rt></ruby><span class="blank-paren">（　　　　）</span>に、<ruby>桜<rt>さくら</rt></ruby>が <ruby>咲<rt>さ</rt></ruby>いて います。」（<ruby>冬<rt>ふゆ</rt></ruby>：<ruby>名詞<rt>めいし</rt></ruby>＋なのに）</div>
+<div class="q-text"><span class="q-num">13</span><ruby>冬<rt>ふゆ</rt></ruby><span class="blank-paren">（　　　　）</span>に、<ruby>桜<rt>さくら</rt></ruby>が <ruby>咲<rt>さ</rt></ruby>いて います。</div>
 <div class="options">
 <div class="option"><input id="q13a" name="q13" type="radio" value="0"/><label for="q13a"><span class="opt-key">1.</span><span class="opt-body">だの</span></label></div>
 <div class="option"><input id="q13b" name="q13" type="radio" value="1"/><label for="q13b"><span class="opt-key">2.</span><span class="opt-body">なの</span></label></div>
-<div class="option"><input id="q13c" name="q13" type="radio" value="0"/><label for="q13c"><span class="opt-key">3.</span><span class="opt-body">のの</span></label></div>
+<div class="option"><input id="q13c" name="q13" type="radio" value="0"/><label for="q13c"><span class="opt-key">3.</span><span class="opt-body">のに</span></label></div>
 <div class="option"><input id="q13d" name="q13" type="radio" value="0"/><label for="q13d"><span class="opt-key">4.</span><span class="opt-body">での</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 名詞に「のに」を接続するときは「名詞＋なのに」の形を使います。「冬なのに」＝冬であるにもかかわらず。「だのに」は口語的で、「のの・での」は間違いです。</div>
+<div class="explanation">✅ 正解：2 — 名詞に「のに」を接続するときは「名詞＋なのに」の形を使います。「冬なのに」＝冬であるにもかかわらず。「だのに」は口語的で、「のに・での」は間違いです。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">14</span>「〜のに」の<ruby>前<rt>まえ</rt></ruby>に<ruby>来<rt>く</rt></ruby>る<ruby>形<rt>かたち</rt></ruby>はどれですか。（な<ruby>形容詞<rt>けいようし</rt></ruby>「<ruby>有名<rt>ゆうめい</rt></ruby>」の<ruby>場合<rt>ばあい</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">14</span>「〜のに」の<ruby>前<rt>まえ</rt></ruby>に<ruby>来<rt>く</rt></ruby>る<ruby>形<rt>かたち</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q14a" name="q14" type="radio" value="0"/><label for="q14a"><span class="opt-key">1.</span><span class="opt-body"><ruby>有名<rt>ゆうめい</rt></ruby>いのに</span></label></div>
 <div class="option"><input id="q14b" name="q14" type="radio" value="0"/><label for="q14b"><span class="opt-key">2.</span><span class="opt-body"><ruby>有名<rt>ゆうめい</rt></ruby>くのに</span></label></div>
 <div class="option"><input id="q14c" name="q14" type="radio" value="1"/><label for="q14c"><span class="opt-key">3.</span><span class="opt-body"><ruby>有名<rt>ゆうめい</rt></ruby>なのに</span></label></div>
-<div class="option"><input id="q14d" name="q14" type="radio" value="0"/><label for="q14d"><span class="opt-key">4.</span><span class="opt-body"><ruby>有名<rt>ゆうめい</rt></ruby>ののに</span></label></div>
+<div class="option"><input id="q14d" name="q14" type="radio" value="0"/><label for="q14d"><span class="opt-key">4.</span><span class="opt-body"><ruby>有名<rt>ゆうめい</rt></ruby>のに</span></label></div>
 </div>
 <div class="explanation">✅ 正解：3 — な形容詞は「語幹＋な＋のに」の形を使います。「有名なのに」が正しい形です。「有名いのに・有名くのに」はい形容詞の活用で間違いです。</div>
 </div>
@@ -251,7 +252,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="q-text"><span class="q-num">15</span>「<ruby>約束<rt>やくそく</rt></ruby>を しましたが、<ruby>彼女<rt>かのじょ</rt></ruby>は <ruby>来<rt>き</rt></ruby>ませんでした。」と「<ruby>約束<rt>やくそく</rt></ruby>を したのに、<ruby>彼女<rt>かのじょ</rt></ruby>は <ruby>来<rt>き</rt></ruby>ませんでした。」の<ruby>違<rt>ちが</rt></ruby>いはどれですか。</div>
 <div class="options" style="grid-template-columns:1fr">
 <div class="option"><input id="q15a" name="q15" type="radio" value="0"/><label for="q15a"><span class="opt-key">1.</span><span class="opt-body"><ruby>意味<rt>いみ</rt></ruby>は<ruby>全<rt>まった</rt></ruby>く<ruby>同<rt>おな</rt></ruby>じ</span></label></div>
-<div class="option"><input id="q15b" name="q15" type="radio" value="1"/><label for="q15b"><span class="opt-key">2.</span><span class="opt-body">「が」は<ruby>単純<rt>たんじゅん</rt></ruby>な<ruby>対比<rt>たいひ</rt></ruby>・<ruby>逆接<rt>ぎゃくせつ</rt></ruby>、「のに」は<ruby>期待外<rt>きたいはず</rt></ruby>れ・<ruby>不満<rt>ふまん</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちを<ruby>含<rt>ふく</rt></ruby>む</span></label></div>
+<div class="option"><input id="q15b" name="q15" type="radio" value="1"/><label for="q15b"><span class="opt-key">2.</span><span class="opt-body">「のに」は<ruby>不満<rt>ふまん</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちを<ruby>含<rt>ふく</rt></ruby>む</span></label></div>
 <div class="option"><input id="q15c" name="q15" type="radio" value="0"/><label for="q15c"><span class="opt-key">3.</span><span class="opt-body">「のに」は<ruby>過去<rt>かこ</rt></ruby>にのみ<ruby>使<rt>つか</rt></ruby>える</span></label></div>
 <div class="option"><input id="q15d" name="q15" type="radio" value="0"/><label for="q15d"><span class="opt-key">4.</span><span class="opt-body">「が」の<ruby>方<rt>ほう</rt></ruby>が<ruby>不満<rt>ふまん</rt></ruby>が<ruby>強<rt>つよ</rt></ruby>い</span></label></div>
 </div>
@@ -261,7 +262,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="question">
 <div class="q-text"><span class="q-num">16</span>「〜のに」と「〜ても」の<ruby>違<rt>ちが</rt></ruby>いとして<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</div>
 <div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q16a" name="q16" type="radio" value="1"/><label for="q16a"><span class="opt-key">1.</span><span class="opt-body">「のに」は<ruby>実際<rt>じっさい</rt></ruby>に<ruby>起<rt>お</rt></ruby>きたこと（<ruby>過去<rt>かこ</rt></ruby>・<ruby>現在<rt>げんざい</rt></ruby>の<ruby>事実<rt>じじつ</rt></ruby>）を<ruby>逆接<rt>ぎゃくせつ</rt></ruby>で<ruby>述<rt>の</rt></ruby>べる、「ても」は<ruby>仮定<rt>かてい</rt></ruby>の<ruby>逆接<rt>ぎゃくせつ</rt></ruby><ruby>条件<rt>じょうけん</rt></ruby>にも<ruby>使<rt>つか</rt></ruby>える</span></label></div>
+<div class="option"><input id="q16a" name="q16" type="radio" value="1"/><label for="q16a"><span class="opt-key">1.</span><span class="opt-body">「のに」は<ruby>実際<rt>じっさい</rt></ruby>に<ruby>起<rt>お</rt></ruby>きた<ruby>事実<rt>じじつ</rt></ruby>を<ruby>逆接<rt>ぎゃくせつ</rt></ruby>で<ruby>述<rt>の</rt></ruby>べる</span></label></div>
 <div class="option"><input id="q16b" name="q16" type="radio" value="0"/><label for="q16b"><span class="opt-key">2.</span><span class="opt-body">「のに」は<ruby>仮定<rt>かてい</rt></ruby><ruby>条件<rt>じょうけん</rt></ruby>にも<ruby>使<rt>つか</rt></ruby>える</span></label></div>
 <div class="option"><input id="q16c" name="q16" type="radio" value="0"/><label for="q16c"><span class="opt-key">3.</span><span class="opt-body"><ruby>意味<rt>いみ</rt></ruby>は<ruby>全<rt>まった</rt></ruby>く<ruby>同<rt>おな</rt></ruby>じ</span></label></div>
 <div class="option"><input id="q16d" name="q16" type="radio" value="0"/><label for="q16d"><span class="opt-key">4.</span><span class="opt-body">「ても」のみ<ruby>実際<rt>じっさい</rt></ruby>に<ruby>起<rt>お</rt></ruby>きた<ruby>事実<rt>じじつ</rt></ruby>を<ruby>述<rt>の</rt></ruby>べる</span></label></div>
@@ -272,10 +273,10 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="question">
 <div class="q-text"><span class="q-num">17</span><ruby>次<rt>つぎ</rt></ruby>のうち「のに」を<ruby>使<rt>つか</rt></ruby>った<ruby>正<rt>ただ</rt></ruby>しい<ruby>文<rt>ぶん</rt></ruby>はどれですか。</div>
 <div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q17a" name="q17" type="radio" value="0"/><label for="q17a"><span class="opt-key">1.</span><span class="opt-body">あした <ruby>雨<rt>あめ</rt></ruby>が <ruby>降<rt>ふ</rt></ruby>るのに、サッカーを します。（<ruby>仮定<rt>かてい</rt></ruby>の<ruby>逆接<rt>ぎゃくせつ</rt></ruby>）</span></label></div>
-<div class="option"><input id="q17b" name="q17" type="radio" value="1"/><label for="q17b"><span class="opt-key">2.</span><span class="opt-body">きょうは <ruby>日曜日<rt>にちようび</rt></ruby>なのに、<ruby>働<rt>はたら</rt></ruby>かなければ なりません。（<ruby>現在<rt>げんざい</rt></ruby>の<ruby>事実<rt>じじつ</rt></ruby>に<ruby>対<rt>たい</rt></ruby>する<ruby>不満<rt>ふまん</rt></ruby>）</span></label></div>
-<div class="option"><input id="q17c" name="q17" type="radio" value="0"/><label for="q17c"><span class="opt-key">3.</span><span class="opt-body">お<ruby>金<rt>かね</rt></ruby>が あったのに、<ruby>何<rt>なん</rt></ruby>でも <ruby>買<rt>か</rt></ruby>えます。（<ruby>仮定<rt>かてい</rt></ruby>）</span></label></div>
-<div class="option"><input id="q17d" name="q17" type="radio" value="0"/><label for="q17d"><span class="opt-key">4.</span><span class="opt-body"><ruby>暑<rt>あつ</rt></ruby>く なるのに、コートを <ruby>着<rt>き</rt></ruby>ます。（<ruby>仮定<rt>かてい</rt></ruby>）</span></label></div>
+<div class="option"><input id="q17a" name="q17" type="radio" value="0"/><label for="q17a"><span class="opt-key">1.</span><span class="opt-body">あした <ruby>雨<rt>あめ</rt></ruby>が <ruby>降<rt>ふ</rt></ruby>るのに、サッカーを します。</span></label></div>
+<div class="option"><input id="q17b" name="q17" type="radio" value="1"/><label for="q17b"><span class="opt-key">2.</span><span class="opt-body">きょうは <ruby>日曜日<rt>にちようび</rt></ruby>なのに、<ruby>働<rt>はたら</rt></ruby>かなければ なりません。</span></label></div>
+<div class="option"><input id="q17c" name="q17" type="radio" value="0"/><label for="q17c"><span class="opt-key">3.</span><span class="opt-body">お<ruby>金<rt>かね</rt></ruby>が あったのに、<ruby>何<rt>なん</rt></ruby>でも <ruby>買<rt>か</rt></ruby>えます。</span></label></div>
+<div class="option"><input id="q17d" name="q17" type="radio" value="0"/><label for="q17d"><span class="opt-key">4.</span><span class="opt-body"><ruby>暑<rt>あつ</rt></ruby>く なるのに、コートを <ruby>着<rt>き</rt></ruby>ます。</span></label></div>
 </div>
 <div class="explanation">✅ 正解：2 — 「きょうは日曜日なのに、働かなければなりません。」は現在の事実に対する不満を表す正しい使い方です。</div>
 </div>
@@ -341,6 +342,7 @@ return items.findIndex(function(el){return el.querySelector('input[type="radio"]
 }
 const posCounts=[0,0,0,0];
 document.querySelectorAll('.options').forEach(function(optsDiv){
+if(optsDiv.classList.contains('no-shuffle'))return;
 const items=Array.prototype.filter.call(optsDiv.children,function(el){
 return el.classList&&el.classList.contains('option');
 });
@@ -386,19 +388,60 @@ else el.className='timer';
 if(timeLeft<=0){clearInterval(timerInterval);submitTest();}
 },1000);
 }
+function gradeCheckboxExact(name,mustArr){
+const inputs=[...document.querySelectorAll(`input[name="${name}"]`)];
+const checked=inputs.filter(i=>i.checked).map(i=>i.value);
+const must=new Set(mustArr);
+if(checked.length!==must.size)return false;
+for(const v of checked){if(!must.has(v))return false;}
+for(const v of must){if(!checked.includes(v))return false;}
+return true;
+}
+function markCheckboxQuestion(name,goodVals){
+document.querySelectorAll(`input[name="${name}"]`).forEach(inp=>{
+const p=inp.closest('.option');
+if(!p)return;
+const ok=goodVals.includes(inp.value);
+if(ok)p.classList.add('correct');
+if(inp.checked&&!ok)p.classList.add('wrong');
+});
+}
+function gradeQ1(){
+const checked=[...document.querySelectorAll('input[name="q1"]:checked')].map(i=>i.value);
+if(checked.some(v=>v==='w1'||v==='w2'))return false;
+return checked.includes('b');
+}
+function markQ1(){
+document.querySelectorAll('input[name="q1"]').forEach(inp=>{
+const p=inp.closest('.option');
+if(!p)return;
+if(inp.value==='b')p.classList.add('correct');
+else if(inp.value==='a')p.classList.add('alt-correct');
+else if(inp.checked)p.classList.add('wrong');
+});
+}
 function submitTest(){
 if(submitted)return;submitted=true;
 if(timerInterval)clearInterval(timerInterval);
 let correct=0;
 for(let i=1;i<=TOTAL;i++){
+if(i===1){
+if(gradeQ1())correct++;
+markQ1();
+}else if(i===9){
+if(gradeCheckboxExact('q9',['1','2']))correct++;
+markCheckboxQuestion('q9',['1','2']);
+}else{
 const sel=document.querySelector(`input[name="q${i}"]:checked`);
 const opts=document.querySelectorAll(`input[name="q${i}"]`);
 if(sel&&sel.value==='1'){correct++;}
 opts.forEach(o=>{
-const p=o.parentElement;
+const p=o.closest('.option');
+if(!p)return;
 if(o.value==='1')p.classList.add('correct');
 else if(o.checked&&o.value!=='1')p.classList.add('wrong');
 });
+}
 }
 document.querySelectorAll('.explanation').forEach(e=>e.classList.add('show'));
 const pct=Math.round((correct/TOTAL)*100);
