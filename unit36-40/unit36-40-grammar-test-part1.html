@@ -37,6 +37,7 @@ header h1{font-size:1.35em;margin-bottom:4px}
 .option label:hover{border-color:#1e3a8a;background:#f0f4ff}
 .option input:checked+label{border-color:#1e3a8a;background:#e8eeff;color:#0f1f4d;font-weight:600}
 .option.correct label{border-color:#48bb78!important;background:#f0fff4!important;color:#276749!important}
+.option.alt-correct label{border-color:#f6ad55!important;background:#fffbeb!important;color:#975a16!important}
 .option.wrong label{border-color:#fc8181!important;background:#fff5f5!important;color:#9b2c2c!important}
 .dialogue{margin:6px 0 12px;padding:14px 16px;background:#f7fafc;border-left:3px solid #1e3a8a;border-radius:0 8px 8px 0;font-size:1.02em;line-height:1.9}
 .dialogue p{margin:0 0 .5em;padding:0}
@@ -116,12 +117,12 @@ ruby rt{font-size:.6em;color:#555}
 <div class="question">
 <div class="q-text"><span class="q-num">4</span><ruby>薬<rt>くすり</rt></ruby>を<ruby>飲<rt>の</rt></ruby>む<span class="blank-paren">（　　　）</span>を<ruby>忘<rt>わす</rt></ruby>れてしまいました。</div>
 <div class="options">
-<div class="option"><input id="q4a" name="q4" type="radio" value="0"/><label for="q4a"><span class="opt-key">1.</span><span class="opt-body">こと</span></label></div>
+<div class="option"><input id="q4a" name="q4" type="radio" value="2"/><label for="q4a"><span class="opt-key">1.</span><span class="opt-body">こと</span></label></div>
 <div class="option"><input id="q4b" name="q4" type="radio" value="0"/><label for="q4b"><span class="opt-key">2.</span><span class="opt-body">ため</span></label></div>
 <div class="option"><input id="q4c" name="q4" type="radio" value="1"/><label for="q4c"><span class="opt-key">3.</span><span class="opt-body">の</span></label></div>
 <div class="option"><input id="q4d" name="q4" type="radio" value="0"/><label for="q4d"><span class="opt-key">4.</span><span class="opt-body">よう</span></label></div>
 </div>
-<div class="explanation">✅ 正解：3 — 〜のを忘れる：動詞辞書形＋のを忘れる（のは具体的な行為の名詞化）【第38課】</div>
+<div class="explanation">✅ 正解：3 — 〜のを忘れる：動詞辞書形＋のを忘れる（のは具体的な行為の名詞化）。1（こと）も使えます。【第38課】</div>
 </div>
 
 <!-- Q5 -->
@@ -157,11 +158,11 @@ ruby rt{font-size:.6em;color:#555}
 <div class="q-text"><span class="q-num">7</span><ruby>歌<rt>うた</rt></ruby>を<ruby>歌<rt>うた</rt></ruby>う<span class="blank-paren">（　　　）</span>が<ruby>得意<rt>とくい</rt></ruby>です。</div>
 <div class="options">
 <div class="option"><input id="q7a" name="q7" type="radio" value="1"/><label for="q7a"><span class="opt-key">1.</span><span class="opt-body">の</span></label></div>
-<div class="option"><input id="q7b" name="q7" type="radio" value="0"/><label for="q7b"><span class="opt-key">2.</span><span class="opt-body">こと</span></label></div>
+<div class="option"><input id="q7b" name="q7" type="radio" value="2"/><label for="q7b"><span class="opt-key">2.</span><span class="opt-body">こと</span></label></div>
 <div class="option"><input id="q7c" name="q7" type="radio" value="0"/><label for="q7c"><span class="opt-key">3.</span><span class="opt-body">もの</span></label></div>
 <div class="option"><input id="q7d" name="q7" type="radio" value="0"/><label for="q7d"><span class="opt-key">4.</span><span class="opt-body">から</span></label></div>
 </div>
-<div class="explanation">✅ 正解：1 — 〜のが得意：動詞辞書形＋のが＋評価（のは具体的な行為の名詞化）【第38課】</div>
+<div class="explanation">✅ 正解：1 — 〜のが得意：動詞辞書形＋のが＋評価（のは具体的な行為の名詞化）。2（こと）も使えます。【第38課】</div>
 </div>
 
 <!-- Q8 -->
@@ -184,24 +185,24 @@ ruby rt{font-size:.6em;color:#555}
 <p><span class="sp">B：</span><ruby>明日<rt>あした</rt></ruby><ruby>大切<rt>たいせつ</rt></ruby>な<ruby>発表<rt>はっぴょう</rt></ruby>がある<span class="blank-paren">（　　　）</span>、<ruby>今夜<rt>こんや</rt></ruby>は<ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>ます。</p>
 </div>
 <div class="options">
-<div class="option"><input id="q9a" name="q9" type="radio" value="0"/><label for="q9a"><span class="opt-key">1.</span><span class="opt-body">から</span></label></div>
+<div class="option"><input id="q9a" name="q9" type="radio" value="2"/><label for="q9a"><span class="opt-key">1.</span><span class="opt-body">から</span></label></div>
 <div class="option"><input id="q9b" name="q9" type="radio" value="0"/><label for="q9b"><span class="opt-key">2.</span><span class="opt-body">て</span></label></div>
 <div class="option"><input id="q9c" name="q9" type="radio" value="1"/><label for="q9c"><span class="opt-key">3.</span><span class="opt-body">ので</span></label></div>
 <div class="option"><input id="q9d" name="q9" type="radio" value="0"/><label for="q9d"><span class="opt-key">4.</span><span class="opt-body">のに</span></label></div>
 </div>
-<div class="explanation">✅ 正解：3 — 〜ので：普通形＋ので（ていねいな理由表現）【第39課】</div>
+<div class="explanation">✅ 正解：3 — 〜ので：普通形＋ので（ていねいな理由表現）。1（から）も使えます。【第39課】</div>
 </div>
 
 <!-- Q10 -->
 <div class="question">
 <div class="q-text"><span class="q-num">10</span><ruby>宮崎<rt>みやざき</rt></ruby>さんに<ruby>赤<rt>あか</rt></ruby>ちゃんが<ruby>生<rt>う</rt></ruby>まれた<span class="blank-paren">（　　　）</span>を<ruby>知<rt>し</rt></ruby>っていますか。</div>
 <div class="options">
-<div class="option"><input id="q10a" name="q10" type="radio" value="0"/><label for="q10a"><span class="opt-key">1.</span><span class="opt-body">こと</span></label></div>
+<div class="option"><input id="q10a" name="q10" type="radio" value="2"/><label for="q10a"><span class="opt-key">1.</span><span class="opt-body">こと</span></label></div>
 <div class="option"><input id="q10b" name="q10" type="radio" value="0"/><label for="q10b"><span class="opt-key">2.</span><span class="opt-body">ため</span></label></div>
 <div class="option"><input id="q10c" name="q10" type="radio" value="1"/><label for="q10c"><span class="opt-key">3.</span><span class="opt-body">の</span></label></div>
 <div class="option"><input id="q10d" name="q10" type="radio" value="0"/><label for="q10d"><span class="opt-key">4.</span><span class="opt-body">よう</span></label></div>
 </div>
-<div class="explanation">✅ 正解：3 — 〜のを知っている：動詞た形＋のを知っている（目撃・把握できる事柄）【第38課】</div>
+<div class="explanation">✅ 正解：3 — 〜のを知っている：動詞た形＋のを知っている（目撃・把握できる事柄）。1（こと）も使えます。【第38課】</div>
 </div>
 
 <!-- Q11 -->
@@ -406,6 +407,7 @@ function submitTest(){
     document.querySelectorAll(`input[name="q${i}"]`).forEach(o=>{
       const p=o.parentElement;
       if(o.value==='1')p.classList.add('correct');
+      else if(o.value==='2')p.classList.add('alt-correct');
       else if(o.checked)p.classList.add('wrong');
     });
     if(sel&&sel.value==='1')correct++;
