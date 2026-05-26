@@ -26,6 +26,8 @@ header h1{font-size:1.45em;margin-bottom:4px}
 .question:last-child{border-bottom:none}
 .q-num{display:inline-block;background:#2b6cb0;color:#fff;width:28px;height:28px;text-align:center;line-height:28px;border-radius:50%;font-size:.85em;font-weight:bold;margin-right:8px}
 .q-text{font-size:1.05em;margin-bottom:12px;font-weight:500}
+.dialogue{background:#f7fafc;border-left:4px solid #2b6cb0;padding:14px 16px;border-radius:0 8px 8px 0;margin-bottom:14px;font-size:1em;line-height:1.9}
+.dialogue .sp{font-weight:700;color:#2b6cb0}
 .options{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:stretch}
 @media(max-width:600px){.options{grid-template-columns:1fr}}
 .option{position:relative;display:flex;min-height:0}
@@ -36,6 +38,7 @@ header h1{font-size:1.45em;margin-bottom:4px}
 .option label:hover{border-color:#2b6cb0;background:#f0f7ff}
 .option input:checked+label{border-color:#2b6cb0;background:#e8f2fc;color:#1a365d;font-weight:600}
 .option.correct label{border-color:#48bb78!important;background:#f0fff4!important;color:#276749!important}
+.option.correct-alt label{border-color:#ecc94b!important;background:#fffbeb!important;color:#975a16!important}
 .option.wrong label{border-color:#fc8181!important;background:#fff5f5!important;color:#9b2c2c!important}
 .btn-submit{display:block;width:100%;min-height:48px;padding:16px;background:linear-gradient(135deg,#2b6cb0 0%,#2c5282 100%);color:#fff;border:none;border-radius:12px;font-size:1.1em;font-weight:bold;cursor:pointer;transition:transform .2s,box-shadow .2s;margin-top:24px;touch-action:manipulation;-webkit-user-select:none;user-select:none}
 .btn-submit:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(43,108,176,.4)}
@@ -76,7 +79,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <p class="section-lead"><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 
 <div class="question">
-<div class="q-text"><span class="q-num">1</span>「<ruby>今<rt>いま</rt></ruby>から <ruby>試合<rt>しあい</rt></ruby>が <span class="blank-paren">（　　　　）</span>ところです。」（<ruby>始<rt>はじ</rt></ruby>まります→<ruby>辞書形<rt>じしょけい</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">1</span><ruby>今<rt>いま</rt></ruby>から <ruby>試合<rt>しあい</rt></ruby>が <span class="blank-paren">（　　　　）</span>ところです。</div>
 <div class="options">
 <div class="option"><input id="q1a" name="q1" type="radio" value="0"/><label for="q1a"><span class="opt-key">1.</span><span class="opt-body"><ruby>始<rt>はじ</rt></ruby>まった</span></label></div>
 <div class="option"><input id="q1b" name="q1" type="radio" value="0"/><label for="q1b"><span class="opt-key">2.</span><span class="opt-body"><ruby>始<rt>はじ</rt></ruby>まっている</span></label></div>
@@ -87,7 +90,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">2</span>「<ruby>今<rt>いま</rt></ruby> <ruby>論文<rt>ろんぶん</rt></ruby>を <span class="blank-paren">（　　　　）</span>いる ところです。」</div>
+<div class="q-text"><span class="q-num">2</span><ruby>今<rt>いま</rt></ruby> <ruby>論文<rt>ろんぶん</rt></ruby>を <span class="blank-paren">（　　　　）</span>いる ところです。</div>
 <div class="options">
 <div class="option"><input id="q2a" name="q2" type="radio" value="1"/><label for="q2a"><span class="opt-key">1.</span><span class="opt-body"><ruby>書<rt>か</rt></ruby>いて</span></label></div>
 <div class="option"><input id="q2b" name="q2" type="radio" value="0"/><label for="q2b"><span class="opt-key">2.</span><span class="opt-body"><ruby>書<rt>か</rt></ruby>く</span></label></div>
@@ -98,7 +101,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">3</span>「たった<ruby>今<rt>いま</rt></ruby> バスが <span class="blank-paren">（　　　　）</span>ところです。」（<ruby>出<rt>で</rt></ruby>ます→た<ruby>形<rt>けい</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">3</span>たった<ruby>今<rt>いま</rt></ruby> バスが <span class="blank-paren">（　　　　）</span>ところです。</div>
 <div class="options">
 <div class="option"><input id="q3a" name="q3" type="radio" value="0"/><label for="q3a"><span class="opt-key">1.</span><span class="opt-body"><ruby>出<rt>で</rt></ruby>る</span></label></div>
 <div class="option"><input id="q3b" name="q3" type="radio" value="0"/><label for="q3b"><span class="opt-key">2.</span><span class="opt-body"><ruby>出<rt>で</rt></ruby>て</span></label></div>
@@ -142,7 +145,11 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">7</span>「もしもし、<ruby>今<rt>いま</rt></ruby> いいですか。……すみません。<span class="blank-paren">（　　　　）</span>ところなんです。」</div>
+<div class="q-text"><span class="q-num">7</span><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</div>
+<div class="dialogue">
+<span class="sp">Aさん：</span>もしもし、<ruby>今<rt>いま</rt></ruby> いいですか。<br/>
+<span class="sp">Bさん：</span>すみません。<span class="blank-paren">（　　　　）</span>ところなんです。
+</div>
 <div class="options" style="grid-template-columns:1fr">
 <div class="option"><input id="q7a" name="q7" type="radio" value="1"/><label for="q7a"><span class="opt-key">1.</span><span class="opt-body"><ruby>電車<rt>でんしゃ</rt></ruby>に <ruby>乗<rt>の</rt></ruby>っている</span></label></div>
 <div class="option"><input id="q7b" name="q7" type="radio" value="0"/><label for="q7b"><span class="opt-key">2.</span><span class="opt-body"><ruby>電車<rt>でんしゃ</rt></ruby>に <ruby>乗<rt>の</rt></ruby>った</span></label></div>
@@ -153,7 +160,11 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">8</span>「<ruby>故障<rt>こしょう</rt></ruby>の <ruby>原因<rt>げんいん</rt></ruby>は わかりましたか。……いいえ、<ruby>今<rt>いま</rt></ruby> <ruby>調<rt>しら</rt></ruby>べて <span class="blank-paren">（　　　　）</span>ところです。」</div>
+<div class="q-text"><span class="q-num">8</span><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</div>
+<div class="dialogue">
+<span class="sp">Aさん：</span><ruby>故障<rt>こしょう</rt></ruby>の <ruby>原因<rt>げんいん</rt></ruby>は わかりましたか。<br/>
+<span class="sp">Bさん：</span>いいえ、<ruby>今<rt>いま</rt></ruby> <ruby>調<rt>しら</rt></ruby>べて <span class="blank-paren">（　　　　）</span>ところです。
+</div>
 <div class="options">
 <div class="option"><input id="q8a" name="q8" type="radio" value="0"/><label for="q8a"><span class="opt-key">1.</span><span class="opt-body">ある</span></label></div>
 <div class="option"><input id="q8b" name="q8" type="radio" value="1"/><label for="q8b"><span class="opt-key">2.</span><span class="opt-body">いる</span></label></div>
@@ -170,7 +181,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <p class="section-lead"><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 
 <div class="question">
-<div class="q-text"><span class="q-num">9</span>「<ruby>先月<rt>せんげつ</rt></ruby> <ruby>会社<rt>かいしゃ</rt></ruby>に <span class="blank-paren">（　　　　）</span>ばかりです。」（<ruby>入<rt>はい</rt></ruby>ります→た<ruby>形<rt>けい</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">9</span><ruby>先月<rt>せんげつ</rt></ruby> <ruby>会社<rt>かいしゃ</rt></ruby>に <span class="blank-paren">（　　　　）</span>ばかりです。</div>
 <div class="options">
 <div class="option"><input id="q9a" name="q9" type="radio" value="0"/><label for="q9a"><span class="opt-key">1.</span><span class="opt-body"><ruby>入<rt>はい</rt></ruby>る</span></label></div>
 <div class="option"><input id="q9b" name="q9" type="radio" value="0"/><label for="q9b"><span class="opt-key">2.</span><span class="opt-body"><ruby>入<rt>はい</rt></ruby>って</span></label></div>
@@ -185,36 +196,36 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="options" style="grid-template-columns:1fr">
 <div class="option"><input id="q10a" name="q10" type="radio" value="0"/><label for="q10a"><span class="opt-key">1.</span><span class="opt-body">これからする</span></label></div>
 <div class="option"><input id="q10b" name="q10" type="radio" value="0"/><label for="q10b"><span class="opt-key">2.</span><span class="opt-body">している<ruby>途中<rt>とちゅう</rt></ruby></span></label></div>
-<div class="option"><input id="q10c" name="q10" type="radio" value="1"/><label for="q10c"><span class="opt-key">3.</span><span class="opt-body"><ruby>動作<rt>どうさ</rt></ruby>が<ruby>完了<rt>かんりょう</rt></ruby>してから<ruby>時間<rt>じかん</rt></ruby>があまりたっていないことを<ruby>表<rt>あらわ</rt></ruby>す</span></label></div>
+<div class="option"><input id="q10c" name="q10" type="radio" value="1"/><label for="q10c"><span class="opt-key">3.</span><span class="opt-body">〜してからすぐ</span></label></div>
 <div class="option"><input id="q10d" name="q10" type="radio" value="0"/><label for="q10d"><span class="opt-key">4.</span><span class="opt-body">まだしていない</span></label></div>
 </div>
-<div class="explanation">✅ 正解：3 — 「〜たばかりです」は動作が完了してからまだ時間があまりたっていないという主観的な感覚を表します。</div>
+<div class="explanation">✅ 正解：3 — 「〜たばかりです」は「〜してからすぐ」という意味で、動作が完了してからまだ時間があまりたっていないことを表します。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">11</span>「〜たところです」と「〜たばかりです」の<ruby>違<rt>ちが</rt></ruby>いはどれですか。</div>
-<div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q11a" name="q11" type="radio" value="0"/><label for="q11a"><span class="opt-key">1.</span><span class="opt-body">どちらも<ruby>全<rt>まった</rt></ruby>く<ruby>同<rt>おな</rt></ruby>じ<ruby>意味<rt>いみ</rt></ruby></span></label></div>
-<div class="option"><input id="q11b" name="q11" type="radio" value="1"/><label for="q11b"><span class="opt-key">2.</span><span class="opt-body">「〜たところです」は「たった<ruby>今<rt>いま</rt></ruby>」という<ruby>客観的<rt>きゃっかんてき</rt></ruby>な<ruby>直後<rt>ちょくご</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>し、「〜たばかりです」は「まだ<ruby>時間<rt>じかん</rt></ruby>がたっていない」という<ruby>主観的<rt>しゅかんてき</rt></ruby>な<ruby>感覚<rt>かんかく</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す</span></label></div>
-<div class="option"><input id="q11c" name="q11" type="radio" value="0"/><label for="q11c"><span class="opt-key">3.</span><span class="opt-body">「ばかりです」の<ruby>方<rt>ほう</rt></ruby>が<ruby>時間的<rt>じかんてき</rt></ruby>により<ruby>遠<rt>とお</rt></ruby>い<ruby>過去<rt>かこ</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す</span></label></div>
-<div class="option"><input id="q11d" name="q11" type="radio" value="0"/><label for="q11d"><span class="opt-key">4.</span><span class="opt-body">「ところです」の<ruby>方<rt>ほう</rt></ruby>が<ruby>主観的<rt>しゅかんてき</rt></ruby>な<ruby>感覚<rt>かんかく</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す</span></label></div>
+<div class="q-text"><span class="q-num">11</span>「〜たところです」と「〜たばかりです」の<ruby>違<rt>ちが</rt></ruby>いとして<ruby>正<rt>ただ</rt></ruby>しいものをすべて<ruby>選<rt>えら</rt></ruby>びなさい。</div>
+<div class="options options-multi no-shuffle" style="grid-template-columns:1fr">
+<div class="option"><input id="q11a" name="q11" type="checkbox" value="a"/><label for="q11a"><span class="opt-key">1.</span><span class="opt-body">「〜たところです」→ たった<ruby>今<rt>いま</rt></ruby>・<ruby>客観<rt>きゃっかん</rt></ruby></span></label></div>
+<div class="option"><input id="q11b" name="q11" type="checkbox" value="b"/><label for="q11b"><span class="opt-key">2.</span><span class="opt-body">「〜たばかりです」→ まだ<ruby>時間<rt>じかん</rt></ruby>がたっていない・<ruby>主観<rt>しゅかん</rt></ruby></span></label></div>
+<div class="option"><input id="q11c" name="q11" type="checkbox" value="w1"/><label for="q11c"><span class="opt-key">3.</span><span class="opt-body">どちらも<ruby>同<rt>おな</rt></ruby>じ<ruby>意味<rt>いみ</rt></ruby></span></label></div>
+<div class="option"><input id="q11d" name="q11" type="checkbox" value="w2"/><label for="q11d"><span class="opt-key">4.</span><span class="opt-body">「ばかりです」の<ruby>方<rt>ほう</rt></ruby>が<ruby>遠<rt>とお</rt></ruby>い<ruby>過去<rt>かこ</rt></ruby></span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「〜たところです」は「たった今」という客観的な直後を示し、「〜たばかりです」は「先月入ったばかり」のように主観的に時間がたっていない感覚を表します。</div>
+<div class="explanation">✅ 正解：1・2 — 「〜たところです」は「たった今」という客観的な直後を示し、「〜たばかりです」は「まだ時間がたっていない」という主観的な感覚を表します。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">12</span>「<ruby>先週<rt>せんしゅう</rt></ruby> <ruby>買<rt>か</rt></ruby>った<span class="blank-paren">（　　　　）</span>のに、もう <ruby>壊<rt>こわ</rt></ruby>れました。」</div>
+<div class="q-text"><span class="q-num">12</span><ruby>先週<rt>せんしゅう</rt></ruby> <ruby>買<rt>か</rt></ruby>った<span class="blank-paren">（　　　　）</span>なのに、もう <ruby>壊<rt>こわ</rt></ruby>れました。</div>
 <div class="options">
-<div class="option"><input id="q12a" name="q12" type="radio" value="0"/><label for="q12a"><span class="opt-key">1.</span><span class="opt-body">ところ</span></label></div>
+<div class="option"><input id="q12a" name="q12" type="radio" value="1"/><label for="q12a"><span class="opt-key">1.</span><span class="opt-body">ところ</span></label></div>
 <div class="option"><input id="q12b" name="q12" type="radio" value="1"/><label for="q12b"><span class="opt-key">2.</span><span class="opt-body">ばかり</span></label></div>
 <div class="option"><input id="q12c" name="q12" type="radio" value="0"/><label for="q12c"><span class="opt-key">3.</span><span class="opt-body">はず</span></label></div>
 <div class="option"><input id="q12d" name="q12" type="radio" value="0"/><label for="q12d"><span class="opt-key">4.</span><span class="opt-body">らしい</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「先週買ったばかりなのに」で「まだ日が浅いのに（不満）」という主観的な感覚と逆接を表します。「ところ」は直後すぎるため「先週」と合いません。</div>
+<div class="explanation">✅ 正解：1・2（どちらも正解）— 「先週買ったばかりなのに」で「まだ日が浅いのに（不満）」という主観的な感覚を表します。「先週買ったところなのに」も文として自然です。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">13</span><ruby>次<rt>つぎ</rt></ruby>のうち「ばかりです」を<ruby>使<rt>つか</rt></ruby>う<ruby>正<rt>ただ</rt></ruby>しい<ruby>文<rt>ぶん</rt></ruby>はどれですか。</div>
+<div class="q-text"><span class="q-num">13</span><ruby>次<rt>つぎ</rt></ruby>のうち「〜ばかりです」を<ruby>使<rt>つか</rt></ruby>う<ruby>正<rt>ただ</rt></ruby>しい<ruby>文<rt>ぶん</rt></ruby>はどれですか。</div>
 <div class="options" style="grid-template-columns:1fr">
 <div class="option"><input id="q13a" name="q13" type="radio" value="0"/><label for="q13a"><span class="opt-key">1.</span><span class="opt-body">これから <ruby>昼<rt>ひる</rt></ruby>ごはんを <ruby>食<rt>た</rt></ruby>べる ばかりです</span></label></div>
 <div class="option"><input id="q13b" name="q13" type="radio" value="0"/><label for="q13b"><span class="opt-key">2.</span><span class="opt-body"><ruby>今<rt>いま</rt></ruby> <ruby>会議<rt>かいぎ</rt></ruby>を している ばかりです</span></label></div>
@@ -285,6 +296,7 @@ return items.findIndex(function(el){return el.querySelector('input[type="radio"]
 }
 const posCounts=[0,0,0,0];
 document.querySelectorAll('.options').forEach(function(optsDiv){
+if(optsDiv.classList.contains('no-shuffle'))return;
 const items=Array.prototype.filter.call(optsDiv.children,function(el){
 return el.classList&&el.classList.contains('option');
 });
@@ -330,11 +342,33 @@ else el.className='timer';
 if(timeLeft<=0){clearInterval(timerInterval);submitTest();}
 },1000);
 }
+function gradeCheckboxExact(name,mustArr){
+const inputs=[...document.querySelectorAll(`input[name="${name}"]`)];
+const checked=inputs.filter(i=>i.checked).map(i=>i.value);
+const must=new Set(mustArr);
+if(checked.length!==must.size)return false;
+for(const v of checked){if(!must.has(v))return false;}
+for(const v of must){if(!checked.includes(v))return false;}
+return true;
+}
+function markCheckboxQuestion(name,goodVals){
+document.querySelectorAll(`input[name="${name}"]`).forEach(inp=>{
+const p=inp.closest('.option');
+if(!p)return;
+const ok=goodVals.includes(inp.value);
+if(ok)p.classList.add('correct');
+if(inp.checked&&!ok)p.classList.add('wrong');
+});
+}
 function submitTest(){
 if(submitted)return;submitted=true;
 if(timerInterval)clearInterval(timerInterval);
 let correct=0;
 for(let i=1;i<=TOTAL;i++){
+if(i===11){
+if(gradeCheckboxExact('q11',['a','b']))correct++;
+markCheckboxQuestion('q11',['a','b']);
+}else{
 const sel=document.querySelector(`input[name="q${i}"]:checked`);
 const opts=document.querySelectorAll(`input[name="q${i}"]`);
 if(sel&&sel.value==='1'){correct++;}
@@ -343,6 +377,7 @@ const p=o.parentElement;
 if(o.value==='1')p.classList.add('correct');
 else if(o.checked&&o.value!=='1')p.classList.add('wrong');
 });
+}
 }
 document.querySelectorAll('.explanation').forEach(e=>e.classList.add('show'));
 const pct=Math.round((correct/TOTAL)*100);
