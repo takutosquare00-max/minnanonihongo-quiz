@@ -27,7 +27,9 @@ header h1{font-size:1.45em;margin-bottom:4px}
 .q-num{display:inline-block;background:#2b6cb0;color:#fff;width:28px;height:28px;text-align:center;line-height:28px;border-radius:50%;font-size:.85em;font-weight:bold;margin-right:8px}
 .q-text{font-size:1.05em;margin-bottom:12px;font-weight:500}
 .options{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:stretch}
-@media(max-width:600px){.options{grid-template-columns:1fr}}
+.options.options-wide{grid-template-columns:1fr}
+.options.options-compact{grid-template-columns:1fr 1fr}
+@media(max-width:600px){.options:not(.options-compact){grid-template-columns:1fr}}
 .option{position:relative;display:flex;min-height:0}
 .option input{display:none}
 .option label{flex:1;display:flex;align-items:center;gap:8px;padding:12px 14px;border:2px solid #e2e8f0;border-radius:8px;cursor:pointer;transition:all .2s;font-size:.95em;touch-action:manipulation;-webkit-user-select:none;user-select:none;min-height:48px;width:100%;box-sizing:border-box}
@@ -76,7 +78,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <p class="section-lead"><ruby>活用形<rt>かつようけい</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 
 <div class="question">
-<div class="q-text"><span class="q-num">1</span>「<ruby>書<rt>か</rt></ruby>きます」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。（グループI）</div>
+<div class="q-text"><span class="q-num">1</span>「<ruby>書<rt>か</rt></ruby>きます」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q1a" name="q1" type="radio" value="1"/><label for="q1a"><span class="opt-key">1.</span><span class="opt-body"><ruby>書<rt>か</rt></ruby>かせます</span></label></div>
 <div class="option"><input id="q1b" name="q1" type="radio" value="0"/><label for="q1b"><span class="opt-key">2.</span><span class="opt-body"><ruby>書<rt>か</rt></ruby>きさせます</span></label></div>
@@ -87,7 +89,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">2</span>「<ruby>食<rt>た</rt></ruby>べます」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。（グループII）</div>
+<div class="q-text"><span class="q-num">2</span>「<ruby>食<rt>た</rt></ruby>べます」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q2a" name="q2" type="radio" value="0"/><label for="q2a"><span class="opt-key">1.</span><span class="opt-body"><ruby>食<rt>た</rt></ruby>べせます</span></label></div>
 <div class="option"><input id="q2b" name="q2" type="radio" value="1"/><label for="q2b"><span class="opt-key">2.</span><span class="opt-body"><ruby>食<rt>た</rt></ruby>べさせます</span></label></div>
@@ -98,7 +100,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">3</span>「きます」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。（グループIII・<ruby>特殊<rt>とくしゅ</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">3</span>「きます」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q3a" name="q3" type="radio" value="0"/><label for="q3a"><span class="opt-key">1.</span><span class="opt-body">きさせます</span></label></div>
 <div class="option"><input id="q3b" name="q3" type="radio" value="0"/><label for="q3b"><span class="opt-key">2.</span><span class="opt-body">きらせます</span></label></div>
@@ -109,7 +111,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">4</span>「します」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。（グループIII・<ruby>特殊<rt>とくしゅ</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">4</span>「します」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q4a" name="q4" type="radio" value="0"/><label for="q4a"><span class="opt-key">1.</span><span class="opt-body">しさせます</span></label></div>
 <div class="option"><input id="q4b" name="q4" type="radio" value="1"/><label for="q4b"><span class="opt-key">2.</span><span class="opt-body">させます</span></label></div>
@@ -120,7 +122,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">5</span>「<ruby>走<rt>はし</rt></ruby>ります」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。（グループI）</div>
+<div class="q-text"><span class="q-num">5</span>「<ruby>走<rt>はし</rt></ruby>ります」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q5a" name="q5" type="radio" value="1"/><label for="q5a"><span class="opt-key">1.</span><span class="opt-body"><ruby>走<rt>はし</rt></ruby>らせます</span></label></div>
 <div class="option"><input id="q5b" name="q5" type="radio" value="0"/><label for="q5b"><span class="opt-key">2.</span><span class="opt-body"><ruby>走<rt>はし</rt></ruby>りさせます</span></label></div>
@@ -131,7 +133,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">6</span>「<ruby>飲<rt>の</rt></ruby>みます」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。（グループI）</div>
+<div class="q-text"><span class="q-num">6</span>「<ruby>飲<rt>の</rt></ruby>みます」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q6a" name="q6" type="radio" value="0"/><label for="q6a"><span class="opt-key">1.</span><span class="opt-body"><ruby>飲<rt>の</rt></ruby>みさせます</span></label></div>
 <div class="option"><input id="q6b" name="q6" type="radio" value="0"/><label for="q6b"><span class="opt-key">2.</span><span class="opt-body"><ruby>飲<rt>の</rt></ruby>まさせます</span></label></div>
@@ -142,7 +144,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">7</span>「<ruby>休<rt>やす</rt></ruby>みます」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。（グループI）</div>
+<div class="q-text"><span class="q-num">7</span>「<ruby>休<rt>やす</rt></ruby>みます」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q7a" name="q7" type="radio" value="0"/><label for="q7a"><span class="opt-key">1.</span><span class="opt-body"><ruby>休<rt>やす</rt></ruby>みさせます</span></label></div>
 <div class="option"><input id="q7b" name="q7" type="radio" value="0"/><label for="q7b"><span class="opt-key">2.</span><span class="opt-body"><ruby>休<rt>やす</rt></ruby>めさせます</span></label></div>
@@ -153,7 +155,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">8</span>「<ruby>届<rt>とど</rt></ruby>けます」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。（グループII）</div>
+<div class="q-text"><span class="q-num">8</span>「<ruby>届<rt>とど</rt></ruby>けます」の<ruby>使役形<rt>しえきけい</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q8a" name="q8" type="radio" value="1"/><label for="q8a"><span class="opt-key">1.</span><span class="opt-body"><ruby>届<rt>とど</rt></ruby>けさせます</span></label></div>
 <div class="option"><input id="q8b" name="q8" type="radio" value="0"/><label for="q8b"><span class="opt-key">2.</span><span class="opt-body"><ruby>届<rt>とど</rt></ruby>けせます</span></label></div>
@@ -166,11 +168,11 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 
 <!-- セクション2: 使役文の助詞 -->
 <div class="section">
-<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>9〜14：<ruby>使役文<rt>しえきぶん</rt></ruby>の<ruby>助詞<rt>じょし</rt></ruby>（を vs に）</div>
+<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>9〜14：<ruby>使役文<rt>しえきぶん</rt></ruby>の<ruby>助詞<rt>じょし</rt></ruby></div>
 <p class="section-lead"><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 
 <div class="question">
-<div class="q-text"><span class="q-num">9</span>「<ruby>部長<rt>ぶちょう</rt></ruby>は ミラーさん<span class="blank-paren">（　　　　）</span>アメリカへ <ruby>出張<rt>しゅっちょう</rt></ruby>させました。」（<ruby>自動詞<rt>じどうし</rt></ruby>・<ruby>行先<rt>いきさき</rt></ruby>あり）</div>
+<div class="q-text"><span class="q-num">9</span><ruby>部長<rt>ぶちょう</rt></ruby>は ミラーさん<span class="blank-paren">（　　　　）</span>アメリカへ <ruby>出張<rt>しゅっちょう</rt></ruby>させました。</div>
 <div class="options">
 <div class="option"><input id="q9a" name="q9" type="radio" value="0"/><label for="q9a"><span class="opt-key">1.</span><span class="opt-body">に</span></label></div>
 <div class="option"><input id="q9b" name="q9" type="radio" value="1"/><label for="q9b"><span class="opt-key">2.</span><span class="opt-body">を</span></label></div>
@@ -181,7 +183,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">10</span>「わたしは <ruby>子<rt>こ</rt></ruby>ども<span class="blank-paren">（　　　　）</span><ruby>本<rt>ほん</rt></ruby>を <ruby>読<rt>よ</rt></ruby>ませます。」（<ruby>他動詞<rt>たどうし</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">10</span>わたしは <ruby>子<rt>こ</rt></ruby>ども<span class="blank-paren">（　　　　）</span><ruby>本<rt>ほん</rt></ruby>を <ruby>読<rt>よ</rt></ruby>ませます。</div>
 <div class="options">
 <div class="option"><input id="q10a" name="q10" type="radio" value="0"/><label for="q10a"><span class="opt-key">1.</span><span class="opt-body">を</span></label></div>
 <div class="option"><input id="q10b" name="q10" type="radio" value="0"/><label for="q10b"><span class="opt-key">2.</span><span class="opt-body">で</span></label></div>
@@ -192,7 +194,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">11</span>「お<ruby>母<rt>かあ</rt></ruby>さんは <ruby>娘<rt>むすめ</rt></ruby><span class="blank-paren">（　　　　）</span>ピアノを <ruby>習<rt>なら</rt></ruby>わせています。」（<ruby>他動詞<rt>たどうし</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">11</span>お<ruby>母<rt>かあ</rt></ruby>さんは <ruby>娘<rt>むすめ</rt></ruby><span class="blank-paren">（　　　　）</span>ピアノを <ruby>習<rt>なら</rt></ruby>わせています。</div>
 <div class="options">
 <div class="option"><input id="q11a" name="q11" type="radio" value="0"/><label for="q11a"><span class="opt-key">1.</span><span class="opt-body">を</span></label></div>
 <div class="option"><input id="q11b" name="q11" type="radio" value="1"/><label for="q11b"><span class="opt-key">2.</span><span class="opt-body">に</span></label></div>
@@ -203,7 +205,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">12</span>「わたしは <ruby>子<rt>こ</rt></ruby>ども<span class="blank-paren">（　　　　）</span><ruby>自由<rt>じゆう</rt></ruby>に <ruby>遊<rt>あそ</rt></ruby>ばせました。」（<ruby>自動詞<rt>じどうし</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">12</span>わたしは <ruby>子<rt>こ</rt></ruby>ども<span class="blank-paren">（　　　　）</span><ruby>自由<rt>じゆう</rt></ruby>に <ruby>遊<rt>あそ</rt></ruby>ばせました。</div>
 <div class="options">
 <div class="option"><input id="q12a" name="q12" type="radio" value="0"/><label for="q12a"><span class="opt-key">1.</span><span class="opt-body">に</span></label></div>
 <div class="option"><input id="q12b" name="q12" type="radio" value="0"/><label for="q12b"><span class="opt-key">2.</span><span class="opt-body">で</span></label></div>
@@ -214,25 +216,25 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">13</span><ruby>自動詞<rt>じどうし</rt></ruby>の<ruby>使役文<rt>しえきぶん</rt></ruby>で、させる<ruby>相手<rt>あいて</rt></ruby>（<ruby>人物<rt>じんぶつ</rt></ruby>）を<ruby>示<rt>しめ</rt></ruby>す<ruby>助詞<rt>じょし</rt></ruby>はどれですか。</div>
-<div class="options">
-<div class="option"><input id="q13a" name="q13" type="radio" value="0"/><label for="q13a"><span class="opt-key">1.</span><span class="opt-body">が</span></label></div>
-<div class="option"><input id="q13b" name="q13" type="radio" value="0"/><label for="q13b"><span class="opt-key">2.</span><span class="opt-body">で</span></label></div>
-<div class="option"><input id="q13c" name="q13" type="radio" value="1"/><label for="q13c"><span class="opt-key">3.</span><span class="opt-body">を</span></label></div>
-<div class="option"><input id="q13d" name="q13" type="radio" value="0"/><label for="q13d"><span class="opt-key">4.</span><span class="opt-body">に</span></label></div>
+<div class="q-text"><span class="q-num">13</span>正しい<ruby>文章<rt>ぶんしょう</rt></ruby>はどれですか。<ruby>複数<rt>ふくすう</rt></ruby><ruby>回答<rt>かいとう</rt></ruby><ruby>可能<rt>かのう</rt></ruby>。</div>
+<div class="options options-multi no-shuffle">
+<div class="option"><input id="q13a" name="q13" type="checkbox" value="a"/><label for="q13a"><span class="opt-key">1.</span><span class="opt-body">わたしは <ruby>息子<rt>むすこ</rt></ruby>に <ruby>公園<rt>こうえん</rt></ruby>で <ruby>走<rt>はし</rt></ruby>らせました。</span></label></div>
+<div class="option"><input id="q13b" name="q13" type="checkbox" value="b"/><label for="q13b"><span class="opt-key">2.</span><span class="opt-body">わたしは <ruby>息子<rt>むすこ</rt></ruby>を <ruby>公園<rt>こうえん</rt></ruby>で <ruby>走<rt>はし</rt></ruby>らせました。</span></label></div>
+<div class="option"><input id="q13c" name="q13" type="checkbox" value="w1"/><label for="q13c"><span class="opt-key">3.</span><span class="opt-body">わたしは <ruby>息子<rt>むすこ</rt></ruby>が <ruby>公園<rt>こうえん</rt></ruby>で <ruby>走<rt>はし</rt></ruby>らせました。</span></label></div>
+<div class="option"><input id="q13d" name="q13" type="checkbox" value="w2"/><label for="q13d"><span class="opt-key">4.</span><span class="opt-body">わたしは <ruby>息子<rt>むすこ</rt></ruby>で <ruby>公園<rt>こうえん</rt></ruby>で <ruby>走<rt>はし</rt></ruby>らせました。</span></label></div>
 </div>
-<div class="explanation">✅ 正解：3 — 自動詞の使役文では、させる対象（人）を「を」で示します。例：「子どもを走らせる」「息子をアメリカへ行かせる」。</div>
+<div class="explanation">✅ 正解：1・2 — 自動詞「走る」の使役文。息子を／息子に＋公園で走らせました。どちらも正しい使役文です。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">14</span><ruby>他動詞<rt>たどうし</rt></ruby>の<ruby>使役文<rt>しえきぶん</rt></ruby>で、させる<ruby>相手<rt>あいて</rt></ruby>（<ruby>人物<rt>じんぶつ</rt></ruby>）を<ruby>示<rt>しめ</rt></ruby>す<ruby>助詞<rt>じょし</rt></ruby>はどれですか。</div>
-<div class="options">
-<div class="option"><input id="q14a" name="q14" type="radio" value="0"/><label for="q14a"><span class="opt-key">1.</span><span class="opt-body">が</span></label></div>
-<div class="option"><input id="q14b" name="q14" type="radio" value="0"/><label for="q14b"><span class="opt-key">2.</span><span class="opt-body">で</span></label></div>
-<div class="option"><input id="q14c" name="q14" type="radio" value="0"/><label for="q14c"><span class="opt-key">3.</span><span class="opt-body">を</span></label></div>
-<div class="option"><input id="q14d" name="q14" type="radio" value="1"/><label for="q14d"><span class="opt-key">4.</span><span class="opt-body">に</span></label></div>
+<div class="q-text"><span class="q-num">14</span>正しい<ruby>文章<rt>ぶんしょう</rt></ruby>はどれですか。<ruby>複数<rt>ふくすう</rt></ruby><ruby>回答<rt>かいとう</rt></ruby><ruby>可能<rt>かのう</rt></ruby>。</div>
+<div class="options options-multi no-shuffle">
+<div class="option"><input id="q14a" name="q14" type="checkbox" value="w1"/><label for="q14a"><span class="opt-key">1.</span><span class="opt-body">わたしは <ruby>息子<rt>むすこ</rt></ruby>を ケーキを <ruby>食<rt>た</rt></ruby>べさせました。</span></label></div>
+<div class="option"><input id="q14b" name="q14" type="checkbox" value="a"/><label for="q14b"><span class="opt-key">2.</span><span class="opt-body">わたしは <ruby>息子<rt>むすこ</rt></ruby>に ケーキを <ruby>食<rt>た</rt></ruby>べさせました。</span></label></div>
+<div class="option"><input id="q14c" name="q14" type="checkbox" value="w2"/><label for="q14c"><span class="opt-key">3.</span><span class="opt-body">わたしは <ruby>息子<rt>むすこ</rt></ruby>が ケーキを <ruby>食<rt>た</rt></ruby>べさせました。</span></label></div>
+<div class="option"><input id="q14d" name="q14" type="checkbox" value="b"/><label for="q14d"><span class="opt-key">4.</span><span class="opt-body">わたしは ケーキを <ruby>息子<rt>むすこ</rt></ruby>に <ruby>食<rt>た</rt></ruby>べさせました。</span></label></div>
 </div>
-<div class="explanation">✅ 正解：4 — 他動詞の使役文では、させる対象（人）を「に」で示します。例：「子どもに本を読ませる」「生徒にピアノを習わせる」。</div>
+<div class="explanation">✅ 正解：2・4 — 他動詞「食べる」の使役文。息子に＋ケーキを／ケーキを息子に＋食べさせました。語順が違っても正しいです。</div>
 </div>
 </div>
 
@@ -242,7 +244,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <p class="section-lead"><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 
 <div class="question">
-<div class="q-text"><span class="q-num">15</span>「<ruby>来週<rt>らいしゅう</rt></ruby>、<ruby>休<rt>やす</rt></ruby>み<span class="blank-paren">（　　　　）</span>いただけませんか。」</div>
+<div class="q-text"><span class="q-num">15</span><ruby>来週<rt>らいしゅう</rt></ruby>、<ruby>休<rt>やす</rt></ruby>ま<span class="blank-paren">（　　　　）</span>いただけませんか。</div>
 <div class="options">
 <div class="option"><input id="q15a" name="q15" type="radio" value="1"/><label for="q15a"><span class="opt-key">1.</span><span class="opt-body">させて</span></label></div>
 <div class="option"><input id="q15b" name="q15" type="radio" value="0"/><label for="q15b"><span class="opt-key">2.</span><span class="opt-body">にして</span></label></div>
@@ -254,17 +256,17 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 
 <div class="question">
 <div class="q-text"><span class="q-num">16</span>「〜させていただけませんか」はどんな<ruby>意味<rt>いみ</rt></ruby>ですか。</div>
-<div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q16a" name="q16" type="radio" value="0"/><label for="q16a"><span class="opt-key">1.</span><span class="opt-body"><ruby>相手<rt>あいて</rt></ruby>に<ruby>何<rt>なに</rt></ruby>かをお<ruby>願<rt>ねが</rt></ruby>いする（<ruby>依頼<rt>いらい</rt></ruby>）</span></label></div>
-<div class="option"><input id="q16b" name="q16" type="radio" value="1"/><label for="q16b"><span class="opt-key">2.</span><span class="opt-body"><ruby>自分<rt>じぶん</rt></ruby>が<ruby>何<rt>なに</rt></ruby>かをしたいと<ruby>相手<rt>あいて</rt></ruby>に<ruby>許可<rt>きょか</rt></ruby>を<ruby>求<rt>もと</rt></ruby>める（<ruby>許可依頼<rt>きょかいらい</rt></ruby>）</span></label></div>
+<div class="options">
+<div class="option"><input id="q16a" name="q16" type="radio" value="0"/><label for="q16a"><span class="opt-key">1.</span><span class="opt-body"><ruby>相手<rt>あいて</rt></ruby>に<ruby>何<rt>なに</rt></ruby>かをお<ruby>願<rt>ねが</rt></ruby>いする</span></label></div>
+<div class="option"><input id="q16b" name="q16" type="radio" value="1"/><label for="q16b"><span class="opt-key">2.</span><span class="opt-body"><ruby>相手<rt>あいて</rt></ruby>に<ruby>許可<rt>きょか</rt></ruby>を<ruby>求<rt>もと</rt></ruby>める</span></label></div>
 <div class="option"><input id="q16c" name="q16" type="radio" value="0"/><label for="q16c"><span class="opt-key">3.</span><span class="opt-body"><ruby>相手<rt>あいて</rt></ruby>に<ruby>命令<rt>めいれい</rt></ruby>する</span></label></div>
 <div class="option"><input id="q16d" name="q16" type="radio" value="0"/><label for="q16d"><span class="opt-key">4.</span><span class="opt-body"><ruby>相手<rt>あいて</rt></ruby>を<ruby>禁止<rt>きんし</rt></ruby>する</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「〜させていただけませんか」は自分がその行為をしたいと相手に許可を求める丁寧な表現です。例：「帰らせていただけませんか（帰ってもいいですか）」。</div>
+<div class="explanation">✅ 正解：2 — 「〜させていただけませんか」は相手に許可を求める丁寧な表現です。例：「帰らせていただけませんか（帰ってもいいですか）」。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">17</span>「すみませんが、ここに <ruby>車<rt>くるま</rt></ruby>を <ruby>止<rt>と</rt></ruby>め<span class="blank-paren">（　　　　）</span>いただけませんか。」</div>
+<div class="q-text"><span class="q-num">17</span>すみませんが、ここに <ruby>車<rt>くるま</rt></ruby>を <ruby>止<rt>と</rt></ruby>め<span class="blank-paren">（　　　　）</span>いただけませんか。</div>
 <div class="options">
 <div class="option"><input id="q17a" name="q17" type="radio" value="1"/><label for="q17a"><span class="opt-key">1.</span><span class="opt-body">させて</span></label></div>
 <div class="option"><input id="q17b" name="q17" type="radio" value="0"/><label for="q17b"><span class="opt-key">2.</span><span class="opt-body">てもらって</span></label></div>
@@ -277,25 +279,25 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 
 <!-- セクション4: 使役の意味 -->
 <div class="section">
-<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>18〜20：<ruby>使役<rt>しえき</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>（<ruby>強制<rt>きょうせい</rt></ruby> vs <ruby>許可<rt>きょか</rt></ruby>）</div>
+<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>18〜20：<ruby>使役<rt>しえき</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby></div>
 <p class="section-lead"><ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 
 <div class="question">
 <div class="q-text"><span class="q-num">18</span><ruby>使役形<rt>しえきけい</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</div>
-<div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q18a" name="q18" type="radio" value="0"/><label for="q18a"><span class="opt-key">1.</span><span class="opt-body">〜することができる（<ruby>可能<rt>かのう</rt></ruby>）</span></label></div>
-<div class="option"><input id="q18b" name="q18" type="radio" value="0"/><label for="q18b"><span class="opt-key">2.</span><span class="opt-body">〜する（<ruby>意志<rt>いし</rt></ruby>）</span></label></div>
-<div class="option"><input id="q18c" name="q18" type="radio" value="1"/><label for="q18c"><span class="opt-key">3.</span><span class="opt-body">〜させる（<ruby>強制<rt>きょうせい</rt></ruby>・<ruby>許可<rt>きょか</rt></ruby>）</span></label></div>
-<div class="option"><input id="q18d" name="q18" type="radio" value="0"/><label for="q18d"><span class="opt-key">4.</span><span class="opt-body">〜してしまう（<ruby>完了<rt>かんりょう</rt></ruby>）</span></label></div>
+<div class="options">
+<div class="option"><input id="q18a" name="q18" type="radio" value="0"/><label for="q18a"><span class="opt-key">1.</span><span class="opt-body">〜することができる</span></label></div>
+<div class="option"><input id="q18b" name="q18" type="radio" value="0"/><label for="q18b"><span class="opt-key">2.</span><span class="opt-body">〜する</span></label></div>
+<div class="option"><input id="q18c" name="q18" type="radio" value="1"/><label for="q18c"><span class="opt-key">3.</span><span class="opt-body">〜させる</span></label></div>
+<div class="option"><input id="q18d" name="q18" type="radio" value="0"/><label for="q18d"><span class="opt-key">4.</span><span class="opt-body">〜してしまう</span></label></div>
 </div>
 <div class="explanation">✅ 正解：3 — 使役形には「強制（〜させる）」と「許可（〜させてあげる）」の2つの意味があります。文脈によってどちらかを判断します。</div>
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">19</span>「<ruby>先生<rt>せんせい</rt></ruby>は <ruby>生徒<rt>せいと</rt></ruby>に <ruby>自由<rt>じゆう</rt></ruby>に <ruby>意見<rt>いけん</rt></ruby>を <ruby>言<rt>い</rt></ruby>わせました。」この<ruby>文<rt>ぶん</rt></ruby>の<ruby>用法<rt>ようほう</rt></ruby>はどれですか。</div>
-<div class="options" style="grid-template-columns:1fr">
-<div class="option"><input id="q19a" name="q19" type="radio" value="0"/><label for="q19a"><span class="opt-key">1.</span><span class="opt-body"><ruby>強制<rt>きょうせい</rt></ruby>（<ruby>強引<rt>ごういん</rt></ruby>にやらせた）</span></label></div>
-<div class="option"><input id="q19b" name="q19" type="radio" value="1"/><label for="q19b"><span class="opt-key">2.</span><span class="opt-body"><ruby>許可<rt>きょか</rt></ruby>（<ruby>自由<rt>じゆう</rt></ruby>に<ruby>言<rt>い</rt></ruby>っていいよという<ruby>許可<rt>きょか</rt></ruby>）</span></label></div>
+<div class="q-text"><span class="q-num">19</span><ruby>先生<rt>せんせい</rt></ruby>は <ruby>生徒<rt>せいと</rt></ruby>に <ruby>自由<rt>じゆう</rt></ruby>に <ruby>意見<rt>いけん</rt></ruby>を <ruby>言<rt>い</rt></ruby>わせました。この<ruby>文<rt>ぶん</rt></ruby>の<ruby>用法<rt>ようほう</rt></ruby>はどれですか。</div>
+<div class="options">
+<div class="option"><input id="q19a" name="q19" type="radio" value="0"/><label for="q19a"><span class="opt-key">1.</span><span class="opt-body"><ruby>強制<rt>きょうせい</rt></ruby></span></label></div>
+<div class="option"><input id="q19b" name="q19" type="radio" value="1"/><label for="q19b"><span class="opt-key">2.</span><span class="opt-body"><ruby>許可<rt>きょか</rt></ruby></span></label></div>
 <div class="option"><input id="q19c" name="q19" type="radio" value="0"/><label for="q19c"><span class="opt-key">3.</span><span class="opt-body">どちらでもない</span></label></div>
 <div class="option"><input id="q19d" name="q19" type="radio" value="0"/><label for="q19d"><span class="opt-key">4.</span><span class="opt-body"><ruby>命令<rt>めいれい</rt></ruby></span></label></div>
 </div>
@@ -303,7 +305,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 
 <div class="question">
-<div class="q-text"><span class="q-num">20</span>「<ruby>毎日<rt>まいにち</rt></ruby> <ruby>子<rt>こ</rt></ruby>どもたちを 1キロ <ruby>走<rt>はし</rt></ruby>らせています。」この<ruby>文<rt>ぶん</rt></ruby>の<ruby>用法<rt>ようほう</rt></ruby>はどれですか。</div>
+<div class="q-text"><span class="q-num">20</span><ruby>毎日<rt>まいにち</rt></ruby> <ruby>子<rt>こ</rt></ruby>どもたちを 1キロ <ruby>走<rt>はし</rt></ruby>らせています。この<ruby>文<rt>ぶん</rt></ruby>の<ruby>用法<rt>ようほう</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q20a" name="q20" type="radio" value="0"/><label for="q20a"><span class="opt-key">1.</span><span class="opt-body"><ruby>許可<rt>きょか</rt></ruby></span></label></div>
 <div class="option"><input id="q20b" name="q20" type="radio" value="1"/><label for="q20b"><span class="opt-key">2.</span><span class="opt-body"><ruby>強制<rt>きょうせい</rt></ruby></span></label></div>
@@ -374,6 +376,7 @@ return items.findIndex(function(el){return el.querySelector('input[type="radio"]
 }
 const posCounts=[0,0,0,0];
 document.querySelectorAll('.options').forEach(function(optsDiv){
+if(optsDiv.classList.contains('no-shuffle'))return;
 const items=Array.prototype.filter.call(optsDiv.children,function(el){
 return el.classList&&el.classList.contains('option');
 });
@@ -405,6 +408,27 @@ if(slot<0)return;
 posCounts[slot]++;
 });
 }
+function optBodyLen(optionEl){
+const body=optionEl.querySelector('.opt-body');
+if(!body)return 0;
+const clone=body.cloneNode(true);
+clone.querySelectorAll('rt').forEach(function(r){r.remove();});
+return (clone.textContent||'').replace(/\s/g,'').length;
+}
+function applyOptionsLayout(){
+document.querySelectorAll('.options').forEach(function(optsDiv){
+const items=Array.prototype.filter.call(optsDiv.children,function(el){
+return el.classList&&el.classList.contains('option');
+});
+if(items.length<1)return;
+let maxLen=0;
+items.forEach(function(el){maxLen=Math.max(maxLen,optBodyLen(el));});
+optsDiv.classList.remove('options-compact','options-wide');
+if(maxLen<=10)optsDiv.classList.add('options-compact');
+else optsDiv.classList.add('options-wide');
+});
+}
+try{applyOptionsLayout();}catch(e){}
 try{shuffleAllOptions();}catch(e){}
 function startTimer(){
 timerInterval=setInterval(()=>{
@@ -419,11 +443,36 @@ else el.className='timer';
 if(timeLeft<=0){clearInterval(timerInterval);submitTest();}
 },1000);
 }
+function gradeCheckboxExact(name,mustArr){
+const inputs=[...document.querySelectorAll(`input[name="${name}"]`)];
+const checked=inputs.filter(i=>i.checked).map(i=>i.value);
+const must=new Set(mustArr);
+if(checked.length!==must.size)return false;
+for(const v of checked){if(!must.has(v))return false;}
+for(const v of must){if(!checked.includes(v))return false;}
+return true;
+}
+function markCheckboxQuestion(name,goodVals){
+document.querySelectorAll(`input[name="${name}"]`).forEach(inp=>{
+const p=inp.closest('.option');
+if(!p)return;
+const ok=goodVals.includes(inp.value);
+if(ok)p.classList.add('correct');
+if(inp.checked&&!ok)p.classList.add('wrong');
+});
+}
 function submitTest(){
 if(submitted)return;submitted=true;
 if(timerInterval)clearInterval(timerInterval);
 let correct=0;
 for(let i=1;i<=TOTAL;i++){
+if(i===13){
+if(gradeCheckboxExact('q13',['a','b']))correct++;
+markCheckboxQuestion('q13',['a','b']);
+}else if(i===14){
+if(gradeCheckboxExact('q14',['a','b']))correct++;
+markCheckboxQuestion('q14',['a','b']);
+}else{
 const sel=document.querySelector(`input[name="q${i}"]:checked`);
 const opts=document.querySelectorAll(`input[name="q${i}"]`);
 if(sel&&sel.value==='1'){correct++;}
@@ -432,6 +481,7 @@ const p=o.parentElement;
 if(o.value==='1')p.classList.add('correct');
 else if(o.checked&&o.value!=='1')p.classList.add('wrong');
 });
+}
 }
 document.querySelectorAll('.explanation').forEach(e=>e.classList.add('show'));
 const pct=Math.round((correct/TOTAL)*100);
