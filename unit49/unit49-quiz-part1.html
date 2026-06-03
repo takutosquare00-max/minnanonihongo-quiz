@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="ja">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>みんなの日本語 49 パート1（15分・18問）</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -28,7 +27,9 @@ header h1{font-size:1.45em;margin-bottom:4px}
 .q-num{display:inline-block;background:#2b6cb0;color:#fff;width:28px;height:28px;text-align:center;line-height:28px;border-radius:50%;font-size:.85em;font-weight:bold;margin-right:8px}
 .q-text{font-size:1.05em;margin-bottom:12px;font-weight:500}
 .options{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:stretch}
-@media(max-width:600px){.options{grid-template-columns:1fr}}
+.options.options-wide{grid-template-columns:1fr}
+.options.options-compact{grid-template-columns:1fr 1fr}
+@media(max-width:600px){.options:not(.options-compact){grid-template-columns:1fr}}
 .option{position:relative;display:flex;min-height:0}
 .option input{display:none}
 .option label{flex:1;display:flex;align-items:center;gap:8px;padding:12px 14px;border:2px solid #e2e8f0;border-radius:8px;cursor:pointer;transition:all .2s;font-size:.95em;touch-action:manipulation;-webkit-user-select:none;user-select:none;min-height:48px;width:100%;box-sizing:border-box}
@@ -37,6 +38,7 @@ header h1{font-size:1.45em;margin-bottom:4px}
 .option label:hover{border-color:#2b6cb0;background:#f0f7ff}
 .option input:checked+label{border-color:#2b6cb0;background:#e8f2fc;color:#1a365d;font-weight:600}
 .option.correct label{border-color:#48bb78!important;background:#f0fff4!important;color:#276749!important}
+.option.alt-correct label{border-color:#48bb78!important;background:#f0fff4!important;color:#276749!important}
 .option.wrong label{border-color:#fc8181!important;background:#fff5f5!important;color:#9b2c2c!important}
 .btn-submit{display:block;width:100%;min-height:48px;padding:16px;background:linear-gradient(135deg,#2b6cb0 0%,#2c5282 100%);color:#fff;border:none;border-radius:12px;font-size:1.1em;font-weight:bold;cursor:pointer;transition:transform .2s,box-shadow .2s;margin-top:24px;touch-action:manipulation;-webkit-user-select:none;user-select:none}
 .btn-submit:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(43,108,176,.4)}
@@ -72,10 +74,10 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </header>
 <!-- セクション1: 尊敬形の作り方（タイプ1） -->
 <div class="section">
-<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>1〜4：<ruby>尊敬形<rt>そんけいけい</rt></ruby>の<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>（タイプ1・<ruby>受身形<rt>うけみけい</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じ<ruby>形<rt>かたち</rt></ruby>）</div>
+<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>1〜4：<ruby>尊敬語<rt>そんけいご</rt></ruby>タイプ1の<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby></div>
 <p class="section-lead"><ruby>活用形<rt>かつようけい</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 <div class="question">
-<div class="q-text"><span class="q-num">1</span>「<ruby>帰<rt>かえ</rt></ruby>ります」の<ruby>尊敬<rt>そんけい</rt></ruby><ruby>形<rt>かたち</rt></ruby>はどれですか。（グループI・タイプ1）</div>
+<div class="q-text"><span class="q-num">1</span>「<ruby>帰<rt>かえ</rt></ruby>ります」の<ruby>尊敬語<rt>そんけいご</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q1a" name="q1" type="radio" value="0"/><label for="q1a"><span class="opt-key">1.</span><span class="opt-body"><ruby>帰<rt>かえ</rt></ruby>らせます</span></label></div>
 <div class="option"><input id="q1b" name="q1" type="radio" value="1"/><label for="q1b"><span class="opt-key">2.</span><span class="opt-body"><ruby>帰<rt>かえ</rt></ruby>られます</span></label></div>
@@ -85,7 +87,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="explanation">✅ 正解：2 — グループI動詞の尊敬形（タイプ1）は受身形と同じで「ない形の語幹＋れます」。帰る→帰ら＋れます＝「帰られます」。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">2</span>「<ruby>食<rt>た</rt></ruby>べます」の<ruby>尊敬<rt>そんけい</rt></ruby><ruby>形<rt>かたち</rt></ruby>はどれですか。（グループII・タイプ1）</div>
+<div class="q-text"><span class="q-num">2</span>「<ruby>食<rt>た</rt></ruby>べます」の<ruby>尊敬語<rt>そんけいご</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q2a" name="q2" type="radio" value="1"/><label for="q2a"><span class="opt-key">1.</span><span class="opt-body"><ruby>食<rt>た</rt></ruby>べられます</span></label></div>
 <div class="option"><input id="q2b" name="q2" type="radio" value="0"/><label for="q2b"><span class="opt-key">2.</span><span class="opt-body"><ruby>食<rt>た</rt></ruby>べさせます</span></label></div>
@@ -95,7 +97,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="explanation">✅ 正解：1 — グループII動詞の尊敬形（タイプ1）は「ない形の語幹＋られます」。食べる→食べ＋られます＝「食べられます」。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">3</span>「<ruby>来<rt>き</rt></ruby>ます」の<ruby>尊敬<rt>そんけい</rt></ruby><ruby>形<rt>かたち</rt></ruby>はどれですか。（グループIII・タイプ1）</div>
+<div class="q-text"><span class="q-num">3</span>「<ruby>来<rt>き</rt></ruby>ます」の<ruby>尊敬語<rt>そんけいご</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q3a" name="q3" type="radio" value="0"/><label for="q3a"><span class="opt-key">1.</span><span class="opt-body">きされます</span></label></div>
 <div class="option"><input id="q3b" name="q3" type="radio" value="0"/><label for="q3b"><span class="opt-key">2.</span><span class="opt-body">きなさいます</span></label></div>
@@ -105,7 +107,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="explanation">✅ 正解：3 — 「来ます」のない形は「こない」。語幹「こ」＋られます＝「こられます」が正しい尊敬形です。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">4</span>「します」の<ruby>尊敬<rt>そんけい</rt></ruby><ruby>形<rt>かたち</rt></ruby>はどれですか。（グループIII・タイプ1）</div>
+<div class="q-text"><span class="q-num">4</span>「します」の<ruby>尊敬語<rt>そんけいご</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q4a" name="q4" type="radio" value="0"/><label for="q4a"><span class="opt-key">1.</span><span class="opt-body">しられます</span></label></div>
 <div class="option"><input id="q4b" name="q4" type="radio" value="0"/><label for="q4b"><span class="opt-key">2.</span><span class="opt-body">させます</span></label></div>
@@ -117,10 +119,10 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 </div>
 <!-- セクション2: お〜になります（タイプ2） -->
 <div class="section">
-<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>5〜8：お〜に<ruby>なります<rt></rt></ruby>（タイプ2）</div>
+<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>5〜8：お〜になる</div>
 <p class="section-lead"><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 <div class="question">
-<div class="q-text"><span class="q-num">5</span>「<ruby>帰<rt>かえ</rt></ruby>ります」の「お〜になります」の<ruby>形<rt>かたち</rt></ruby>はどれですか。</div>
+<div class="q-text"><span class="q-num">5</span>「<ruby>帰<rt>かえ</rt></ruby>ります」のお〜になるの形はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q5a" name="q5" type="radio" value="1"/><label for="q5a"><span class="opt-key">1.</span><span class="opt-body">お<ruby>帰<rt>かえ</rt></ruby>りになります</span></label></div>
 <div class="option"><input id="q5b" name="q5" type="radio" value="0"/><label for="q5b"><span class="opt-key">2.</span><span class="opt-body">おかえしになります</span></label></div>
@@ -130,7 +132,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="explanation">✅ 正解：1 — 「お＋ます形語幹＋になります」の形。帰ります→語幹「帰り」→「お帰りになります」が正しい尊敬語です。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">6</span>「<ruby>書<rt>か</rt></ruby>きます」の「お〜になります」の<ruby>形<rt>かたち</rt></ruby>はどれですか。</div>
+<div class="q-text"><span class="q-num">6</span>「<ruby>書<rt>か</rt></ruby>きます」のお〜になるの形はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q6a" name="q6" type="radio" value="0"/><label for="q6a"><span class="opt-key">1.</span><span class="opt-body">ご<ruby>書<rt>か</rt></ruby>きになります</span></label></div>
 <div class="option"><input id="q6b" name="q6" type="radio" value="0"/><label for="q6b"><span class="opt-key">2.</span><span class="opt-body">お<ruby>書<rt>か</rt></ruby>いになります</span></label></div>
@@ -140,24 +142,24 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="explanation">✅ 正解：3 — ます形語幹をそのまま使います。書きます→語幹「書き」→「お書きになります」。「お書いになります」はて形語幹なので間違いです。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">7</span><ruby>次<rt>つぎ</rt></ruby>のうち「お〜になります」の<ruby>形<rt>かたち</rt></ruby>が<ruby>使<rt>つか</rt></ruby>えないものはどれですか。</div>
+<div class="q-text"><span class="q-num">7</span><ruby>次<rt>つぎ</rt></ruby>のうち、お〜になるの形が<ruby>使<rt>つか</rt></ruby>えないものはどれですか。</div>
 <div class="options">
 <div class="option"><input id="q7a" name="q7" type="radio" value="0"/><label for="q7a"><span class="opt-key">1.</span><span class="opt-body"><ruby>帰<rt>かえ</rt></ruby>ります</span></label></div>
 <div class="option"><input id="q7b" name="q7" type="radio" value="0"/><label for="q7b"><span class="opt-key">2.</span><span class="opt-body"><ruby>読<rt>よ</rt></ruby>みます</span></label></div>
-<div class="option"><input id="q7c" name="q7" type="radio" value="1"/><label for="q7c"><span class="opt-key">3.</span><span class="opt-body"><ruby>見<rt>み</rt></ruby>ます（ます<ruby>形<rt>かたち</rt></ruby>が1モーラ）</span></label></div>
+<div class="option"><input id="q7c" name="q7" type="radio" value="1"/><label for="q7c"><span class="opt-key">3.</span><span class="opt-body"><ruby>見<rt>み</rt></ruby>ます</span></label></div>
 <div class="option"><input id="q7d" name="q7" type="radio" value="0"/><label for="q7d"><span class="opt-key">4.</span><span class="opt-body"><ruby>書<rt>か</rt></ruby>きます</span></label></div>
 </div>
-<div class="explanation">✅ 正解：3 — 「お〜になります」はます形語幹が1モーラ（1音節）の場合は使えません。「見ます」の語幹「み」は1モーラなので使えません。</div>
+<div class="explanation">✅ 正解：3 — お〜になるはます形語幹が1モーラ（1音節）の場合は使えません。「見ます」の語幹「み」は1モーラなので使えません。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">8</span>「<ruby>社長<rt>しゃちょう</rt></ruby>は もう お<ruby>帰<rt>かえ</rt></ruby>り<span class="blank-paren">（　　　　）</span>。」</div>
+<div class="q-text"><span class="q-num">8</span><ruby>社長<rt>しゃちょう</rt></ruby>は もう お<ruby>帰<rt>かえ</rt></ruby>り<span class="blank-paren">（　　　　）</span>。</div>
 <div class="options">
 <div class="option"><input id="q8a" name="q8" type="radio" value="0"/><label for="q8a"><span class="opt-key">1.</span><span class="opt-body">しました</span></label></div>
 <div class="option"><input id="q8b" name="q8" type="radio" value="1"/><label for="q8b"><span class="opt-key">2.</span><span class="opt-body">になりました</span></label></div>
 <div class="option"><input id="q8c" name="q8" type="radio" value="0"/><label for="q8c"><span class="opt-key">3.</span><span class="opt-body">させました</span></label></div>
 <div class="option"><input id="q8d" name="q8" type="radio" value="0"/><label for="q8d"><span class="opt-key">4.</span><span class="opt-body">くださいました</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「お帰り＋になりました」で「お〜になります」の過去形。「社長はもうお帰りになりました」が正しい尊敬表現です。</div>
+<div class="explanation">✅ 正解：2 — 「お帰り＋になりました」でお〜になるの過去形。「社長はもうお帰りになりました」が正しい尊敬表現です。</div>
 </div>
 </div>
 <!-- セクション3: 特別尊敬語の対応 -->
@@ -165,7 +167,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>9〜14：<ruby>特別<rt>とくべつ</rt></ruby><ruby>尊敬語<rt>そんけいご</rt></ruby>の<ruby>対応<rt>たいおう</rt></ruby></div>
 <p class="section-lead"><ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 <div class="question">
-<div class="q-text"><span class="q-num">9</span>「います・いきます・きます」の<ruby>特別<rt>とくべつ</rt></ruby><ruby>尊敬語<rt>そんけいご</rt></ruby>はどれですか。</div>
+<div class="q-text"><span class="q-num">9</span>「いる・いく・来る」の<ruby>特別<rt>とくべつ</rt></ruby><ruby>尊敬語<rt>そんけいご</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q9a" name="q9" type="radio" value="0"/><label for="q9a"><span class="opt-key">1.</span><span class="opt-body">なさいます</span></label></div>
 <div class="option"><input id="q9b" name="q9" type="radio" value="0"/><label for="q9b"><span class="opt-key">2.</span><span class="opt-body">めしあがります</span></label></div>
@@ -175,7 +177,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="explanation">✅ 正解：3 — 「います・いきます・きます」の特別尊敬語は「いらっしゃいます」です。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">10</span>「たべます・のみます」の<ruby>特別<rt>とくべつ</rt></ruby><ruby>尊敬語<rt>そんけいご</rt></ruby>はどれですか。</div>
+<div class="q-text"><span class="q-num">10</span>「食べる・飲む」の<ruby>特別<rt>とくべつ</rt></ruby><ruby>尊敬語<rt>そんけいご</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q10a" name="q10" type="radio" value="0"/><label for="q10a"><span class="opt-key">1.</span><span class="opt-body">いらっしゃいます</span></label></div>
 <div class="option"><input id="q10b" name="q10" type="radio" value="0"/><label for="q10b"><span class="opt-key">2.</span><span class="opt-body">なさいます</span></label></div>
@@ -230,17 +232,17 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>15〜18：<ruby>尊敬語<rt>そんけいご</rt></ruby>を<ruby>文中<rt>ぶんちゅう</rt></ruby>で<ruby>使<rt>つか</rt></ruby>う</div>
 <p class="section-lead"><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 <div class="question">
-<div class="q-text"><span class="q-num">15</span>「<ruby>部長<rt>ぶちょう</rt></ruby>は どちらに <span class="blank-paren">（　　　　）</span>か。」（います→<ruby>特別<rt>とくべつ</rt></ruby><ruby>尊敬語<rt>そんけいご</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">15</span><ruby>部長<rt>ぶちょう</rt></ruby>は どちらに <span class="blank-paren">（　　　　）</span>か。</div>
 <div class="options">
-<div class="option"><input id="q15a" name="q15" type="radio" value="0"/><label for="q15a"><span class="opt-key">1.</span><span class="opt-body">なさいます</span></label></div>
+<div class="option"><input id="q15a" name="q15" type="radio" value="a"/><label for="q15a"><span class="opt-key">1.</span><span class="opt-body">なさいます</span></label></div>
 <div class="option"><input id="q15b" name="q15" type="radio" value="0"/><label for="q15b"><span class="opt-key">2.</span><span class="opt-body">ございます</span></label></div>
 <div class="option"><input id="q15c" name="q15" type="radio" value="1"/><label for="q15c"><span class="opt-key">3.</span><span class="opt-body">いらっしゃいます</span></label></div>
 <div class="option"><input id="q15d" name="q15" type="radio" value="0"/><label for="q15d"><span class="opt-key">4.</span><span class="opt-body">めしあがります</span></label></div>
 </div>
-<div class="explanation">✅ 正解：3 — 「います」の特別尊敬語は「いらっしゃいます」。「部長はどちらにいらっしゃいますか」が正しい尊敬表現です。</div>
+<div class="explanation">✅ 正解：3（追加正解：なさいます）— 「います」の特別尊敬語は「いらっしゃいます」。「いく」の尊敬語「なさいます」も文脈によって使えます。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">16</span>「<ruby>先生<rt>せんせい</rt></ruby>、もう ご<ruby>昼食<rt>ちゅうしょく</rt></ruby>は <span class="blank-paren">（　　　　）</span>か。」（たべました→<ruby>特別<rt>とくべつ</rt></ruby><ruby>尊敬語<rt>そんけいご</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">16</span><ruby>先生<rt>せんせい</rt></ruby>、もう ご<ruby>昼食<rt>ちゅうしょく</rt></ruby>は <span class="blank-paren">（　　　　）</span>か。</div>
 <div class="options">
 <div class="option"><input id="q16a" name="q16" type="radio" value="0"/><label for="q16a"><span class="opt-key">1.</span><span class="opt-body">なさいました</span></label></div>
 <div class="option"><input id="q16b" name="q16" type="radio" value="0"/><label for="q16b"><span class="opt-key">2.</span><span class="opt-body">いらっしゃいました</span></label></div>
@@ -250,7 +252,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="explanation">✅ 正解：3 — 「たべます」の特別尊敬語は「めしあがります」→過去形「めしあがりました」。「もうご昼食はめしあがりましたか」が正しい表現です。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">17</span>「お<ruby>名前<rt>なまえ</rt></ruby>は <ruby>何<rt>なん</rt></ruby>と <span class="blank-paren">（　　　　）</span>か。」（いいます→<ruby>特別<rt>とくべつ</rt></ruby><ruby>尊敬語<rt>そんけいご</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">17</span>お<ruby>名前<rt>なまえ</rt></ruby>は <ruby>何<rt>なん</rt></ruby>と <span class="blank-paren">（　　　　）</span>か。</div>
 <div class="options">
 <div class="option"><input id="q17a" name="q17" type="radio" value="0"/><label for="q17a"><span class="opt-key">1.</span><span class="opt-body">なさいます</span></label></div>
 <div class="option"><input id="q17b" name="q17" type="radio" value="1"/><label for="q17b"><span class="opt-key">2.</span><span class="opt-body">おっしゃいます</span></label></div>
@@ -260,7 +262,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="explanation">✅ 正解：2 — 「いいます」の特別尊敬語は「おっしゃいます」。「お名前は何とおっしゃいますか」が正しい表現です。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">18</span>「ことし <ruby>映画<rt>えいが</rt></ruby>を <span class="blank-paren">（　　　　）</span>か。」（みましたか→<ruby>特別<rt>とくべつ</rt></ruby><ruby>尊敬語<rt>そんけいご</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">18</span>ことし <ruby>映画<rt>えいが</rt></ruby>を <span class="blank-paren">（　　　　）</span>か。</div>
 <div class="options">
 <div class="option"><input id="q18a" name="q18" type="radio" value="0"/><label for="q18a"><span class="opt-key">1.</span><span class="opt-body">ごぞんじですか</span></label></div>
 <div class="option"><input id="q18b" name="q18" type="radio" value="0"/><label for="q18b"><span class="opt-key">2.</span><span class="opt-body">めしあがりましたか</span></label></div>
@@ -361,6 +363,27 @@ if(slot<0)return;
 posCounts[slot]++;
 });
 }
+function optBodyLen(optionEl){
+const body=optionEl.querySelector('.opt-body');
+if(!body)return 0;
+const clone=body.cloneNode(true);
+clone.querySelectorAll('rt').forEach(function(r){r.remove();});
+return (clone.textContent||'').replace(/\s/g,'').length;
+}
+function applyOptionsLayout(){
+document.querySelectorAll('.options').forEach(function(optsDiv){
+const items=Array.prototype.filter.call(optsDiv.children,function(el){
+return el.classList&&el.classList.contains('option');
+});
+if(items.length<1)return;
+let maxLen=0;
+items.forEach(function(el){maxLen=Math.max(maxLen,optBodyLen(el));});
+optsDiv.classList.remove('options-compact','options-wide');
+if(maxLen<=10)optsDiv.classList.add('options-compact');
+else optsDiv.classList.add('options-wide');
+});
+}
+try{applyOptionsLayout();}catch(e){}
 try{shuffleAllOptions();}catch(e){}
 function startTimer(){
 timerInterval=setInterval(()=>{
@@ -382,11 +405,12 @@ let correct=0;
 for(let i=1;i<=TOTAL;i++){
 const sel=document.querySelector(`input[name="q${i}"]:checked`);
 const opts=document.querySelectorAll(`input[name="q${i}"]`);
-if(sel&&sel.value==='1'){correct++;}
+if(sel&&(sel.value==='1'||sel.value==='a')){correct++;}
 opts.forEach(o=>{
 const p=o.parentElement;
 if(o.value==='1')p.classList.add('correct');
-else if(o.checked&&o.value!=='1')p.classList.add('wrong');
+else if(o.value==='a')p.classList.add('alt-correct');
+else if(o.checked&&o.value!=='1'&&o.value!=='a')p.classList.add('wrong');
 });
 }
 document.querySelectorAll('.explanation').forEach(e=>e.classList.add('show'));
