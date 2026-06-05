@@ -80,10 +80,10 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="question">
 <div class="q-text"><span class="q-num">1</span>どうぞ お<span class="blank-paren">（　　　　）</span>ください。</div>
 <div class="options">
-<div class="option"><input id="q1a" name="q1" type="radio" value="0"/><label for="q1a"><span class="opt-key">1.</span><span class="opt-body"><ruby>入<rt>い</rt></ruby>りて</span></label></div>
-<div class="option"><input id="q1b" name="q1" type="radio" value="0"/><label for="q1b"><span class="opt-key">2.</span><span class="opt-body"><ruby>入<rt>いっ</rt></ruby>って</span></label></div>
-<div class="option"><input id="q1c" name="q1" type="radio" value="1"/><label for="q1c"><span class="opt-key">3.</span><span class="opt-body"><ruby>入<rt>い</rt></ruby>り</span></label></div>
-<div class="option"><input id="q1d" name="q1" type="radio" value="0"/><label for="q1d"><span class="opt-key">4.</span><span class="opt-body"><ruby>入<rt>い</rt></ruby>る</span></label></div>
+<div class="option"><input id="q1a" name="q1" type="radio" value="0"/><label for="q1a"><span class="opt-key">1.</span><span class="opt-body"><ruby>入<rt>はい</rt></ruby>りて</span></label></div>
+<div class="option"><input id="q1b" name="q1" type="radio" value="0"/><label for="q1b"><span class="opt-key">2.</span><span class="opt-body"><ruby>入<rt>はい</rt></ruby>って</span></label></div>
+<div class="option"><input id="q1c" name="q1" type="radio" value="1"/><label for="q1c"><span class="opt-key">3.</span><span class="opt-body"><ruby>入<rt>はい</rt></ruby>り</span></label></div>
+<div class="option"><input id="q1d" name="q1" type="radio" value="0"/><label for="q1d"><span class="opt-key">4.</span><span class="opt-body"><ruby>入<rt>はい</rt></ruby>る</span></label></div>
 </div>
 <div class="explanation">✅ 正解：3 — 「お＋ます形語幹＋ください」の形。入ります→語幹「入り」→「お入りください」。「入って」はて形なので間違いです。</div>
 </div>
@@ -220,12 +220,12 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="question">
 <div class="q-text"><span class="q-num">13</span>「<ruby>掛<rt>か</rt></ruby>けます」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
 <div class="options">
-<div class="option"><input id="q13a" name="q13" type="radio" value="0"/><label for="q13a"><span class="opt-key">1.</span><span class="opt-body"><ruby>電話<rt>でんわ</rt></ruby>をかける</span></label></div>
+<div class="option"><input id="q13a" name="q13" type="radio" value="a"/><label for="q13a"><span class="opt-key">1.</span><span class="opt-body"><ruby>電話<rt>でんわ</rt></ruby>をかける</span></label></div>
 <div class="option"><input id="q13b" name="q13" type="radio" value="1"/><label for="q13b"><span class="opt-key">2.</span><span class="opt-body"><ruby>座<rt>すわ</rt></ruby>る</span></label></div>
 <div class="option"><input id="q13c" name="q13" type="radio" value="0"/><label for="q13c"><span class="opt-key">3.</span><span class="opt-body"><ruby>机<rt>つくえ</rt></ruby>に<ruby>物<rt>もの</rt></ruby>を<ruby>置<rt>お</rt></ruby>く</span></label></div>
 <div class="option"><input id="q13d" name="q13" type="radio" value="0"/><label for="q13d"><span class="opt-key">4.</span><span class="opt-body"><ruby>部屋<rt>へや</rt></ruby>を<ruby>出<rt>で</rt></ruby>る</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 「掛けます」（いすに〜）は「座る」という意味。「どうぞお掛けください」は「どうぞお座りください」という意味です。</div>
+<div class="explanation">✅ 正解：2（追加正解：電話をかける）— 「掛けます」は文脈により「座る」（いすに〜）や「電話をかける」の意味があります。</div>
 </div>
 <div class="question">
 <div class="q-text"><span class="q-num">14</span>「あいさつ」の<ruby>意味<rt>いみ</rt></ruby>はどれですか。</div>
@@ -416,7 +416,7 @@ opts.forEach(o=>{
 const p=o.parentElement;
 if(o.value==='1')p.classList.add('correct');
 else if(o.value==='a'){
-if(o.name==='q16')p.classList.add('alt-correct-green');
+if(o.name==='q13'||o.name==='q16')p.classList.add('alt-correct-green');
 else p.classList.add('alt-correct');
 }else if(o.checked&&o.value!=='1'&&o.value!=='a')p.classList.add('wrong');
 });
