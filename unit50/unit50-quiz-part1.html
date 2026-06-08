@@ -28,7 +28,9 @@ header h1{font-size:1.45em;margin-bottom:4px}
 .q-num{display:inline-block;background:#2b6cb0;color:#fff;width:28px;height:28px;text-align:center;line-height:28px;border-radius:50%;font-size:.85em;font-weight:bold;margin-right:8px}
 .q-text{font-size:1.05em;margin-bottom:12px;font-weight:500}
 .options{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:stretch}
-@media(max-width:600px){.options{grid-template-columns:1fr}}
+.options.options-wide{grid-template-columns:1fr}
+.options.options-compact{grid-template-columns:1fr 1fr}
+@media(max-width:600px){.options:not(.options-compact){grid-template-columns:1fr}}
 .option{position:relative;display:flex;min-height:0}
 .option input{display:none}
 .option label{flex:1;display:flex;align-items:center;gap:8px;padding:12px 14px;border:2px solid #e2e8f0;border-radius:8px;cursor:pointer;transition:all .2s;font-size:.95em;touch-action:manipulation;-webkit-user-select:none;user-select:none;min-height:48px;width:100%;box-sizing:border-box}
@@ -70,74 +72,74 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="score-badge" id="scoreBadge"><ruby>全<rt>ぜん</rt></ruby>18<ruby>問<rt>もん</rt></ruby></div>
 </div>
 </header>
-<!-- セクション1: 謙譲語Iの形 -->
+<!-- セクション1: 謙譲語の形 -->
 <div class="section">
-<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>1〜6：<ruby>謙譲語<rt>けんじょうご</rt></ruby>I（お/ご〜します）の<ruby>形<rt>かたち</rt></ruby></div>
+<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>1〜6：<ruby>謙譲語<rt>けんじょうご</rt></ruby>の<ruby>形<rt>かたち</rt></ruby></div>
 <p class="section-lead"><ruby>活用形<rt>かつようけい</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 <div class="question">
-<div class="q-text"><span class="q-num">1</span>「<ruby>持<rt>も</rt></ruby>ちます」の<ruby>謙譲語<rt>けんじょうご</rt></ruby>I はどれですか。（グループI → お〜します）</div>
+<div class="q-text"><span class="q-num">1</span>「<ruby>持<rt>も</rt></ruby>ちます」の<ruby>謙譲語<rt>けんじょうご</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q1a" name="q1" type="radio" value="1"/><label for="q1a"><span class="opt-key">1.</span><span class="opt-body">お<ruby>持<rt>も</rt></ruby>ちします</span></label></div>
 <div class="option"><input id="q1b" name="q1" type="radio" value="0"/><label for="q1b"><span class="opt-key">2.</span><span class="opt-body"><ruby>持<rt>も</rt></ruby>たれます</span></label></div>
 <div class="option"><input id="q1c" name="q1" type="radio" value="0"/><label for="q1c"><span class="opt-key">3.</span><span class="opt-body">お<ruby>持<rt>も</rt></ruby>ちになります</span></label></div>
 <div class="option"><input id="q1d" name="q1" type="radio" value="0"/><label for="q1d"><span class="opt-key">4.</span><span class="opt-body">ご<ruby>持<rt>も</rt></ruby>ちします</span></label></div>
 </div>
-<div class="explanation">✅ 正解：1 — グループI動詞の謙譲語Iは「お＋ます形語幹＋します」。持ちます→語幹「持ち」→「お持ちします」。「お持ちになります」は尊敬語なので注意。</div>
+<div class="explanation">✅ 正解：1 — 和語動詞の謙譲語は「お＋ます形語幹＋します」。持ちます→語幹「持ち」→「お持ちします」。「お持ちになります」は尊敬語なので注意。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">2</span>「<ruby>送<rt>おく</rt></ruby>ります」の<ruby>謙譲語<rt>けんじょうご</rt></ruby>I はどれですか。</div>
+<div class="q-text"><span class="q-num">2</span>「<ruby>送<rt>おく</rt></ruby>ります」の<ruby>謙譲語<rt>けんじょうご</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q2a" name="q2" type="radio" value="0"/><label for="q2a"><span class="opt-key">1.</span><span class="opt-body"><ruby>送<rt>おく</rt></ruby>らせます</span></label></div>
 <div class="option"><input id="q2b" name="q2" type="radio" value="0"/><label for="q2b"><span class="opt-key">2.</span><span class="opt-body">お<ruby>送<rt>おく</rt></ruby>りになります</span></label></div>
 <div class="option"><input id="q2c" name="q2" type="radio" value="1"/><label for="q2c"><span class="opt-key">3.</span><span class="opt-body">お<ruby>送<rt>おく</rt></ruby>りします</span></label></div>
 <div class="option"><input id="q2d" name="q2" type="radio" value="0"/><label for="q2d"><span class="opt-key">4.</span><span class="opt-body">ご<ruby>送<rt>おく</rt></ruby>りします</span></label></div>
 </div>
-<div class="explanation">✅ 正解：3 — 「送ります」の謙譲語Iは「お送りします」。「お送りになります」は尊敬語。和語動詞には「お〜します」を使います。</div>
+<div class="explanation">✅ 正解：3 — 「送ります」の謙譲語は「お送りします」。「お送りになります」は尊敬語。和語動詞には「お〜します」を使います。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">3</span>「<ruby>案内<rt>あんない</rt></ruby>します」の<ruby>謙譲語<rt>けんじょうご</rt></ruby>I はどれですか。（グループIII<ruby>漢語<rt>かんご</rt></ruby> → ご〜します）</div>
+<div class="q-text"><span class="q-num">3</span>「<ruby>案内<rt>あんない</rt></ruby>します」の<ruby>謙譲語<rt>けんじょうご</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q3a" name="q3" type="radio" value="0"/><label for="q3a"><span class="opt-key">1.</span><span class="opt-body">お<ruby>案内<rt>あんない</rt></ruby>します</span></label></div>
 <div class="option"><input id="q3b" name="q3" type="radio" value="1"/><label for="q3b"><span class="opt-key">2.</span><span class="opt-body">ご<ruby>案内<rt>あんない</rt></ruby>します</span></label></div>
 <div class="option"><input id="q3c" name="q3" type="radio" value="0"/><label for="q3c"><span class="opt-key">3.</span><span class="opt-body"><ruby>案内<rt>あんない</rt></ruby>されます</span></label></div>
 <div class="option"><input id="q3d" name="q3" type="radio" value="0"/><label for="q3d"><span class="opt-key">4.</span><span class="opt-body">お<ruby>案内<rt>あんない</rt></ruby>になります</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 漢語動詞（〜します）の謙譲語Iは「ご〜します」。「案内します」→「ご案内します」。「お〜します」は和語動詞に使います。</div>
+<div class="explanation">✅ 正解：2 — 漢語動詞（〜します）の謙譲語は「ご〜します」。「案内します」→「ご案内します」。「お〜します」は和語動詞に使います。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">4</span>「<ruby>説明<rt>せつめい</rt></ruby>します」の<ruby>謙譲語<rt>けんじょうご</rt></ruby>I はどれですか。（グループIII<ruby>漢語<rt>かんご</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">4</span>「<ruby>説明<rt>せつめい</rt></ruby>します」の<ruby>謙譲語<rt>けんじょうご</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q4a" name="q4" type="radio" value="0"/><label for="q4a"><span class="opt-key">1.</span><span class="opt-body">お<ruby>説明<rt>せつめい</rt></ruby>します</span></label></div>
 <div class="option"><input id="q4b" name="q4" type="radio" value="0"/><label for="q4b"><span class="opt-key">2.</span><span class="opt-body"><ruby>説明<rt>せつめい</rt></ruby>されます</span></label></div>
 <div class="option"><input id="q4c" name="q4" type="radio" value="1"/><label for="q4c"><span class="opt-key">3.</span><span class="opt-body">ご<ruby>説明<rt>せつめい</rt></ruby>します</span></label></div>
 <div class="option"><input id="q4d" name="q4" type="radio" value="0"/><label for="q4d"><span class="opt-key">4.</span><span class="opt-body">お<ruby>説明<rt>せつめい</rt></ruby>になります</span></label></div>
 </div>
-<div class="explanation">✅ 正解：3 — 「説明します」は漢語動詞なので謙譲語Iは「ご説明します」。「説明されます」は尊敬語（受身形）ではなく別の表現です。</div>
+<div class="explanation">✅ 正解：3 — 「説明します」は漢語動詞なので謙譲語は「ご説明します」。「説明されます」は尊敬語（受身形）ではなく別の表現です。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">5</span><ruby>次<rt>つぎ</rt></ruby>のうち「お〜します」の<ruby>形<rt>かたち</rt></ruby>が<ruby>使<rt>つか</rt></ruby>えないものはどれですか。</div>
+<div class="q-text"><span class="q-num">5</span><ruby>次<rt>つぎ</rt></ruby>のうち、「お〜します」の<ruby>形<rt>かたち</rt></ruby>が<ruby>使<rt>つか</rt></ruby>えないものはどれですか。</div>
 <div class="options">
 <div class="option"><input id="q5a" name="q5" type="radio" value="0"/><label for="q5a"><span class="opt-key">1.</span><span class="opt-body"><ruby>持<rt>も</rt></ruby>ちます</span></label></div>
 <div class="option"><input id="q5b" name="q5" type="radio" value="0"/><label for="q5b"><span class="opt-key">2.</span><span class="opt-body"><ruby>送<rt>おく</rt></ruby>ります</span></label></div>
-<div class="option"><input id="q5c" name="q5" type="radio" value="1"/><label for="q5c"><span class="opt-key">3.</span><span class="opt-body"><ruby>見<rt>み</rt></ruby>ます（ます<ruby>形<rt>かたち</rt></ruby>が1モーラ）</span></label></div>
+<div class="option"><input id="q5c" name="q5" type="radio" value="1"/><label for="q5c"><span class="opt-key">3.</span><span class="opt-body"><ruby>見<rt>み</rt></ruby>ます</span></label></div>
 <div class="option"><input id="q5d" name="q5" type="radio" value="0"/><label for="q5d"><span class="opt-key">4.</span><span class="opt-body"><ruby>書<rt>か</rt></ruby>きます</span></label></div>
 </div>
 <div class="explanation">✅ 正解：3 — 「お〜します」はます形語幹が1モーラ（1音節）の場合は使えません。「見ます」の語幹「み」は1モーラなので「お見します」とは言えません。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">6</span>「<ruby>重<rt>おも</rt></ruby>そうですね。<span class="blank-paren">（　　　　）</span>ましょうか。」（<ruby>持<rt>も</rt></ruby>ちます→<ruby>謙譲語<rt>けんじょうご</rt></ruby>I）</div>
+<div class="q-text"><span class="q-num">6</span><ruby>重<rt>おも</rt></ruby>そうですね。<span class="blank-paren">（　　　　）</span>ましょうか。</div>
 <div class="options">
 <div class="option"><input id="q6a" name="q6" type="radio" value="1"/><label for="q6a"><span class="opt-key">1.</span><span class="opt-body">お<ruby>持<rt>も</rt></ruby>ちし</span></label></div>
 <div class="option"><input id="q6b" name="q6" type="radio" value="0"/><label for="q6b"><span class="opt-key">2.</span><span class="opt-body">お<ruby>持<rt>も</rt></ruby>ちに</span></label></div>
 <div class="option"><input id="q6c" name="q6" type="radio" value="0"/><label for="q6c"><span class="opt-key">3.</span><span class="opt-body"><ruby>持<rt>も</rt></ruby>たれ</span></label></div>
 <div class="option"><input id="q6d" name="q6" type="radio" value="0"/><label for="q6d"><span class="opt-key">4.</span><span class="opt-body">ご<ruby>持<rt>も</rt></ruby>ちし</span></label></div>
 </div>
-<div class="explanation">✅ 正解：1 — 「お持ちしましょうか」が正しい謙譲語I。「お持ちになりましょうか」は尊敬語。「ご持ちします」は和語動詞にご〜は使えないので誤り。</div>
+<div class="explanation">✅ 正解：1 — 「お持ちしましょうか」が正しい謙譲語。「お持ちになりましょうか」は尊敬語。「ご持ちします」は和語動詞にご〜は使えないので誤り。</div>
 </div>
 </div>
-<!-- セクション2: 謙譲語II（特別謙譲語）の対応 -->
+<!-- セクション2: 特別謙譲語の対応 -->
 <div class="section">
-<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>7〜14：<ruby>謙譲語<rt>けんじょうご</rt></ruby>II（<ruby>特別謙譲語<rt>とくべつけんじょうご</rt></ruby>）の<ruby>対応<rt>たいおう</rt></ruby></div>
+<div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>7〜14：<ruby>特別謙譲語<rt>とくべつけんじょうご</rt></ruby>の<ruby>対応<rt>たいおう</rt></ruby></div>
 <p class="section-lead"><ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 <div class="question">
 <div class="q-text"><span class="q-num">7</span>「いきます・きます」の<ruby>特別謙譲語<rt>とくべつけんじょうご</rt></ruby>はどれですか。</div>
@@ -200,7 +202,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="explanation">✅ 正解：1 — 「みます」の特別謙譲語は「はいけんします（拝見します）」です。「ぞんじます」は「しっています」の謙譲語です。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">13</span>「ききます・（うちへ）いきます」の<ruby>特別謙譲語<rt>とくべつけんじょうご</rt></ruby>はどれですか。</div>
+<div class="q-text"><span class="q-num">13</span>「ききます・うちへいきます」の<ruby>特別謙譲語<rt>とくべつけんじょうご</rt></ruby>はどれですか。</div>
 <div class="options">
 <div class="option"><input id="q13a" name="q13" type="radio" value="0"/><label for="q13a"><span class="opt-key">1.</span><span class="opt-body">ぞんじます</span></label></div>
 <div class="option"><input id="q13b" name="q13" type="radio" value="0"/><label for="q13b"><span class="opt-key">2.</span><span class="opt-body">もうします</span></label></div>
@@ -225,7 +227,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="section-title"><ruby>問題<rt>もんだい</rt></ruby>15〜18：<ruby>謙譲語<rt>けんじょうご</rt></ruby>を<ruby>文中<rt>ぶんちゅう</rt></ruby>で<ruby>使<rt>つか</rt></ruby>う</div>
 <p class="section-lead"><span class="blank-paren">（　　　　）</span>に<ruby>入<rt>はい</rt></ruby>る<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。</p>
 <div class="question">
-<div class="q-text"><span class="q-num">15</span>「<ruby>私<rt>わたし</rt></ruby>は ミラーと <span class="blank-paren">（　　　　）</span>。」（いいます→<ruby>特別謙譲語<rt>とくべつけんじょうご</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">15</span><ruby>私<rt>わたし</rt></ruby>は ミラーと <span class="blank-paren">（　　　　）</span>。</div>
 <div class="options">
 <div class="option"><input id="q15a" name="q15" type="radio" value="0"/><label for="q15a"><span class="opt-key">1.</span><span class="opt-body">おっしゃいます</span></label></div>
 <div class="option"><input id="q15b" name="q15" type="radio" value="1"/><label for="q15b"><span class="opt-key">2.</span><span class="opt-body">もうします</span></label></div>
@@ -235,7 +237,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="explanation">✅ 正解：2 — 「いいます」の謙譲語は「もうします」。「私はミラーともうします」が正しい自己紹介の謙譲表現。「おっしゃいます」は相手に使う尊敬語。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">16</span>「アメリカから <span class="blank-paren">（　　　　）</span>。」（<ruby>来<rt>き</rt></ruby>ました→<ruby>特別謙譲語<rt>とくべつけんじょうご</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">16</span>アメリカから <span class="blank-paren">（　　　　）</span>。</div>
 <div class="options">
 <div class="option"><input id="q16a" name="q16" type="radio" value="0"/><label for="q16a"><span class="opt-key">1.</span><span class="opt-body">こられました</span></label></div>
 <div class="option"><input id="q16b" name="q16" type="radio" value="1"/><label for="q16b"><span class="opt-key">2.</span><span class="opt-body">まいりました</span></label></div>
@@ -245,7 +247,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="explanation">✅ 正解：2 — 自分の「きます」の謙譲語は「まいります」→過去形「まいりました」。「いらっしゃいました」は相手の動作に使う尊敬語。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">17</span>「<ruby>家族<rt>かぞく</rt></ruby>は ニューヨークに <span class="blank-paren">（　　　　）</span>。」（います→<ruby>特別謙譲語<rt>とくべつけんじょうご</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">17</span><ruby>家族<rt>かぞく</rt></ruby>は ニューヨークに <span class="blank-paren">（　　　　）</span>。</div>
 <div class="options">
 <div class="option"><input id="q17a" name="q17" type="radio" value="0"/><label for="q17a"><span class="opt-key">1.</span><span class="opt-body">いらっしゃいます</span></label></div>
 <div class="option"><input id="q17b" name="q17" type="radio" value="1"/><label for="q17b"><span class="opt-key">2.</span><span class="opt-body">おります</span></label></div>
@@ -255,7 +257,7 @@ rt{font-size:0.55em;font-weight:400;line-height:1.1}
 <div class="explanation">✅ 正解：2 — 自分の身内（家族）の「います」は謙譲語「おります」で表現します。「いらっしゃいます」は相手・第三者（身内でない人）に使う尊敬語。</div>
 </div>
 <div class="question">
-<div class="q-text"><span class="q-num">18</span>「<ruby>切符<rt>きっぷ</rt></ruby>を <span class="blank-paren">（　　　　）</span>。」（<ruby>見<rt>み</rt></ruby>ます→<ruby>特別謙譲語<rt>とくべつけんじょうご</rt></ruby>）</div>
+<div class="q-text"><span class="q-num">18</span><ruby>切符<rt>きっぷ</rt></ruby>を <span class="blank-paren">（　　　　）</span>。</div>
 <div class="options">
 <div class="option"><input id="q18a" name="q18" type="radio" value="0"/><label for="q18a"><span class="opt-key">1.</span><span class="opt-body">ごらんになります</span></label></div>
 <div class="option"><input id="q18b" name="q18" type="radio" value="1"/><label for="q18b"><span class="opt-key">2.</span><span class="opt-body">はいけんします</span></label></div>
@@ -356,6 +358,27 @@ if(slot<0)return;
 posCounts[slot]++;
 });
 }
+function optBodyLen(optionEl){
+const body=optionEl.querySelector('.opt-body');
+if(!body)return 0;
+const clone=body.cloneNode(true);
+clone.querySelectorAll('rt').forEach(function(r){r.remove();});
+return (clone.textContent||'').replace(/\s/g,'').length;
+}
+function applyOptionsLayout(){
+document.querySelectorAll('.options').forEach(function(optsDiv){
+const items=Array.prototype.filter.call(optsDiv.children,function(el){
+return el.classList&&el.classList.contains('option');
+});
+if(items.length<1)return;
+let maxLen=0;
+items.forEach(function(el){maxLen=Math.max(maxLen,optBodyLen(el));});
+optsDiv.classList.remove('options-compact','options-wide');
+if(maxLen<=10)optsDiv.classList.add('options-compact');
+else optsDiv.classList.add('options-wide');
+});
+}
+try{applyOptionsLayout();}catch(e){}
 try{shuffleAllOptions();}catch(e){}
 function startTimer(){
 timerInterval=setInterval(()=>{
