@@ -38,6 +38,7 @@ header h1{font-size:1.35em;margin-bottom:4px}
 .option input:checked+label{border-color:#1e3a8a;background:#e8eeff;color:#0f1f4d;font-weight:600}
 .option.correct label{border-color:#48bb78!important;background:#f0fff4!important;color:#276749!important}
 .option.alt-correct label{border-color:#f6ad55!important;background:#fffbeb!important;color:#975a16!important}
+.option.alt-correct-green label{border-color:#48bb78!important;background:#f0fff4!important;color:#276749!important}
 .option.wrong label{border-color:#fc8181!important;background:#fff5f5!important;color:#9b2c2c!important}
 .dialogue{margin:6px 0 12px;padding:14px 16px;background:#f7fafc;border-left:3px solid #1e3a8a;border-radius:0 8px 8px 0;font-size:1.02em;line-height:1.9}
 .dialogue p{margin:0 0 .5em;padding:0}
@@ -121,12 +122,12 @@ ruby rt{font-size:.6em;color:#555}
 <p><span class="sp">B：</span><ruby>駅<rt>えき</rt></ruby>まで<ruby>送<rt>おく</rt></ruby>って<span class="blank-paren">（　　　）</span>か。</p>
 </div>
 <div class="options">
-<div class="option"><input id="q4a" name="q4" type="radio" value="2"/><label for="q4a"><span class="opt-key">1.</span><span class="opt-body">いただきません</span></label></div>
-<div class="option"><input id="q4b" name="q4" type="radio" value="1"/><label for="q4b"><span class="opt-key">2.</span><span class="opt-body">くださいません</span></label></div>
+<div class="option"><input id="q4a" name="q4" type="radio" value="1"/><label for="q4a"><span class="opt-key">1.</span><span class="opt-body">いただきません</span></label></div>
+<div class="option"><input id="q4b" name="q4" type="radio" value="0"/><label for="q4b"><span class="opt-key">2.</span><span class="opt-body">くださいません</span></label></div>
 <div class="option"><input id="q4c" name="q4" type="radio" value="0"/><label for="q4c"><span class="opt-key">3.</span><span class="opt-body">やりません</span></label></div>
-<div class="option"><input id="q4d" name="q4" type="radio" value="2"/><label for="q4d"><span class="opt-key">4.</span><span class="opt-body">もらいません</span></label></div>
+<div class="option"><input id="q4d" name="q4" type="radio" value="0"/><label for="q4d"><span class="opt-key">4.</span><span class="opt-body">もらいません</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 〜てくださいませんか：〜てくださいより丁寧な依頼。1（いただけませんか）・4（もらえませんか）も依頼として使える表現。【第41課】</div>
+<div class="explanation">✅ 正解：1 — 〜ていただきませんか：目上の人への依頼をへりくだって言う表現。【第41課】</div>
 </div>
 
 <!-- Q5 -->
@@ -145,12 +146,12 @@ ruby rt{font-size:.6em;color:#555}
 <div class="question">
 <div class="q-text"><span class="q-num">6</span>この<ruby>機械<rt>きかい</rt></ruby>は<ruby>何<rt>なに</rt></ruby><span class="blank-paren">（　　　）</span><ruby>使<rt>つか</rt></ruby>うんですか。</div>
 <div class="options">
-<div class="option"><input id="q6a" name="q6" type="radio" value="0"/><label for="q6a"><span class="opt-key">1.</span><span class="opt-body">のために</span></label></div>
+<div class="option"><input id="q6a" name="q6" type="radio" value="a"/><label for="q6a"><span class="opt-key">1.</span><span class="opt-body">のために</span></label></div>
 <div class="option"><input id="q6b" name="q6" type="radio" value="1"/><label for="q6b"><span class="opt-key">2.</span><span class="opt-body">をするのに</span></label></div>
 <div class="option"><input id="q6c" name="q6" type="radio" value="0"/><label for="q6c"><span class="opt-key">3.</span><span class="opt-body">ように</span></label></div>
 <div class="option"><input id="q6d" name="q6" type="radio" value="0"/><label for="q6d"><span class="opt-key">4.</span><span class="opt-body">として</span></label></div>
 </div>
-<div class="explanation">✅ 正解：2 — 動詞辞書形＋のに：用途・手段（何をするのに使う／要る）【第42課】</div>
+<div class="explanation">✅ 正解：2／1 — 動詞辞書形＋のに：用途・手段（何をするのに使う）。1（のために）も目的を表す表現として使えます。【第42課】</div>
 </div>
 
 <!-- Q7 -->
@@ -172,7 +173,7 @@ ruby rt{font-size:.6em;color:#555}
 <div class="option"><input id="q8a" name="q8" type="radio" value="0"/><label for="q8a"><span class="opt-key">1.</span><span class="opt-body">にとって</span></label></div>
 <div class="option"><input id="q8b" name="q8" type="radio" value="1"/><label for="q8b"><span class="opt-key">2.</span><span class="opt-body">によって</span></label></div>
 <div class="option"><input id="q8c" name="q8" type="radio" value="0"/><label for="q8c"><span class="opt-key">3.</span><span class="opt-body">について</span></label></div>
-<div class="option"><input id="q8d" name="q8" type="radio" value="0"/><label for="q8d"><span class="opt-key">4.</span><span class="opt-body">に対して</span></label></div>
+<div class="option"><input id="q8d" name="q8" type="radio" value="0"/><label for="q8d"><span class="opt-key">4.</span><span class="opt-body">に<ruby>対<rt>たい</rt></ruby>して</span></label></div>
 </div>
 <div class="explanation">✅ 正解：2 — 名詞＋によって：多様性（人によって考え方が違う）【第42課】</div>
 </div>
@@ -184,7 +185,7 @@ ruby rt{font-size:.6em;color:#555}
 <div class="option"><input id="q9a" name="q9" type="radio" value="0"/><label for="q9a"><span class="opt-key">1.</span><span class="opt-body">する</span></label></div>
 <div class="option"><input id="q9b" name="q9" type="radio" value="0"/><label for="q9b"><span class="opt-key">2.</span><span class="opt-body">ある</span></label></div>
 <div class="option"><input id="q9c" name="q9" type="radio" value="0"/><label for="q9c"><span class="opt-key">3.</span><span class="opt-body">なる</span></label></div>
-<div class="option"><input id="q9d" name="q9" type="radio" value="1"/><label for="q9d"><span class="opt-key">4.</span><span class="opt-body">出し</span></label></div>
+<div class="option"><input id="q9d" name="q9" type="radio" value="1"/><label for="q9d"><span class="opt-key">4.</span><span class="opt-body"><ruby>出<rt>だ</rt></ruby>し</span></label></div>
 </div>
 <div class="explanation">✅ 正解：4 — 動詞ます形＋そう：様態（降り出しそう＝今にも降り始めそう）【第43課】</div>
 </div>
@@ -399,10 +400,11 @@ function submitTest(){
     document.querySelectorAll(`input[name="q${i}"]`).forEach(o=>{
       const p=o.parentElement;
       if(o.value==='1')p.classList.add('correct');
+      else if(o.value==='a')p.classList.add('alt-correct-green');
       else if(o.value==='2')p.classList.add('alt-correct');
       else if(o.checked)p.classList.add('wrong');
     });
-    if(sel&&sel.value==='1')correct++;
+    if(sel&&(sel.value==='1'||sel.value==='a'))correct++;
   }
   document.querySelectorAll('.explanation').forEach(e=>e.classList.add('show'));
   const pct=Math.round((correct/TOTAL)*100);
